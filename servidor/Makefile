@@ -11,7 +11,7 @@ TARGETS=servidorGyC
 #**********************************************************************#
 all: $(TARGETS)
 
-servidorGyC: servidorGyC.c
+servidorGyC: servidorGyC.c validarServidor.c
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean: servidorGyC
