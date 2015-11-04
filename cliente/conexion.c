@@ -11,21 +11,23 @@ int conexion(char* puerto, char* usuario, char* contrasena){
        
 	int desSocket;
 
-        struct sockaddr_in* ptrCliente;
-        ptrCliente = (struct sockaddr_in *) malloc(sizeof(struct sockaddr_in));
+        struct sockaddr_in cliente;
+       // ptrCliente = (struct sockaddr_in *) malloc(sizeof(struct sockaddr_in));
 	desSocket=socket(PF_INET,SOCK_STREAM,0);
-	ptrCliente->sin_family=AF_INET;
-	ptrCliente->sin_port=htons(atoi(puerto));
-        inet_aton ("127.0.0.1",&ptrCliente->sin_addr);
+	cliente.sin_family=AF_INET;
+	cliente.sin_port=htons(atoi(puerto));
+        inet_aton ("127.0.0.1",&cliente.sin_addr);
 
-        if((connect(desSocket, (struct sockaddr *)ptrCliente, sizeof *ptrCliente))<0){
+        if((connect(desSocket, (struct sockaddr*)&cliente, sizeof cliente))<0){
 		perror("connect (servidorGyC)");
 		return -1;
 	}
 
-       validar(usuario,contrasena,desSocket); 
-          
-       free(ptrCliente);
+       if(validar(usuario,contrasena,desSocket)<0){
+        return -1;
+        }
+       directorio(usuario); 
+         
 
 	return 0;
 }

@@ -15,5 +15,6 @@ servidorGyC: servidorGyC.c validarServidor.c
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean: servidorGyC
-	rm $(TARGETS) *.o
+	rm $(TARGETS) *.o *.swp
+
 

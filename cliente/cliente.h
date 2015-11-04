@@ -3,5 +3,7 @@
 
 int conexion(char*,char*,char*);
 int validar(char*,char*,int);
+int directorio(char*);
+
 int conectado(int);
 #endif

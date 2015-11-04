@@ -5,7 +5,7 @@ TARGETS = clienteGyC
 
 all: $(TARGETS)
 
-clienteGyC: clienteGyC.c conexion.c validar.c conectado.c 
+clienteGyC: clienteGyC.c conexion.c validar.c directorio.c openNewDir.c conectado.c
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean: clienteGyC
