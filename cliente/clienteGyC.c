@@ -12,7 +12,6 @@
 int main(int argc ,char* argv[] ){
 
 	int op;
-        int desSocket;
 	char* puerto="2000";
         char* usuario=NULL;
         char* contrasena=NULL;

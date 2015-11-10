@@ -11,7 +11,7 @@ DIR* openNewDir(char* path){
  
      if((dire=opendir(path))==NULL){
          if(mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH)<0){
-                  perror("Error en la creacion de directorio (servidorGyC.c)");
+                  perror("Error en la creacion de socket (servidorGyC.c)");
                   return NULL;
           }
            dire=opendir(path);

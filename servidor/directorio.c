@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include"cliente.h"
+#include"head.h"
 #include<fcntl.h>
 #include<dirent.h>
 #include <sys/types.h>
@@ -42,7 +42,7 @@ int directorio(char* usuario){
        }else{
          return -1;
        }
-
+ printf("estoy saliendo>Direc");
    return 0;
 
 }

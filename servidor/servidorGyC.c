@@ -8,7 +8,7 @@
 #include<arpa/inet.h>
 #include <unistd.h>
 
-int dscSocket,sd,opt;
+int dscSocket,dscAccept,opt;
 
 int main (int argc , char* argv[]){
 	
@@ -19,14 +19,14 @@ int main (int argc , char* argv[]){
    		perror("Error en la creacion de socket (servidorGyC.c)");
    		return -1;
         }
-        printf("cree el socket");
 
  	//estructura TCP/IP
    	assert(argc ==3);
    	local.sin_family=AF_INET;
    	local.sin_port=htons(atoi(argv[2]));
    	inet_aton(argv[1],&local.sin_addr); //esta funcion pasa de ascci a red.
- 	// si no hay nadie en lisen es decir escuchando.Para reutilizar la combinacionj IP y puerto
+ 	
+        // si no hay nadie en lisen es decir escuchando.Para reutilizar la combinacionj IP y puerto
    	opt=1;
    	setsockopt(dscSocket, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof opt);
         
@@ -37,12 +37,28 @@ int main (int argc , char* argv[]){
   
    	listen(dscSocket,15);
             
-  	 while ((sd= accept(dscSocket, NULL, 0))>0){
-           char buf[1024];
-           memset(buf,'\0',1024);
-	   int loe;
-           validarServidor(sd);
-           write(1,"sali del validar",16);   
-          }
+  	 while ((dscAccept= accept(dscSocket, NULL, 0))>0){
+           Usuario usuario;
+           memset(usuario.usuario,'\0',30);
+           memset(usuario.contrasena,'\0',30);
+
+           usuario.dscAccept=dscAccept;
+           /*valida que exista el usuario 
+             Struct Usuario
+             return 0 o -1
+            */         
+	   if(validarServidor(&usuario)==0){;           
+           	/*
+            	abre los directorio si no existe los crea
+           	 nombre de usuario
+           	*/
+           	if(directorio(usuario.usuario)==0){   
+                	write(1,usuario.usuario,sizeof usuario.usuario);
+                	write(1,usuario.contrasena,sizeof usuario.contrasena);
+          	    }
+           }
+		  
+	 
+         }
     return 0;
 }

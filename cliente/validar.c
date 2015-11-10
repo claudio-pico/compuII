@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/socket.h>
 #include"cliente.h"
-int validar(char* usuario, char*contrasena , int desSocket){
+#include <unistd.h>
 
-	char* tok;	
+
+int validar(char* usuario, char*contrasena , int desSocket){
+	
 	char usuCont[42];
         char res[128];
        	 memset(usuCont, '\0', 42);
