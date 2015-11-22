@@ -7,27 +7,26 @@
 #include<assert.h>
 #include<arpa/inet.h>
 #include"cliente.h"
-int conexion(char* puerto, char* usuario, char* contrasena){
+int conexion(char* puerto,Cliente* cliente){
        
 	int desSocket;
 
-        struct sockaddr_in cliente;
+        struct sockaddr_in clienteConex;
        // ptrCliente = (struct sockaddr_in *) malloc(sizeof(struct sockaddr_in));
 	desSocket=socket(PF_INET,SOCK_STREAM,0);
-	cliente.sin_family=AF_INET;
-	cliente.sin_port=htons(atoi(puerto));
-        inet_aton ("127.0.0.1",&cliente.sin_addr);
+	clienteConex.sin_family=AF_INET;
+	clienteConex.sin_port=htons(atoi(puerto));
+        inet_aton ("127.0.0.1",&clienteConex.sin_addr);
 
-        if((connect(desSocket, (struct sockaddr*)&cliente, sizeof cliente))<0){
+        if((connect(desSocket, (struct sockaddr*)&clienteConex, sizeof clienteConex))<0){
 		perror("connect (servidorGyC)");
 		return -1;
 	}
-
-       if(validar(usuario,contrasena,desSocket)<0){
+        
+       cliente->desSocket=desSocket;
+       if(validar(cliente)<0){
         return -1;
-        }
-       directorio(usuario); 
+        } 
          
-
 	return 0;
 }

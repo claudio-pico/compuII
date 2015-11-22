@@ -24,9 +24,7 @@ memset(buf2,'\0',512);
         if(op==-1){
             perror("Error en la apertura del archivo2(validarServidor.c) \n");
             return -1;
-        }
-     
- 
+        } 
         while((leido = read(op ,buf2, sizeof buf2))>0){
             tok = strtok (buf2,"\n");	
         	while (tok != NULL && strlen(usuario->usuario)==0){
@@ -47,8 +45,7 @@ memset(buf2,'\0',512);
                  	       
                 	}
 	 		tok=strtok (NULL, "\n");
-                }
-              
+                }             
   //---------------------------
           }
          
@@ -59,6 +56,7 @@ memset(buf2,'\0',512);
            	 }
        		return -1;
          }
-
+    close(leido); 
+    close(loe);
     return 0;
 }

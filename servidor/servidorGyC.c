@@ -52,8 +52,17 @@ int main (int argc , char* argv[]){
             	abre los directorio si no existe los crea
            	 nombre de usuario
            	*/
-           	if(directorio(usuario.usuario)==0){   
-                	write(1,usuario.usuario,sizeof usuario.usuario);
+           	if(directorio(&usuario)==0){   
+                        printf("vopy a entrar a actializar \n");
+                        actualizarCliente(&usuario);
+                        struct dirent *dt;
+    
+      while((dt=readdir(usuario.dirPublico)) != NULL){
+               
+                	}
+            printf("SALIR \n");
+
+                        write(1,usuario.usuario,sizeof usuario.usuario);
                 	write(1,usuario.contrasena,sizeof usuario.contrasena);
           	    }
            }
