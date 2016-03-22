@@ -1,0 +1,11 @@
+CLIENTE
+ ./clienteGyC -u claudio -c 123
+
+SERVIDOR
+./servidorGyC 127.0.0.1 2000
+
+******Instalar******************
+
+1. apt-get install libssl-dev
+
+
