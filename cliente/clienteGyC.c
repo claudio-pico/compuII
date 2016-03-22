@@ -12,11 +12,12 @@
 int main(int argc ,char* argv[] ){
 
 	int op;
-        Cliente cliente;
+        Usuario usuario;
 	char* puerto="2000";
-        cliente.usuario=NULL;
-        cliente.contrasena=NULL;
-      
+       // usuario.usuario=NULL;
+       // usuario.contrasena=NULL;
+       memset(usuario.usuario,'\0',30);
+           memset(usuario.contrasena,'\0',30);
 //        memset(cliente.usuario,'\0',30);
  //       memset(cliente.contrasena,'\0',30);
      printf("entre \n");	
@@ -24,9 +25,9 @@ int main(int argc ,char* argv[] ){
 	switch (op) {
         case 'p': puerto = optarg; 
 				  break; 
-        	        case 'u': cliente.usuario= optarg;
+        	        case 'u': strcpy(usuario.usuario,optarg);
                                   break;
-                        case 'c': cliente.contrasena = optarg;
+                        case 'c': strcpy(usuario.contrasena,optarg);
                                   break;
                   	case '?': 
 				  return -1; 
@@ -36,7 +37,7 @@ int main(int argc ,char* argv[] ){
 		}  
         }
 
-       if(!(strlen(cliente.usuario)>0) ||!(strlen(cliente.contrasena)>0)){
+      if(!(strlen(usuario.usuario)>0) ||!(strlen(usuario.contrasena)>0)){
            char msj[128]="ERROR: Ingrese Usuario y Contraseña(ejemplo ./clienteGyC -u usuario -c Contraseña) \n";
 	   if(write(1,msj,sizeof msj)<0){
 		perror("Error en write: ");
@@ -46,10 +47,9 @@ int main(int argc ,char* argv[] ){
        
        }
 
-    if(conexion(puerto,&cliente)==0){
-      if(directorio(&cliente)==0){
-          printf("voya entra a actualiza\n");
-          actualizarDirectorio(&cliente);
+    if(conexion(puerto,&usuario)==0){
+      if(directorio(&usuario)==0){
+          reportar(&usuario);
           printf("en el if");
        }
     }

@@ -7,7 +7,7 @@
 #include<assert.h>
 #include<arpa/inet.h>
 #include"cliente.h"
-int conexion(char* puerto,Cliente* cliente){
+int conexion(char* puerto,Usuario* usuario){
        
 	int desSocket;
 
@@ -23,8 +23,8 @@ int conexion(char* puerto,Cliente* cliente){
 		return -1;
 	}
         
-       cliente->desSocket=desSocket;
-       if(validar(cliente)<0){
+       usuario->desSocket=desSocket;
+       if(validar(usuario)<0){
         return -1;
         } 
          

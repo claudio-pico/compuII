@@ -1,4 +1,4 @@
-#include"head.h"
+#include"servidor.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -38,32 +38,33 @@ int main (int argc , char* argv[]){
    	listen(dscSocket,15);
             
   	 while ((dscAccept= accept(dscSocket, NULL, 0))>0){
-           Usuario usuario;
+          struct Usuario usuario;
            memset(usuario.usuario,'\0',30);
            memset(usuario.contrasena,'\0',30);
-
+           
            usuario.dscAccept=dscAccept;
            /*valida que exista el usuario 
              Struct Usuario
              return 0 o -1
-            */         
-	   if(validarServidor(&usuario)==0){;           
+            */  printf("voy a entrar a  validar\n");        
+           if(validarServidor(&usuario)==0){;           
            	/*
             	abre los directorio si no existe los crea
            	 nombre de usuario
            	*/
-           	if(directorio(&usuario)==0){   
-                        printf("vopy a entrar a actializar \n");
-                        actualizarCliente(&usuario);
+    printf("pase por validar esto es usuario %s \n", usuario.usuario);      
+     	if(directorio(&usuario)==0){   
+                        printf("vopy a entrar a actializar %s \n",usuario.usuario);
+                       actualizarArchivos(&usuario);
                         struct dirent *dt;
     
       while((dt=readdir(usuario.dirPublico)) != NULL){
                
                 	}
             printf("SALIR \n");
-
-                        write(1,usuario.usuario,sizeof usuario.usuario);
-                	write(1,usuario.contrasena,sizeof usuario.contrasena);
+                        printf("esto es lo ultmimo us:%s cont: %s  termina\n",usuario.usuario, usuario.contrasena);
+                        //write(1,usuario.usuario,sizeof usuario.usuario);
+                	//write(1,usuario.contrasena,sizeof usuario.contrasena);
           	    }
            }
 		  

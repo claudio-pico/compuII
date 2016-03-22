@@ -7,7 +7,7 @@
 #include <sys/stat.h>
 DIR* openNewDir(char*);
 
-int directorio(Cliente* cliente){
+int directorio(Usuario* usuario){
 
  
  char path [128]="./Directorio/";
@@ -18,13 +18,13 @@ int directorio(Cliente* cliente){
         erro =NULL
         return DIR */	
 	if((dire=openNewDir(path))!=NULL){
-            strcat(path,cliente->usuario);
+            strcat(path,usuario->usuario);
             if((dirUsuario=openNewDir(path))!=NULL){ 
 	      strcat(pathAux,path);
               strcat(path,"/privado");
-              if((cliente->dirPrivado=openNewDir(path))!=NULL){
+              if((usuario->dirPrivado=openNewDir(path))!=NULL){
                   strcat(pathAux,"/publico");
-                  if((cliente->dirPublico=openNewDir(pathAux))!=NULL){
+                  if((usuario->dirPublico=openNewDir(pathAux))!=NULL){
          	  return 0;
                  }else{return -1;}
              }else{return -1;}
