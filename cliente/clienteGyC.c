@@ -46,12 +46,15 @@ int main(int argc ,char* argv[] ){
          return -1;
        
        }
-
+    char salir=0;
     if(conexion(puerto,&usuario)==0){
       if(directorio(&usuario)==0){
+//       while(salir==0){
           reportar(&usuario);
           printf("en el if");
-       }
+  //        read(salir,0,1);
+  //       }
+        }
     }
      printf("conexionDes\n"); 
 

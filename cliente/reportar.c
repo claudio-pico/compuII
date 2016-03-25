@@ -59,9 +59,10 @@ struct stat status;
                          printf("nombre: %s md5:%s tmMod:%ld leer:%s\n",archivo.nombre,archivo.md5,archivo.tmpMod,ctime(&archivo.tmpMod));
                         
                         write(usuario->desSocket,&archivo,sizeof archivo);  
-                        sleep(3);
+                        sleep(1);
                        }
             } 
+          sleep(3);
          close(op); 
     }   
    
