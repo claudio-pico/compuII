@@ -11,7 +11,7 @@ TARGETS=servidorGyC
 #**********************************************************************#
 all: $(TARGETS)
 
-servidorGyC: servidorGyC.c validarServidor.c directorio.c openNewDir.c actualizarArchivos.c md5.c
+servidorGyC: servidorGyC.c validarServidor.c directorio.c openNewDir.c actualizarArchivos.c md5.c recibirArchivo.c
 	$(CC) $(CFLAGS) -o $@ $^ -lcrypto
 
 clean: servidorGyC

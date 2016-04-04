@@ -11,6 +11,7 @@
 #include <time.h> 
 
 typedef struct Archivos{
+   struct Head head;
    char nombre[32];
    char md5[64];
    time_t tmpMod;
@@ -56,15 +57,31 @@ struct stat status;
                         strcat(archivo.nombre,dt->d_name);
                         
                         archivo.tmpMod=status.st_mtime;
-                         printf("nombre: %s md5:%s tmMod:%ld leer:%s\n",archivo.nombre,archivo.md5,archivo.tmpMod,ctime(&archivo.tmpMod));
-                        
-                        write(usuario->desSocket,&archivo,sizeof archivo);  
-                        sleep(1);
-                       }
-            } 
-          sleep(3);
-         close(op); 
-    }   
+                        printf("nombre: %s md5:%s tmMod:%ld leer:%s\n",archivo.nombre,archivo.md5,archivo.tmpMod,ctime(&archivo.tmpMod));
+                       memset(archivo.head.head,'\0',11);
+
+                        strcat(archivo.head.head,headM);
+                        memset(archivo.head.accion,'\0',30);
+                        strcat(archivo.head.accion,"actualizarArchivos");
+
+        
+                   write(usuario->desSocket,&archivo,sizeof archivo);  
+                   printf("\n\n");
+                        printf("mando estos nombres y md5 %s",archivo.nombre);
+                         printf("\n\n");
    
+                      sleep(1);
+            
+                   }
+            } 
+       close(op); 
+    }   
+  Archivos archivo;
+       memset(archivo.nombre,'\0',64);
+       memset(archivo.head.accion,'\0',30);
+       strcat(archivo.head.accion,"finalizar");
+       write(usuario->desSocket,&archivo,sizeof archivo);
+ 
+  //sleep(3);
   return 0;
 }

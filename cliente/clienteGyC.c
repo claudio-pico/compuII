@@ -14,13 +14,8 @@ int main(int argc ,char* argv[] ){
 	int op;
         Usuario usuario;
 	char* puerto="2000";
-       // usuario.usuario=NULL;
-       // usuario.contrasena=NULL;
-       memset(usuario.usuario,'\0',30);
-           memset(usuario.contrasena,'\0',30);
-//        memset(cliente.usuario,'\0',30);
- //       memset(cliente.contrasena,'\0',30);
-     printf("entre \n");	
+        memset(usuario.usuario,'\0',30);
+        memset(usuario.contrasena,'\0',30);	
 	while ((op = getopt (argc, argv, "p:d:u:c:")) != -1) { 
 	switch (op) {
         case 'p': puerto = optarg; 
@@ -46,14 +41,10 @@ int main(int argc ,char* argv[] ){
          return -1;
        
        }
-    char salir=0;
     if(conexion(puerto,&usuario)==0){
       if(directorio(&usuario)==0){
-//       while(salir==0){
           reportar(&usuario);
-          printf("en el if");
-  //        read(salir,0,1);
-  //       }
+          mandarArchivos(&usuario);
         }
     }
      printf("conexionDes\n"); 

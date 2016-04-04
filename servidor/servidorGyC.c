@@ -38,7 +38,8 @@ int main (int argc , char* argv[]){
 	listen(dscSocket,15);
 	    
 	 while ((dscAccept= accept(dscSocket, NULL, 0))>0){
-	   struct Usuario usuario;
+	 printf("\n\n************entre en accept ************\n\n");
+           struct Usuario usuario;
 	   memset(usuario.usuario,'\0',30);
 	   memset(usuario.contrasena,'\0',30);
 	   
@@ -59,7 +60,7 @@ int main (int argc , char* argv[]){
 		    	}
                   }
 	   }
-		  
+        printf("\n\n************salid e accep ******** \n\n");
 	close(dscAccept);
 	 }
     return 0;

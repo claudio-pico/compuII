@@ -5,7 +5,7 @@ TARGETS = clienteGyC
 
 all: $(TARGETS)
 
-clienteGyC: clienteGyC.c conexion.c validar.c directorio.c openNewDir.c conectado.c reportar.c md5.c
+clienteGyC: clienteGyC.c conexion.c validar.c directorio.c openNewDir.c conectado.c reportar.c md5.c mandarArchivos.c
 	$(CC) $(CFLAGS) -o $@ $^ -lcrypto
 
 clean: clienteGyC
