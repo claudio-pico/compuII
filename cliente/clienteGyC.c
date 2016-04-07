@@ -43,8 +43,15 @@ int main(int argc ,char* argv[] ){
        }
     if(conexion(puerto,&usuario)==0){
       if(directorio(&usuario)==0){
+       printf("\n\n************actualizo el servidor ************\n\n");
           reportar(&usuario);
           mandarArchivos(&usuario);
+      printf("\n\n \n\n************actualizo el cliente ************\n\n");
+          if(actualizarArchivos(&usuario)){
+                 perror("al actualizar el cliente ");
+                 return -1;
+
+          }
         }
     }
      printf("conexionDes\n"); 

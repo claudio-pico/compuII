@@ -31,8 +31,7 @@ int validarServidor(Usuario*);
  */
 int directorio(Usuario*);
 
-/* manda los nombre de los archivos para actualizar
-   y actualiza los archivos locales
+/* recibe el nombre y contenido de los archivos, elimina luego creael archivo y le ingresa el contenido
 */
 int recibirArchivo(char*,Usuario*);
 
@@ -47,6 +46,11 @@ int (descriptor del archivo)
 unsigned char* (puntero donde almacena el md5)
  */
 void md5(int,char*);
+
+/*genera los md5 y los envia al servidor */
+int reportar(Usuario*);
+
+void  mandarArchivos(Usuario*);
 
 
 #endif

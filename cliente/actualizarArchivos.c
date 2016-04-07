@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
-#include "servidor.h"
+#include "cliente.h"
 #include <unistd.h>
 #include <fcntl.h>
 #include <dirent.h>
@@ -46,7 +46,7 @@ void* hilosActualizar(){
 //printf(" \nbloqueo despues %d\n\n",bloqueoRead);
 
    if(termino!=0){
- 	if((read(usuario->dscAccept ,&archivo, sizeof archivo))>0){
+ 	if((read(usuario->desSocket ,&archivo, sizeof archivo))>0){
         	if((strcmp(archivo.head.head,headM))==0 && (strcmp(archivo.head.accion,"actualizarArchivos"))==0){
                 	pthread_mutex_unlock(&bloqueoRead);
                 	encontroArchivo=0;// para saber si no esta el archivo en local.

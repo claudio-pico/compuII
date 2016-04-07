@@ -40,4 +40,12 @@ void md5(int,char*);
 
 void  mandarArchivos(Usuario*);
 
+/* recibe el nombre y contenido de los archivos, elimina luego creael archivo y le ingresa el contenido
+*/
+int recibirArchivo(char*,Usuario*);
+
+/*recibe los archivos del cliente [md5/nombrearchivo/fecha de moficacion] y busca los que estan
+  en el servidor y compara el md5 y la utima fecha, para luego enviar los archivos que son distintos.
+*/
+int actualizarArchivos(Usuario*);
 #endif

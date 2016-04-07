@@ -38,30 +38,38 @@ int main (int argc , char* argv[]){
 	listen(dscSocket,15);
 	    
 	 while ((dscAccept= accept(dscSocket, NULL, 0))>0){
-	 printf("\n\n************entre en accept ************\n\n");
-           struct Usuario usuario;
-	   memset(usuario.usuario,'\0',30);
-	   memset(usuario.contrasena,'\0',30);
+	 	if(fork()==0){
+
+          		printf("\n\n************entre en accept ************\n\n");
+           		struct Usuario usuario;
+	   		memset(usuario.usuario,'\0',30);
+	   		memset(usuario.contrasena,'\0',30);
 	   
-	   usuario.dscAccept=dscAccept;
-	   /*valida que exista el usuario 
-	     Struct Usuario
-	     return 0 o -1
-	    */        
-	   if(validarServidor(&usuario)==0){;           
-		/*
-		abre los directorio si no existe los crea
-		 nombre de usuario
-		*/
-                 // tengo q poner un while para que se quede en el usuario 
- 	    	if(directorio(&usuario)==0){   
-		       if(actualizarArchivos(&usuario)==0){
-		 	printf("esto es lo ultmimo us:%s cont: %s  termina\n",usuario.usuario, usuario.contrasena);
-		    	}
-                  }
-	   }
-        printf("\n\n************salid e accep ******** \n\n");
-	close(dscAccept);
-	 }
+	   		usuario.dscAccept=dscAccept;
+	   		/*valida que exista el usuario 
+	     		Struct Usuario
+	     		return 0 o -1
+	    		*/        
+	   		if(validarServidor(&usuario)==0){;           
+				/*
+				abre los directorio si no existe los crea
+		 		nombre de usuario
+				*/
+                 		// tengo q poner un while para que se quede en el usuario 
+ 	    			if(directorio(&usuario)==0){ 
+                                  printf("\n\n************actualizo el servidor ************\n\n");  
+		       			if(actualizarArchivos(&usuario)==0){
+		 			printf("esto es lo ultmimo us:%s cont: %s  termina\n",usuario.usuario, usuario.contrasena);
+		    			}
+                                   printf("\n\n\n\n************actualizo el cliente ************\n\n");
+                                       reportar(&usuario);
+                                       mandarArchivos(&usuario);
+                  		}
+                	}
+	   
+        	printf("\n\n************salid e accep ******** \n\n");
+		close(dscAccept);
+	       } 
+        }
     return 0;
 }
