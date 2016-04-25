@@ -7,15 +7,15 @@
 #include <sys/stat.h>
 
 DIR* openNewDir(char* path){
- DIR *dire;       
+  DIR *dire;       
  
-     if((dire=opendir(path))==NULL){
-         if(mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH)<0){
-                  perror("Error en la creacion de socket (servidorGyC.c)");
-                  return NULL;
-          }
-           dire=opendir(path);
-      }
+  if((dire=opendir(path))==NULL){
+    if(mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH)<0){
+      perror("Error en la creacion de socket (servidorGyC.c)");
+      return NULL;
+    }
+    dire=opendir(path);
+  }
 
-         return dire;
+  return dire;
 }
