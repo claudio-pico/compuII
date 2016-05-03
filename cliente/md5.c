@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include"cliente.h"
 void md5(int dato,char* outMd5){
   int n;
   MD5_CTX c;

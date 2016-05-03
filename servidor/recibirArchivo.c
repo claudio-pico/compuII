@@ -40,9 +40,9 @@ int recibirArchivo(char* bufNombreArchivos, Usuario* usuario){
 	  op=open(bufDir,O_CREAT,0600); 
 	}	
 	op=open(bufDir,O_WRONLY | O_CREAT,0600);
-	write(op,nombreArchivo.bufContenido,sizeof(nombreArchivo.bufContenido));            
+	write(op,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));            
       }else if((strcmp(nombreArchivo.head.head,headM))==0 && (strcmp(nombreArchivo.head.accion,"Archivo"))==0){   
-	write(op,nombreArchivo.bufContenido,sizeof(nombreArchivo.bufContenido));
+	write(op,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));
                  	
       }else{
 	termino=0;

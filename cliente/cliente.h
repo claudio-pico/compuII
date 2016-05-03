@@ -11,15 +11,21 @@ typedef struct Head{
   char accion[30];
 }Head;
 
+typedef struct Info{
+  Head head;
+  int cantidad;
+}Info;
+
 typedef struct Usuario{
   struct Head head;
   int desSocket;
   char usuario[30];
   char contrasena[30];
+  DIR* dirTemporario;
   DIR* dirPublico;
-  DIR* dirPrivado;
         
 }Usuario ;
+
 
 /*crea el enlace con el servidor*/
 int conexion(char*,Usuario*);
@@ -42,10 +48,18 @@ void  mandarArchivos(Usuario*);
 
 /* recibe el nombre y contenido de los archivos, elimina luego creael archivo y le ingresa el contenido
  */
-int recibirArchivo(char*,Usuario*);
+int recibirArchivo(char*,Usuario*,int);
 
 /*recibe los archivos del cliente [md5/nombrearchivo/fecha de moficacion] y busca los que estan
   en el servidor y compara el md5 y la utima fecha, para luego enviar los archivos que son distintos.
 */
 int actualizarArchivos(Usuario*);
+
+/*cuenta la cantidad de archivos que hay en un directorio*/
+int contarArchivos(DIR*);
+
+/*Verifica que la actualizacion del archivo fue correcta, si no lo fue 
+vulve el archivo al estado anterior*/
+void verificarMd5(char*,char*,char*);
+
 #endif

@@ -12,13 +12,18 @@ typedef struct Head{
   char accion[30]; 
 }Head;
 
+typedef struct Info{
+  Head head;
+  int cantidad;
+}Info;
+
 typedef struct Usuario{
   struct Head head;
   int dscAccept;
   char usuario[30];
   char contrasena[30];
   DIR* dirPublico;
-  DIR* dirPrivado;       
+  DIR* dirTemporario;       
 }Usuario ;
 
 /*valida que el servidor logueado exista con la contraseña
@@ -52,5 +57,6 @@ int reportar(Usuario*);
 
 void  mandarArchivos(Usuario*);
 
-
+/*cuenta la cantidad de archivos que hay en un directorio*/
+int contarArchivos(DIR*);
 #endif

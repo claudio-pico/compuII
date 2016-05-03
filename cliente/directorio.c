@@ -21,8 +21,8 @@ int directorio(Usuario* usuario){
     strcat(path,usuario->usuario);
     if((dirUsuario=openNewDir(path))!=NULL){ 
       strcat(pathAux,path);
-      strcat(path,"/privado");
-      if((usuario->dirPrivado=openNewDir(path))!=NULL){
+      strcat(path,"/temporario");
+      if((usuario->dirTemporario=openNewDir(path))!=NULL){
 	strcat(pathAux,"/publico");
 	if((usuario->dirPublico=openNewDir(pathAux))!=NULL){
 	  return 0;

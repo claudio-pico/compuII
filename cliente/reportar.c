@@ -30,7 +30,15 @@ int reportar(Usuario* usuario){
   char* tok; 
   printf("reportar\n");
   struct stat status;
-
+  
+  Info info;
+  memset(info.head.head,'\0',11);
+  strcat(info.head.head,headM);
+  memset(info.head.accion,'\0',30);
+  strcat(info.head.accion,"informacion");
+  info.cantidad=contarArchivos(usuario->dirPublico);
+  write(usuario->desSocket,&info,sizeof info);
+  
   while((dt=readdir(usuario->dirPublico)) != NULL){    
     if((strcmp(dt->d_name,".")!=0)&&(strcmp(dt->d_name,"..")!=0)){
       memset(buf,'\0',512);
@@ -69,19 +77,10 @@ int reportar(Usuario* usuario){
 	printf("\n\n");
 	printf("mando estos nombres y md5 %s",archivo.nombre);
 	printf("\n\n");
-   
-	sleep(1);
-            
       }
     } 
     close(op); 
   }   
-  Archivos archivo;
-  memset(archivo.nombre,'\0',64);
-  memset(archivo.head.accion,'\0',30);
-  strcat(archivo.head.accion,"finalizar");
-  write(usuario->desSocket,&archivo,sizeof archivo);
- 
-  //sleep(3);
+
   return 0;
 }

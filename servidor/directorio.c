@@ -20,17 +20,12 @@ int directorio(Usuario* usuario){
   /*openNewDir abre el directorio si no exite lo crea y lo abre.
     erro =NULL
     return DIR */	
-  printf("este es el primer path %s \n",path);
   if((dire=openNewDir(path))!=NULL){
-    printf("este es usuario en diretorio %s",usuario->usuario);
-
     strcat(path,usuario->usuario);
-
     if((dirUsuario=openNewDir(path))!=NULL){ 
       strcat(pathAux,path);
-      strcat(path,"/privado");
-              
-      if((usuario->dirPrivado=openNewDir(path))!=NULL){
+      strcat(path,"/temporario");             
+      if((usuario->dirTemporario=openNewDir(path))!=NULL){
 	strcat(pathAux,"/publico");
 	if((usuario->dirPublico=openNewDir(pathAux))!=NULL){
 	  return 0;
@@ -39,7 +34,6 @@ int directorio(Usuario* usuario){
     }else{return -1;}
   }else{return -1;
   }
-  printf("estoy saliendo>Direc");
   return 0;
 
 }
