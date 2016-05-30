@@ -8,7 +8,7 @@
 #include<arpa/inet.h>
 #include <unistd.h>
 #include <netinet/tcp.h>
-
+#include <sys/wait.h>
 int dscSocket,dscAccept,opt;
 
 int main (int argc , char* argv[]){
@@ -48,7 +48,10 @@ int main (int argc , char* argv[]){
 	    
   while ((dscAccept= accept(dscSocket, NULL, 0))>0){
     if(fork()==0){
-
+      int pipefd[2];
+      if (pipe(pipefd) == -1) {
+        perror("pipe");
+      }    
       printf("\n\n************entre en accept ************\n\n");
       struct Usuario usuario;
       memset(usuario.usuario,'\0',30);
@@ -64,23 +67,35 @@ int main (int argc , char* argv[]){
 	  abre los directorio si no existe los crea
 	  nombre de usuario
 	*/
-	// tengo q poner un while para que se quede en el usuario 
+      if(fork()==0){
+        printf("entre al hijo del log \n");
+        logRead(pipefd,usuario.usuario);
+            printf("salgo hijo");
+        }else{
+        printf("entre al padre \n ");
+        usuario.pipefd=pipefd[1];
+        close(pipefd[0]);
+        // tengo q poner un while para que se quede en el usuario 
 	if(directorio(&usuario)==0){ 
 	  printf("\n\n************actualizo el servidor ************\n\n");  
 	  if(actualizarArchivos(&usuario)==0){
 	    printf("esto es lo ultmimo us:%s cont: %s  termina\n",usuario.usuario, usuario.contrasena);
 	  }
 	  printf("\n\n\n\n************actualizo el cliente ************\n\n");
-	  reportar(&usuario);
+//	  sleep(2);
+          reportar(&usuario);
 	  mandarArchivos(&usuario);
 	}
-      }
+     
      /*  char nada[512]; 
        if((read(usuario.dscAccept ,&nada, sizeof nada))>0){
 
        }*/	   
       printf("\n\n************salid e accep ******** \n\n");
+      wait(NULL);
       close(dscAccept);
+     }
+     }
     } 
   }
   return 0;

@@ -24,6 +24,7 @@ typedef struct Usuario{
   char contrasena[30];
   DIR* dirPublico;
   DIR* dirTemporario;       
+  int pipefd;
 }Usuario ;
 
 /*valida que el servidor logueado exista con la contraseña
@@ -59,4 +60,17 @@ void  mandarArchivos(Usuario*);
 
 /*cuenta la cantidad de archivos que hay en un directorio*/
 int contarArchivos(DIR*);
+/*registra el mensaje en archivo log
+ int pipefd[1]
+ char* usuario[30]
+ */
+void logRead(int*,char*);
+
+/*envia msj para registrar en log
+int pipefd[0]
+char* nombreArchivo[32]
+*/
+
+void logWrite(int,char*);
+
 #endif

@@ -28,7 +28,6 @@ int reportar(Usuario* usuario){
   strcat(dir,usuario->usuario);
   strcat(dir,"/publico/");
   char* tok; 
-  printf("reportar\n");
   struct stat status;
   
   Info info;
@@ -46,12 +45,9 @@ int reportar(Usuario* usuario){
       snprintf(buf, sizeof buf, "%s%s",dir,dt->d_name);
       op=0;
       printf("esto es dir de md5 %s\n",buf);
-      op=open(buf, O_RDWR,0600);
-      md5(op,outMd5);                       
-            
-      stat(buf,&status);
-      printf("  tmMod:%ld \n",status.st_mtime);
-  
+      op=open(buf,O_RDONLY,0600);
+      md5(op,outMd5);                                   
+      stat(buf,&status); 
       //El -mtime se actualiza cuando se modifica un archivo. 
       //Cada vez que actualice el contenido de un archivo o guardar un archivo mtime se actualiza.
       if(strlen(outMd5)>0){                                      
@@ -75,9 +71,6 @@ int reportar(Usuario* usuario){
 
         
 	write(usuario->dscAccept,&archivo,sizeof archivo);  
-	printf("\n\n");
-	printf("mando estos nombres y md5 %s",archivo.nombre);
-	printf("\n\n");           
       }
     } 
     close(op); 

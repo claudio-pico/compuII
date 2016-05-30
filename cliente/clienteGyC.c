@@ -47,9 +47,9 @@ int main(int argc ,char* argv[] ){
       reportar(&usuario);
       mandarArchivos(&usuario);
       printf("\n\n \n\n************actualizo el cliente ************\n\n");
+//      sleep(2);
       if(actualizarArchivos(&usuario)){
-	perror("al actualizar el cliente ");
-	return -1;
+        return -1;
 
       }
     }

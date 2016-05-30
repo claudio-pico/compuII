@@ -27,6 +27,7 @@ int recibirArchivo(char* bufNombreArchivos, Usuario* usuario){
   write(usuario->dscAccept,bufNombreArchivos,512);
   while(termino){
     memset(nombreArchivo.nombre,'\0',64);
+    memset(nombreArchivo.bufContenido,'\0',1024);
     if((read(usuario->dscAccept,&nombreArchivo, sizeof nombreArchivo))>0){
       if((strcmp(nombreArchivo.head.head,headM))==0 && (strcmp(nombreArchivo.head.accion,"InicioArchivo"))==0){
 	memset(bufDir,'\0',64);
@@ -37,13 +38,18 @@ int recibirArchivo(char* bufNombreArchivos, Usuario* usuario){
 	op=0;
 
 	if(remove(bufDir)<0){
-	  op=open(bufDir,O_CREAT,0600); 
+	  op=open(bufDir,O_CREAT|O_APPEND,0600); 
 	}	
-	op=open(bufDir,O_WRONLY | O_CREAT,0600);
+	op=open(bufDir,O_WRONLY | O_CREAT |O_APPEND,0600);
+         printf("estoy voya meter en el archivo \n");
+         write(1,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));
+
 	write(op,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));            
+      //  memset(nombreArchivo.bufContenido,'\0',1024);
+        logWrite(usuario->pipefd,nombreArchivo.nombre);
       }else if((strcmp(nombreArchivo.head.head,headM))==0 && (strcmp(nombreArchivo.head.accion,"Archivo"))==0){   
 	write(op,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));
-                 	
+       // memset(nombreArchivo.bufContenido,'\0',1024);                 	
       }else{
 	termino=0;
 	if(op>0){

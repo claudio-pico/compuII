@@ -40,7 +40,7 @@ void* hilosActualizar(){
       encontroArchivo=0;// para saber si no esta el archivo en local.
       struct dirent *dt;
       memset(bufDir,'\0',512);
-      snprintf(bufDir, sizeof bufDir, "Directorio/%s/publico",usuario->usuario);
+      snprintf(bufDir, sizeof bufDir, "Directorio/%s/publico/",usuario->usuario);
       dire=opendir(bufDir);
       char bufDirAux[512];
       while(((dt=readdir(dire))!= NULL)){
@@ -56,7 +56,8 @@ void* hilosActualizar(){
 	    strcat(bufDirAux,bufDir);
             strcat(bufDirAux,dt->d_name);
             op=0;
-	    op=open(bufDir, O_RDWR,0600);
+	    //op=open(bufDirAux,O_RDWR,0600);
+            op=open(bufDirAux,O_RDONLY,0600);
             memset(outMd5,'\0',64);
             md5(op,outMd5);
             close(op);
@@ -105,17 +106,13 @@ int actualizarArchivos(Usuario* usu){
   while(info.cantidad>numh){
     pthread_create (&tid1[numh], NULL, hilosActualizar, NULL );
     numh=numh+1;
-    printf("cree hilos\n");
   }
   numh=numh-1;
   while(numh >-1 ){
-    printf("mato hilos %d \n",numh);
     pthread_join(tid1[numh], NULL); 
     numh=numh-1;
   }
-  if(pthread_mutex_destroy(&bloqueo)==0){
-    printf("bloqueo es 0 \n");
-  }
+  pthread_mutex_destroy(&bloqueo);
   write(1,bufResultado,sizeof bufResultado);
   recibirArchivo(bufResultado,usu);
   return 0;

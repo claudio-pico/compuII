@@ -42,11 +42,11 @@ void mandarArchivos(Usuario* usuario){
     cantArchivos=0;
     tok = strtok (bufLeido,"\n");
     while (tok != NULL){
-      printf("\nentre al while del tok\n");
       vacio=1;
+      cantArchivos++;
       snprintf(bufDir, sizeof bufDir, "Directorio/%s/publico/%s",usuario->usuario,tok);
                         
-      op=open(bufDir, O_RDWR,0600);
+      op=open(bufDir,O_RDONLY,0600);
       leeArchivo=0;
       memset(nombreArchivo.nombre,'\0',64);          
       strcat(nombreArchivo.nombre,tok);
@@ -60,34 +60,47 @@ void mandarArchivos(Usuario* usuario){
       memset(nombreArchivo.md5,'\0',64);
       md5(op,nombreArchivo.md5);                   
       lseek (op, 0, SEEK_SET );
+      printf("\n\n\n antes del while ");
 
       memset(nombreArchivo.bufContenido,'\0',1024);
       while((leeArchivo=read(op,nombreArchivo.bufContenido,sizeof(nombreArchivo.bufContenido)))>0){
 	vacio=0;
         printf("\n\n\n voy a mandar esto ");
-        write(1,nombreArchivo.bufContenido,sizeof nombreArchivo.bufContenido);
+        write(1,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));
 	write(usuario->dscAccept,&nombreArchivo,sizeof nombreArchivo);
 	memset(nombreArchivo.bufContenido,'\0',1024);
-	strcat(nombreArchivo.head.accion,"Archivo");
+        memset(nombreArchivo.head.accion,'\0',30);
+  	strcat(nombreArchivo.head.accion,"Archivo");
                                
       }      
       if(vacio){
 	printf("\nen vvacio\n");
 	write(usuario->dscAccept,&nombreArchivo,sizeof nombreArchivo);
       }
-      cantArchivos++;
+      //cantArchivos++;
       close(op);
       tok=strtok (NULL, "\n");
     }
 
 
   }
+  
+  memset(nombreArchivo.nombre,'\0',64);  
+  memset(nombreArchivo.head.head,'\0',11);
+  strcat(nombreArchivo.head.head,headM);  
+  memset(nombreArchivo.head.accion,'\0',30);
   if(cantArchivos!=info.cantidad){
     strcat(nombreArchivo.head.accion,"faltoArchivo");
-    memset(nombreArchivo.nombre,'\0',64);
-    memset(nombreArchivo.bufContenido,'\0',1024);
-    write(usuario->dscAccept,&nombreArchivo,sizeof nombreArchivo);
+  }else {
+   strcat(nombreArchivo.head.accion,"finalizarEnvio");
+   printf(" \nle mando el ultimos archivoNombre \n");
+    write(1,nombreArchivo.head.accion,strlen(nombreArchivo.head.accion)); 
+    write(1,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));
   }
+    memset(nombreArchivo.md5,'\0',64);
+    memset(nombreArchivo.bufContenido,'\0',1024);
+    write(1,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));
+    write(usuario->dscAccept,&nombreArchivo,sizeof nombreArchivo);
   return;
 }
 

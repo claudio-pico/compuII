@@ -29,8 +29,8 @@ void mandarArchivos(Usuario* usuario){
   memset(bufLeido,'\0',512);
   char* tok;
   int vacio;
-  printf("estoy en mandar empiexo a eer buuf \n");
   NombreArchivo nombreArchivo;
+  
   if((leido=read(usuario->desSocket ,bufLeido, sizeof bufLeido))>0){
     op=0;
     tok = strtok (bufLeido,"\n");
@@ -48,13 +48,18 @@ void mandarArchivos(Usuario* usuario){
                         
       memset(nombreArchivo.head.accion,'\0',30);
       strcat(nombreArchivo.head.accion,"InicioArchivo");
-                      
+                     
       memset(nombreArchivo.bufContenido,'\0',1024);
+     
       while((leeArchivo=read(op,nombreArchivo.bufContenido,sizeof(nombreArchivo.bufContenido)))>0){
 	vacio=0;
-	write(usuario->desSocket,&nombreArchivo,sizeof nombreArchivo);
+        printf("esto voy a mandar \n");
+        write(1,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));      
+        printf("\n");
+ 	write(usuario->desSocket,&nombreArchivo, sizeof nombreArchivo);
 	memset(nombreArchivo.bufContenido,'\0',1024);
-	strcat(nombreArchivo.head.accion,"Archivo");
+        memset(nombreArchivo.head.accion,'\0',30);
+        strcat(nombreArchivo.head.accion,"Archivo");
                                
       }      
       if(vacio){
@@ -66,6 +71,7 @@ void mandarArchivos(Usuario* usuario){
 
 
   }
+  memset(nombreArchivo.head.accion,'\0',30);
   strcat(nombreArchivo.head.accion,"finalizar");
   memset(nombreArchivo.nombre,'\0',64);
   memset(nombreArchivo.bufContenido,'\0',1024);
