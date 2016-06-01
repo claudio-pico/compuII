@@ -16,6 +16,7 @@ typedef struct NombreArchivo{
   struct Head head;
   char nombre[64];
   char md5[64];
+  int tamanoContenido;
   char bufContenido[1024];
 }NombreArchivo;
 
@@ -23,13 +24,12 @@ typedef struct NombreArchivo{
 
 void mandarArchivos(Usuario* usuario){
   int leido=0;
-  int op,leeArchivo;
   char bufLeido[512];
   char bufDir[64];
   memset(bufDir,'\0',64);
   memset(bufLeido,'\0',512);
   char* tok;
-  int vacio,cantArchivos;
+  int vacio,cantArchivos,op;
   Info info;
   NombreArchivo nombreArchivo;
 
@@ -47,74 +47,42 @@ void mandarArchivos(Usuario* usuario){
       snprintf(bufDir, sizeof bufDir, "Directorio/%s/publico/%s",usuario->usuario,tok);
                         
       op=open(bufDir,O_RDONLY,0600);
-      leeArchivo=0;
-      memset(nombreArchivo.nombre,'\0',64);          
+      memset(&nombreArchivo,'\0',sizeof nombreArchivo);          
       strcat(nombreArchivo.nombre,tok);
-                        
-      memset(nombreArchivo.head.head,'\0',11);
+      printf("\nActualizo el archivo %s \n",nombreArchivo.nombre);
       strcat(nombreArchivo.head.head,headM);
-                        
-      memset(nombreArchivo.head.accion,'\0',30);
       strcat(nombreArchivo.head.accion,"InicioArchivo");
-      
-      memset(nombreArchivo.md5,'\0',64);
+
       md5(op,nombreArchivo.md5);                   
       lseek (op, 0, SEEK_SET );
-      printf("\n\n\n antes del while ");
 
-      memset(nombreArchivo.bufContenido,'\0',1024);
-      while((leeArchivo=read(op,nombreArchivo.bufContenido,sizeof(nombreArchivo.bufContenido)))>0){
+      while((nombreArchivo.tamanoContenido=read(op,nombreArchivo.bufContenido,sizeof(nombreArchivo.bufContenido)))>0){
 	vacio=0;
-        printf("\n\n\n voy a mandar esto ");
-        write(1,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));
+        printf("mando arvhivo %s",nombreArchivo.nombre);
 	write(usuario->dscAccept,&nombreArchivo,sizeof nombreArchivo);
-	memset(nombreArchivo.bufContenido,'\0',1024);
-        memset(nombreArchivo.head.accion,'\0',30);
+	memset(nombreArchivo.bufContenido,'\0',sizeof nombreArchivo.bufContenido);
+        memset(nombreArchivo.head.accion,'\0',sizeof nombreArchivo.head.accion);
   	strcat(nombreArchivo.head.accion,"Archivo");
-                               
+        nombreArchivo.tamanoContenido=0;                        
       }      
       if(vacio){
-	printf("\nen vvacio\n");
 	write(usuario->dscAccept,&nombreArchivo,sizeof nombreArchivo);
       }
-      //cantArchivos++;
       close(op);
       tok=strtok (NULL, "\n");
     }
 
 
   }
-  
-  memset(nombreArchivo.nombre,'\0',64);  
-  memset(nombreArchivo.head.head,'\0',11);
+  memset(&nombreArchivo,'\0',sizeof nombreArchivo); 
   strcat(nombreArchivo.head.head,headM);  
-  memset(nombreArchivo.head.accion,'\0',30);
   if(cantArchivos!=info.cantidad){
     strcat(nombreArchivo.head.accion,"faltoArchivo");
   }else {
    strcat(nombreArchivo.head.accion,"finalizarEnvio");
-   printf(" \nle mando el ultimos archivoNombre \n");
-    write(1,nombreArchivo.head.accion,strlen(nombreArchivo.head.accion)); 
-    write(1,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));
   }
-    memset(nombreArchivo.md5,'\0',64);
-    memset(nombreArchivo.bufContenido,'\0',1024);
-    write(1,nombreArchivo.bufContenido,strlen(nombreArchivo.bufContenido));
     write(usuario->dscAccept,&nombreArchivo,sizeof nombreArchivo);
   return;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

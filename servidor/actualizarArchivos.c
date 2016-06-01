@@ -29,8 +29,7 @@ void* hilosActualizar(){
   char bufDir[512];
   char outMd5[64];
   Archivos archivo;
-  memset(archivo.nombre,'\0',64);         
-  memset(archivo.md5,'\0',64);
+  memset(&archivo,'\0',sizeof archivo );         
   struct stat statusLocal; 
   int op=0;
   int encontroArchivo;
@@ -39,12 +38,12 @@ void* hilosActualizar(){
     if((strcmp(archivo.head.head,headM))==0 && (strcmp(archivo.head.accion,"actualizarArchivos"))==0){
       encontroArchivo=0;// para saber si no esta el archivo en local.
       struct dirent *dt;
-      memset(bufDir,'\0',512);
+      memset(bufDir,'\0',sizeof bufDir);
       snprintf(bufDir, sizeof bufDir, "Directorio/%s/publico/",usuario->usuario);
       dire=opendir(bufDir);
       char bufDirAux[512];
       while(((dt=readdir(dire))!= NULL)){
- 	memset(bufDirAux,'\0',512);
+ 	memset(bufDirAux,'\0',sizeof bufDirAux);
 	
         // 3 casos
 	//  md5C != md5S fecha ac>as actualiza local
@@ -58,13 +57,13 @@ void* hilosActualizar(){
             op=0;
 	    //op=open(bufDirAux,O_RDWR,0600);
             op=open(bufDirAux,O_RDONLY,0600);
-            memset(outMd5,'\0',64);
+            memset(outMd5,'\0',sizeof outMd5);
             md5(op,outMd5);
             close(op);
 	    printf(" \nnombre %s md5local %s md %s \n", dt->d_name ,outMd5 ,archivo.md5);
 	    if(strcmp(outMd5,archivo.md5)!=0){
 	      // tmpMod esta en segundo, el mas grande quiere decir q es el ultimo en modificarse
-	      stat(bufDir,&statusLocal);
+	      stat(bufDirAux,&statusLocal);
 	      if(archivo.tmpMod>statusLocal.st_mtime){
 		pthread_mutex_lock(&bloqueo);
 		strcat(bufResultado,archivo.nombre);
@@ -94,7 +93,7 @@ void* hilosActualizar(){
 int actualizarArchivos(Usuario* usu){
   usuario=usu;
   pthread_mutex_init(&bloqueo,NULL);
-  memset(bufResultado,'\0',512);
+  memset(bufResultado,'\0',sizeof bufResultado);
   Info info;
   if((read(usuario->dscAccept ,&info, sizeof info))<0){
     perror("Leer el Info(actualizarArchivo.c)");
@@ -113,7 +112,6 @@ int actualizarArchivos(Usuario* usu){
     numh=numh-1;
   }
   pthread_mutex_destroy(&bloqueo);
-  write(1,bufResultado,sizeof bufResultado);
   recibirArchivo(bufResultado,usu);
   return 0;
 }

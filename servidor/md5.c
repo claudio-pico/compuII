@@ -11,8 +11,8 @@ void md5(int dato,char* outMd5){
   MD5_CTX c;
   unsigned char out[16];
   char buf[512];
-  memset(out,'\0',16);
-  memset(buf,'\0',512);
+  memset(out,'\0',sizeof out);
+  memset(buf,'\0',sizeof buf);
   MD5_Init(&c);
 
   int tamano=0;
