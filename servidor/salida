@@ -1,423 +1,781 @@
-12678 execve("./servidorGyC", ["./servidorGyC", "127.0.0.1", "2000"], [/* 64 vars */]) = 0
-12678 brk(0)                            = 0x2094000
-12678 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
-12678 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4299a7000
-12678 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
-12678 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-12678 fstat(3, {st_mode=S_IFREG|0644, st_size=125915, ...}) = 0
-12678 mmap(NULL, 125915, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe429988000
-12678 close(3)                          = 0
-12678 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
-12678 open("/lib/x86_64-linux-gnu/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
-12678 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\356\5\0\0\0\0\0@\0\0\0\0\0\0\0 ~\35\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\224 \33\0\0\0\0\0\224 \33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\310-\33\0\0\0\0\0\310-;\0\0\0\0\0\310-;\0\0\0\0\0\31O\2\0\0\0\0\0\320\212\2\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\260\311\34\0\0\0\0\0\260\311<\0\0\0\0\0\260\311<\0\0\0\0\0\0\2\0\0\0\0\0\0\0\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\310\1\0\0\0\0\0\0\310\1\0\0\0\0\0\0\310\1\0\0\0\0\0\0$\0\0\0\0\0\0\0$\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\270s\27\0\0\0\0\0\270s\27\0\0\0\0\0\270s\27\0\0\0\0\0<\222\0\0\0\0\0\0<\222\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0\310-\33\0\0\0\0\0\310-;\0\0\0\0\0\310-;\0\0\0\0\0008\242\1\0\0\0\0\0008\242\1\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\233\302/\224W\343\327\351\317\215\334\23\\\r\254\217wB\23]\0\0\0\0\5\10\0\0n\0\0\0\0\2\0\0\17\0\0\0\1\0\30\205D\4\201\200a\200\0\0 L\4\0\201\0\0\10\30\206\4\200\0\0!\300\20\0@\0\201\204\3\21\204\244`\0F\10\fH\0\3\200\24\201\0\212\4\t\3\311\204\10\0d\30\0\2\0051\10\0\0\200\0\0\0\0\254\24t\201\22\10T\4\0\22@E\t@\200\0\f\224\34\0\0Q\0\300 \1\0H(\f@C\10D\211\2\0\34\0\0@\2 \210\21Q,\224\205\200\0@\10h\"\16\0\0\0\0\4@\0\0\0\6\220\16\0\0(\5\7\0f\0`\260\2\2\0\200\20@\0\0242\10\0\0\0\0\340\0\0\1\1\1\4\202\4#\10\n\10\0A\200\2 \4\202;\4\0\27\5\2\17@\242`\v\4\24\200\2E\304\2\0\210\21\0\0#\0\0b!\f\304\0\2\0010\241\10\0\0\240 \253\0\0250\201\204\20\0a\10B\0\34\0\240\21\r\0@\4 \"\4\4\0@\204\261\201\10\200\200\31\4p0\200\2\0\6Pa\0\200@ \2\244\0\0A\0@i@\n\240\240\223\0\23$\354\2D&\270\10\20\0C\1\0H$\0\0C\4\2B\254\21@\0  @\0\16 \0\0\5\21Q", 832) = 832
-12678 fstat(3, {st_mode=S_IFREG|0644, st_size=1934624, ...}) = 0
-12678 mmap(NULL, 4044952, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe4293ab000
-12678 mprotect(0x7fe42955e000, 2093056, PROT_NONE) = 0
-12678 mmap(0x7fe42975d000, 155648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b2000) = 0x7fe42975d000
-12678 mmap(0x7fe429783000, 14488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe429783000
-12678 close(3)                          = 0
-12678 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
-12678 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
-12678 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0po\0\0\0\0\0\0@\0\0\0\0\0\0\0h\225\1\0\0\0\0\0\0\0\0\0@\0008\0\t\0@\0%\0\"\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\1\0\0\0\0\0\0\370\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240/\1\0\0\0\0\0\240/\1\0\0\0\0\0\240/\1\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\334\210\1\0\0\0\0\0\334\210\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0x\213\1\0\0\0\0\0x\213!\0\0\0\0\0x\213!\0\0\0\0\0x\7\0\0\0\0\0\0\270I\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0P\215\1\0\0\0\0\0P\215!\0\0\0\0\0P\215!\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0008\2\0\0\0\0\0\0008\2\0\0\0\0\0\0008\2\0\0\0\0\0\0D\0\0\0\0\0\0\0D\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\274/\1\0\0\0\0\0\274/\1\0\0\0\0\0\274/\1\0\0\0\0\0\344\n\0\0\0\0\0\0\344\n\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0x\213\1\0\0\0\0\0x\213!\0\0\0\0\0x\213!\0\0\0\0\0\210\4\0\0\0\0\0\0\210\4\0\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\223\30\350\257\v\373\344Ds\33\260F\22\2\357W\367\303\225B\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\2\0\0\0\6\0\0\0\30\0\0\0\0\0\0\0\345\1\0\0V\0\0\0 \0\0\0\v\0\0\0\31#\2\261\1\10\20\2@@a\370\3\10\10\25\200 \0\0\0\0\200\300\321Q\0\0\0\22\353\3020D\0\10\20A\0\2\0\2\f\1\200\v\221\1\330\240\r\240@\230 \244\200\21\n\202-l@g\214V\24\0\224 \200$H\200P(\1\22\f\311B\240\220\22\10\f \2ZdA\245c\4@\n\n\n\0\2009\1(\314@\204\201@\22\10(\fD\0\0\0\200Q\10\200\35\4B\320\2608A\0\1\0\0\265\0300\0\200`\2\20\"\0\tA\20\1\5\0P(\251\22G(\0\0\202\4\230@\4\0\20\340T\0\2@\2\2\20\3010D\26\200\0", 832) = 832
-12678 fstat(3, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
-12678 mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe42918d000
-12678 mprotect(0x7fe4291a6000, 2093056, PROT_NONE) = 0
-12678 mmap(0x7fe4293a5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7fe4293a5000
-12678 mmap(0x7fe4293a7000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe4293a7000
-12678 close(3)                          = 0
-12678 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
-12678 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
-12678 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0@\0\0\0\0\0\0\0 \6\34\0\0\0\0\0\0\0\0\0@\0008\0\n\0@\0D\0C\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000\177\30\0\0\0\0\0000\177\30\0\0\0\0\0000\177\30\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\24\240\33\0\0\0\0\0\24\240\33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0@\247\33\0\0\0\0\0@\247;\0\0\0\0\0@\247;\0\0\0\0\0`Q\0\0\0\0\0\0\200\233\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\240\333\33\0\0\0\0\0\240\333;\0\0\0\0\0\240\333;\0\0\0\0\0\340\1\0\0\0\0\0\0\340\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0p\2\0\0\0\0\0\0p\2\0\0\0\0\0\0p\2\0\0\0\0\0\0D\0\0\0\0\0\0\0D\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0\7\0\0\0\4\0\0\0@\247\33\0\0\0\0\0@\247;\0\0\0\0\0@\247;\0\0\0\0\0\20\0\0\0\0\0\0\0\260\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0P\345td\4\0\0\0L\177\30\0\0\0\0\0L\177\30\0\0\0\0\0L\177\30\0\0\0\0\0\4g\0\0\0\0\0\0\4g\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0@\247\33\0\0\0\0\0@\247;\0\0\0\0\0@\247;\0\0\0\0\0\3008\0\0\0\0\0\0\3008\0\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0000\311M\306j\37\351Q\200\303\326\215+\211\345v\325\256!<\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\2\0\0\0\6\0\0\0\30\0\0\0\0\0\0\0\363\3\0\0\n\0\0\0\0\1\0\0\16\0\0\0\0000\20D\240 \2\1\210\3\346\220\305E\214\0\300\0\10\0\5\200\0`\300\200\0\r\212\f\0\4\20\0\210D2\10.@\210P4, \16\"H&\204\300\214\4\10\0\2\2\16\241\254\32\4f\300\0\3002\0\300\0P\1 \201\10\204\v  ($\0\4 P\0\20X\200\312DB(\0\6\200\20\30B\0 @\200\0\tP\0Q\212@\20\0\0\0\0\10\0\0\21\20", 832) = 832
-12678 fstat(3, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
-12678 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe429987000
-12678 mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe428dc8000
-12678 mprotect(0x7fe428f83000, 2093056, PROT_NONE) = 0
-12678 mmap(0x7fe429182000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ba000) = 0x7fe429182000
-12678 mmap(0x7fe429188000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe429188000
-12678 close(3)                          = 0
-12678 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
-12678 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
-12678 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0@\0\0\0\0\0\0\0\3101\0\0\0\0\0\0\0\0\0\0@\0008\0\t\0@\0\36\0\35\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\1\0\0\0\0\0\0\370\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\200\32\0\0\0\0\0\0\200\32\0\0\0\0\0\0\200\32\0\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0` \0\0\0\0\0\0` \0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0`-\0\0\0\0\0\0`- \0\0\0\0\0`- \0\0\0\0\0@\3\0\0\0\0\0\0\320\3\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\210-\0\0\0\0\0\0\210- \0\0\0\0\0\210- \0\0\0\0\0\20\2\0\0\0\0\0\0\20\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0008\2\0\0\0\0\0\0008\2\0\0\0\0\0\0008\2\0\0\0\0\0\0D\0\0\0\0\0\0\0D\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\234\32\0\0\0\0\0\0\234\32\0\0\0\0\0\0\234\32\0\0\0\0\0\0\274\0\0\0\0\0\0\0\274\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0`-\0\0\0\0\0\0`- \0\0\0\0\0`- \0\0\0\0\0\240\2\0\0\0\0\0\0\240\2\0\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\301\256L\267\31]3zw\243\306\211\5\35\253\2529\200\312\f\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\2\0\0\0\6\0\0\0\30\0\0\0\0\0\0\0\33\0\0\0\33\0\0\0\2\0\0\0\7\0\0\0\230\2\21\0\200H\0\4\22\0\0@\203(\10\236\33\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\0\0\0\0\35\0\0\0\0\0\0\0\36\0\0\0\0\0\0\0\37\0\0\0\0\0\0\0 \0\0\0\0\0\0\0!\0\0\0#\0\0\0$\0\0\0&\0\0\0'\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\0\0\0\0\0\0\0\0\0\0\0\353\26\251\30a\257\0\371\301S\200\30\273\25sB\257\304M\17\221!\374\370\6\2\4\371\3733\373\17\371\31sB\372\31sB\225\263_\31\177\236\320\30a\242\222\6", 832) = 832
-12678 fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
-12678 mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe428bc4000
-12678 mprotect(0x7fe428bc7000, 2093056, PROT_NONE) = 0
-12678 mmap(0x7fe428dc6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe428dc6000
-12678 close(3)                          = 0
-12678 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe429986000
-12678 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe429984000
-12678 arch_prctl(ARCH_SET_FS, 0x7fe429984740) = 0
-12678 mprotect(0x7fe429182000, 16384, PROT_READ) = 0
-12678 mprotect(0x7fe428dc6000, 4096, PROT_READ) = 0
-12678 mprotect(0x7fe4293a5000, 4096, PROT_READ) = 0
-12678 mprotect(0x7fe42975d000, 110592, PROT_READ) = 0
-12678 mprotect(0x604000, 4096, PROT_READ) = 0
-12678 mprotect(0x7fe4299a9000, 4096, PROT_READ) = 0
-12678 munmap(0x7fe429988000, 125915)    = 0
-12678 set_tid_address(0x7fe429984a10)   = 12678
-12678 set_robust_list(0x7fe429984a20, 24) = 0
-12678 futex(0x7ffdbd00c3b0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7fe429984740) = -1 EAGAIN (Resource temporarily unavailable)
-12678 rt_sigaction(SIGRTMIN, {0x7fe4291939f0, [], SA_RESTORER|SA_SIGINFO, 0x7fe42919d340}, NULL, 8) = 0
-12678 rt_sigaction(SIGRT_1, {0x7fe429193a80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fe42919d340}, NULL, 8) = 0
-12678 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
-12678 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
-12678 socket(PF_INET, SOCK_STREAM, IPPROTO_IP) = 3
-12678 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 10), ...}) = 0
-12678 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4299a6000
-12678 write(1, "nueva coneccion \n", 17) = 17
-12678 setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
-12678 setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
-12678 bind(3, {sa_family=AF_INET, sin_port=htons(2000), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
-12678 listen(3, 15)                     = 0
-12678 accept(3, 0, NULL)                = 4
-12678 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe429984a10) = 12728
-12678 accept(3,  <unfinished ...>
-12728 set_robust_list(0x7fe429984a20, 24) = 0
-12728 pipe([5, 6])                      = 0
-12728 write(1, "\n\n************entre en accept ************\n", 43) = 43
-12728 write(1, "\n", 1)                 = 1
-12728 read(4, "pepe-pepe\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 42
-12728 open("usuarios.txt", O_RDWR)      = 7
-12728 read(7, "claudio-123\npepe-pepe\npicp-123\n", 512) = 31
-12728 write(1, "esto es lo q guardo pepe \n\n", 27) = 27
-12728 write(4, "0", 1)                  = 1
-12728 read(7, "", 512)                  = 0
-12728 write(1, "sali\n", 5)             = 5
-12728 close(0)                          = 0
-12728 close(42)                         = -1 EBADF (Bad file descriptor)
-12728 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe429984a10) = 12729
-12729 set_robust_list(0x7fe429984a20, 24 <unfinished ...>
-12728 write(1, "entre al padre \n", 16 <unfinished ...>
-12729 <... set_robust_list resumed> )   = 0
-12728 <... write resumed> )             = 16
-12728 close(5 <unfinished ...>
-12729 write(1, "entre al hijo del log \n", 23 <unfinished ...>
-12728 <... close resumed> )             = 0
-12729 <... write resumed> )             = 23
-12729 close(6 <unfinished ...>
-12728 openat(AT_FDCWD, "./Directorio/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
-12729 <... close resumed> )             = 0
-12728 <... openat resumed> )            = 0
-12729 write(1, "estoy en logRead pipe 6 usu pepe\n \n", 35) = 35
-12729 open("Directorio/pepe/log.txt", O_WRONLY|O_CREAT|O_APPEND, 0600 <unfinished ...>
-12728 brk(0 <unfinished ...>
-12729 <... open resumed> )              = 0
-12728 <... brk resumed> )               = 0x2094000
-12729 read(5,  <unfinished ...>
-12728 brk(0x20bd000)                    = 0x20bd000
-12728 openat(AT_FDCWD, "./Directorio/pepe", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
-12728 openat(AT_FDCWD, "./Directorio/pepe/temporario", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 8
-12728 openat(AT_FDCWD, "./Directorio/pepe/publico", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 9
-12728 write(1, " este es usuario en diretorio pepe\n\n************actualizo el servidor ************\n", 83) = 83
-12728 write(1, "\n", 1)                 = 1
-12728 read(4, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\347\2055\3\0\0\0", 48) = 48
-12728 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fe4283c3000
-12728 mprotect(0x7fe4283c3000, 4096, PROT_NONE) = 0
-12728 clone(child_stack=0x7fe428bc2fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fe428bc39d0, tls=0x7fe428bc3700, child_tidptr=0x7fe428bc39d0) = 12730
-12730 set_robust_list(0x7fe428bc39e0, 24 <unfinished ...>
-12728 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
-12730 <... set_robust_list resumed> )   = 0
-12728 <... mmap resumed> )              = 0x7fe427bc2000
-12730 read(4,  <unfinished ...>
-12728 mprotect(0x7fe427bc2000, 4096, PROT_NONE) = 0
-12728 clone( <unfinished ...>
-12731 set_robust_list(0x7fe4283c29e0, 24 <unfinished ...>
-12728 <... clone resumed> child_stack=0x7fe4283c1fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fe4283c29d0, tls=0x7fe4283c2700, child_tidptr=0x7fe4283c29d0) = 12731
-12731 <... set_robust_list resumed> )   = 0
-12728 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
-12731 read(4,  <unfinished ...>
-12728 <... mmap resumed> )              = 0x7fe4273c1000
-12728 mprotect(0x7fe4273c1000, 4096, PROT_NONE) = 0
-12728 clone( <unfinished ...>
-12732 set_robust_list(0x7fe427bc19e0, 24 <unfinished ...>
-12728 <... clone resumed> child_stack=0x7fe427bc0fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fe427bc19d0, tls=0x7fe427bc1700, child_tidptr=0x7fe427bc19d0) = 12732
-12732 <... set_robust_list resumed> )   = 0
-12728 futex(0x7fe427bc19d0, FUTEX_WAIT, 12732, NULL <unfinished ...>
-12732 read(4, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0segundo.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0007a44077f98a6a51e8f63a2abe4739eb2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0bdOP\177\0\0NVOW\0\0\0\0", 152) = 152
-12731 <... read resumed> "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0pau.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0cd5bd72a3364f2dc6a70b16367c4dae7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0bdOP\177\0\0rWOW\0\0\0\0", 152) = 152
-12730 <... read resumed> "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0primero.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ef963e293ebb3044a8bc9e1e27f0bff2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0bdOP\177\0\0^IOW\0\0\0\0", 152) = 152
-12732 openat(AT_FDCWD, "Directorio/pepe/publico/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
-12731 openat(AT_FDCWD, "Directorio/pepe/publico/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
-12730 openat(AT_FDCWD, "Directorio/pepe/publico/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
-12732 <... openat resumed> )            = 10
-12731 <... openat resumed> )            = 11
-12732 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
-12731 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
-12730 <... openat resumed> )            = 12
-12731 <... mmap resumed> )              = 0x7fe41f3c1000
-12732 <... mmap resumed> )              = 0x7fe4173c1000
-12731 munmap(0x7fe41f3c1000, 12840960 <unfinished ...>
-12730 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
-12732 munmap(0x7fe4173c1000, 12840960 <unfinished ...>
-12731 <... munmap resumed> )            = 0
-12730 <... mmap resumed> )              = 0x7fe40f3c1000
-12732 <... munmap resumed> )            = 0
-12731 munmap(0x7fe424000000, 54267904 <unfinished ...>
-12732 munmap(0x7fe41c000000, 54267904 <unfinished ...>
-12731 <... munmap resumed> )            = 0
-12732 <... munmap resumed> )            = 0
-12731 mprotect(0x7fe420000000, 167936, PROT_READ|PROT_WRITE <unfinished ...>
-12732 mprotect(0x7fe418000000, 167936, PROT_READ|PROT_WRITE <unfinished ...>
-12731 <... mprotect resumed> )          = 0
-12732 <... mprotect resumed> )          = 0
-12730 munmap(0x7fe40f3c1000, 12840960 <unfinished ...>
-12732 getdents(10,  <unfinished ...>
-12731 getdents(11,  <unfinished ...>
-12730 <... munmap resumed> )            = 0
-12732 <... getdents resumed> /* 5 entries */, 32768) = 144
-12731 <... getdents resumed> /* 5 entries */, 32768) = 144
-12732 open("Directorio/pepe/publico/segundo.txt", O_RDONLY <unfinished ...>
-12731 open("Directorio/pepe/publico/pau.txt", O_RDONLY <unfinished ...>
-12730 munmap(0x7fe414000000, 54267904 <unfinished ...>
-12732 <... open resumed> )              = 13
-12731 <... open resumed> )              = 14
-12730 <... munmap resumed> )            = 0
-12732 read(13,  <unfinished ...>
-12731 read(14,  <unfinished ...>
-12730 mprotect(0x7fe410000000, 167936, PROT_READ|PROT_WRITE <unfinished ...>
-12732 <... read resumed> "ssdasdsdervidorsdodsssegundeeeeo csdasdsdasdliente apap asdaasdsdassdhollsdasdasd\n", 512) = 82
-12731 <... read resumed> " hsdaola modificado en cliente msdassdasossddssdasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la sensaci\303\263n de simu", 512) = 512
-12732 read(13,  <unfinished ...>
-12731 read(14,  <unfinished ...>
-12732 <... read resumed> "", 512)       = 0
-12731 <... read resumed> "ltaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otradasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir", 512) = 512
-12732 lseek(13, 0, SEEK_SET <unfinished ...>
-12731 read(14,  <unfinished ...>
-12732 <... lseek resumed> )             = 0
-12731 <... read resumed> "\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la sensaci\303\263n de simultaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevo hilo de ejecuci\303\263n (un thread). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir\303\241 ejecutando ", 512) = 512
-12732 read(13,  <unfinished ...>
-12731 read(14,  <unfinished ...>
-12732 <... read resumed> "ssdasdsdervidorsdodsssegundeeeeo csdasdsdasdliente apap asdaasdsdassdhollsdasdasd\n", 82) = 82
-12731 <... read resumed> "cachos de programa por turnos (porhilo de ejecuci\303\263n (un thread). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez.\n", 512) = 162
-12730 <... mprotect resumed> )          = 0
-12731 read(14,  <unfinished ...>
-12732 read(13,  <unfinished ...>
-12731 <... read resumed> "", 512)       = 0
-12732 <... read resumed> "", 82)        = 0
-12731 lseek(14, 0, SEEK_SET <unfinished ...>
-12730 getdents(12,  <unfinished ...>
-12732 close(13 <unfinished ...>
-12731 <... lseek resumed> )             = 0
-12730 <... getdents resumed> /* 5 entries */, 32768) = 144
-12732 <... close resumed> )             = 0
-12731 read(14,  <unfinished ...>
-12732 write(1, " \n", 2 <unfinished ...>
-12731 <... read resumed> " hsdaola modificado en cliente msdassdasossddssdasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la sensaci\303\263n de simultaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otradasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir"..., 2080) = 1698
-12732 <... write resumed> )             = 2
-12730 open("Directorio/pepe/publico/primero.txt", O_RDONLY <unfinished ...>
-12732 write(1, "nombre segundo.txt md5local 955987343b2a200cf26c53b483983b8d md 7a44077f98a6a51e8f63a2abe4739eb2 \n", 98 <unfinished ...>
-12731 read(14,  <unfinished ...>
-12730 <... open resumed> )              = 13
-12732 <... write resumed> )             = 98
-12731 <... read resumed> "", 2080)      = 0
-12732 stat("Directorio/pepe/publico/segundo.txt",  <unfinished ...>
-12730 read(13,  <unfinished ...>
-12732 <... stat resumed> {st_mode=S_IFREG|0600, st_size=82, ...}) = 0
-12731 close(14 <unfinished ...>
-12732 getdents(10,  <unfinished ...>
-12731 <... close resumed> )             = 0
-12732 <... getdents resumed> /* 0 entries */, 32768) = 0
-12731 write(1, " \n", 2 <unfinished ...>
-12732 open("/proc/sys/vm/overcommit_memory", O_RDONLY|O_CLOEXEC <unfinished ...>
-12731 <... write resumed> )             = 2
-12730 <... read resumed> "midifico lo midifico ssoomodifico en cliente\n", 512) = 45
-12732 <... open resumed> )              = 14
-12731 write(1, "nombre pau.txt md5local 4b60966fb946c9f49f36d4013299d003 md cd5bd72a3364f2dc6a70b16367c4dae7 \n", 94 <unfinished ...>
-12732 read(14,  <unfinished ...>
-12731 <... write resumed> )             = 94
-12732 <... read resumed> "0", 1)        = 1
-12731 stat("Directorio/pepe/publico/pau.txt",  <unfinished ...>
-12732 close(14 <unfinished ...>
-12731 <... stat resumed> {st_mode=S_IFREG|0600, st_size=1698, ...}) = 0
-12732 <... close resumed> )             = 0
-12731 getdents(11,  <unfinished ...>
-12732 madvise(0x7fe418021000, 32768, MADV_DONTNEED <unfinished ...>
-12731 <... getdents resumed> /* 0 entries */, 32768) = 0
-12732 <... madvise resumed> )           = 0
-12731 madvise(0x7fe420021000, 32768, MADV_DONTNEED <unfinished ...>
-12732 close(10 <unfinished ...>
-12731 <... madvise resumed> )           = 0
-12732 <... close resumed> )             = 0
-12731 close(11 <unfinished ...>
-12730 read(13,  <unfinished ...>
-12731 <... close resumed> )             = 0
-12732 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
-12731 futex(0x7fe4299aa968, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
-12732 <... open resumed> )              = 10
-12730 <... read resumed> "", 512)       = 0
-12732 fstat(10,  <unfinished ...>
-12730 lseek(13, 0, SEEK_SET <unfinished ...>
-12732 <... fstat resumed> {st_mode=S_IFREG|0644, st_size=125915, ...}) = 0
-12730 <... lseek resumed> )             = 0
-12732 mmap(NULL, 125915, PROT_READ, MAP_PRIVATE, 10, 0 <unfinished ...>
-12730 read(13,  <unfinished ...>
-12732 <... mmap resumed> )              = 0x7fe429965000
-12730 <... read resumed> "midifico lo midifico ssoomodifico en cliente\n", 45) = 45
-12732 close(10 <unfinished ...>
-12730 read(13,  <unfinished ...>
-12732 <... close resumed> )             = 0
-12730 <... read resumed> "", 45)        = 0
-12732 access("/etc/ld.so.nohwcap", F_OK <unfinished ...>
-12730 close(13 <unfinished ...>
-12732 <... access resumed> )            = -1 ENOENT (No such file or directory)
-12730 <... close resumed> )             = 0
-12732 open("/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC <unfinished ...>
-12730 write(1, " \n", 2 <unfinished ...>
-12732 <... open resumed> )              = 10
-12732 read(10,  <unfinished ...>
-12730 <... write resumed> )             = 2
-12732 <... read resumed> "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260*\0\0\0\0\0\0@\0\0\0\0\0\0\0pY\1\0\0\0\0\0\0\0\0\0@\0008\0\6\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\214T\1\0\0\0\0\0\214T\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\220T\1\0\0\0\0\0\220T!\0\0\0\0\0\220T!\0\0\0\0\0\320\3\0\0\0\0\0\0\220\6\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\260T\1\0\0\0\0\0\260T!\0\0\0\0\0\260T!\0\0\0\0\0\360\1\0\0\0\0\0\0\360\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\220\1\0\0\0\0\0\0\220\1\0\0\0\0\0\0\220\1\0\0\0\0\0\0$\0\0\0\0\0\0\0$\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\3204\1\0\0\0\0\0\3204\1\0\0\0\0\0\3204\1\0\0\0\0\0D\5\0\0\0\0\0\0D\5\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\00061\33DWq\n\345W\214K\360\7\221\336\3275\235\273\222\0\0\0\0\203\0\0\0\27\0\0\0\20\0\0\0\n\0\0\0\23\34\3\30\4$\0\1\1\201\0T\4\6\210\20\200\204\0\10\0\10\5\200\2\0@\20D\20\0\266\2\200\320 \301\0\220\2024\1\0\4\10(@\2H\1\v \320\1\2(\0235\4`l\322\0!\3p`@\322\200\10`\0@\1\0\200\1\0\0\2$\0\10\21\2\10H\300\1$\t\21(  \10C\v\246\202H\t\10\10\3D\f\n\34\22O\306\1\207\va\204\226\315\4\302\305\f\242\333\16\314\27\0\0\0\30\0\0\0\33\0\0\0\0\0\0\0\36\0\0\0\0\0\0\0 \0\0\0!\0\0\0#\0\0\0&\0\0\0(\0\0\0\0\0\0\0)\0\0\0+\0\0\0,\0\0\0/\0\0\0001\0\0\0004\0\0\0005\0\0\0008\0\0\0\0\0\0\0009\0\0\0:\0\0\0=\0\0\0>\0\0\0@\0\0\0A\0\0\0B\0\0\0C\0\0\0D\0\0\0F\0\0\0\0\0\0\0G\0\0\0\0\0\0\0H\0\0\0\0\0\0\0\0\0\0\0I\0\0\0J\0\0\0L\0\0\0M\0\0\0N\0\0\0\0\0\0\0\0\0\0\0P\0\0\0R\0\0\0\0\0\0\0\0\0\0\0S\0\0\0U\0\0\0\0\0\0\0V\0\0\0\0\0\0\0\0\0\0\0X\0\0\0Y\0\0\0Z\0\0\0\0\0\0\0\0\0\0\0\\\0\0\0]\0\0\0\0\0\0\0", 832) = 832
-12730 write(1, "nombre primero.txt md5local ef963e293ebb3044a8bc9e1e27f0bff2 md ef963e293ebb3044a8bc9e1e27f0bff2 \n", 98 <unfinished ...>
-12732 fstat(10, {st_mode=S_IFREG|0644, st_size=90160, ...}) = 0
-12730 <... write resumed> )             = 98
-12732 mmap(NULL, 2186016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 10, 0 <unfinished ...>
-12730 getdents(12,  <unfinished ...>
-12732 <... mmap resumed> )              = 0x7fe4271ab000
-12730 <... getdents resumed> /* 0 entries */, 32768) = 0
-12732 mprotect(0x7fe4271c1000, 2093056, PROT_NONE <unfinished ...>
-12730 madvise(0x7fe410021000, 32768, MADV_DONTNEED <unfinished ...>
-12732 <... mprotect resumed> )          = 0
-12730 <... madvise resumed> )           = 0
-12732 mmap(0x7fe4273c0000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 10, 0x15000 <unfinished ...>
-12730 close(12 <unfinished ...>
-12732 <... mmap resumed> )              = 0x7fe4273c0000
-12730 <... close resumed> )             = 0
-12732 close(10 <unfinished ...>
-12730 futex(0x7fe4299aa968, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
-12732 <... close resumed> )             = 0
-12732 munmap(0x7fe429965000, 125915)    = 0
-12732 futex(0x7fe4299aa968, FUTEX_WAKE_PRIVATE, 1) = 1
-12731 <... futex resumed> )             = 0
-12732 futex(0x7fe4273c0890, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
-12731 futex(0x7fe4299aa968, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-12732 <... futex resumed> )             = 0
-12731 <... futex resumed> )             = 1
-12730 <... futex resumed> )             = 0
-12730 futex(0x7fe4299aa968, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-12732 madvise(0x7fe4273c1000, 8368128, MADV_DONTNEED <unfinished ...>
-12731 madvise(0x7fe427bc2000, 8368128, MADV_DONTNEED <unfinished ...>
-12732 <... madvise resumed> )           = 0
-12731 <... madvise resumed> )           = 0
-12732 _exit(0)                          = ?
-12731 _exit(0)                          = ?
-12730 <... futex resumed> )             = 0
-12732 +++ exited with 0 +++
-12731 +++ exited with 0 +++
-12730 madvise(0x7fe4283c3000, 8368128, MADV_DONTNEED <unfinished ...>
-12728 <... futex resumed> )             = 0
-12730 <... madvise resumed> )           = 0
-12728 futex(0x7fe428bc39d0, FUTEX_WAIT, 12730, NULL <unfinished ...>
-12730 _exit(0)                          = ?
-12730 +++ exited with 0 +++
-12728 <... futex resumed> )             = 0
-12728 write(1, "pau.txt\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
-12728 write(1, "pau.txt\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
-12728 write(4, "pau.txt\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
-12728 read(4, "//GyC****/\0InicioArchivo\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0pau.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0 que bieenn pkakauhsdaola modificado en cliente msdassdasossddssdasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la sensaci\303\263n de simultaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otradasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, "..., 1136) = 1136
-12728 unlink("Directorio/pepe/publico/pau.txt") = 0
-12728 open("Directorio/pepe/publico/pau.txt", O_WRONLY|O_CREAT|O_APPEND, 0600) = 10
-12728 write(1, "Actualizo el archivo pau.txt tama\303\261o 1024\n", 42) = 42
-12728 write(10, " que bieenn pkakauhsdaola modificado en cliente msdassdasossddssdasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la sensaci\303\263n de simultaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otradasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sis", 1024) = 1024
-12728 write(6, "pau.txt", 7 <unfinished ...>
-12729 <... read resumed> "pau.txt", 32) = 7
-12728 <... write resumed> )             = 7
-12729 write(1, "  entre a logRead pau.txt\n", 26 <unfinished ...>
-12728 read(4,  <unfinished ...>
-12729 <... write resumed> )             = 26
-12729 write(0, "se modifico --->", 16)  = 16
-12729 write(0, "pau.txt", 7)            = 7
-12729 write(0, "\n\0", 2)               = 2
-12729 read(5,  <unfinished ...>
-12728 <... read resumed> "//GyC****/\0Archivo\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0pau.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\263\2\0\0tema operativo ir\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la sensaci\303\263n de simultaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevo hilo de ejecuci\303\263n (un thread). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir\303\241 ejecutando cachos de programa por turnos (porhilo de ejecuci\303\263n (un thread). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez.\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1136) = 1136
-12728 write(1, "****************estoy en log write 6----------------------Sigo actualizando pau.txt tama\303\261o 691\n", 96) = 96
-12728 write(10, "tema operativo ir\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la sensaci\303\263n de simultaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevo hilo de ejecuci\303\263n (un thread). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir\303\241 ejecutando cachos de programa por turnos (porhilo de ejecuci\303\263n (un thread). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez.\n", 691) = 691
-12728 read(4, "//GyC****/\0finalizar\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1136) = 1136
-12728 close(10)                         = 0
-12728 write(1, "esto es lo ultmimo us:pepe cont: pepe  termina\n", 47) = 47
-12728 write(1, "\n\n\n\n************actualizo el cliente ************\n", 50) = 50
-12728 write(1, "\n", 1)                 = 1
-12728 getdents(9, /* 5 entries */, 32768) = 144
-12728 getdents(9, /* 0 entries */, 32768) = 0
-12728 lseek(9, 0, SEEK_SET)             = 0
-12728 write(4, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0", 48) = 48
-12728 getdents(9, /* 5 entries */, 32768) = 144
-12728 close(32740)                      = -1 EBADF (Bad file descriptor)
-12728 close(32740)                      = -1 EBADF (Bad file descriptor)
-12728 write(1, "esto es dir de md5 Directorio/pepe/publico/primero.txt\n", 55) = 55
-12728 open("Directorio/pepe/publico/primero.txt", O_RDONLY) = 10
-12728 read(10, "midifico lo midifico ssoomodifico en cliente\n", 512) = 45
-12728 read(10, "", 512)                 = 0
-12728 lseek(10, 0, SEEK_SET)            = 0
-12728 read(10, "midifico lo midifico ssoomodifico en cliente\n", 45) = 45
-12728 read(10, "", 45)                  = 0
-12728 stat("Directorio/pepe/publico/primero.txt", {st_mode=S_IFREG|0600, st_size=45, ...}) = 0
-12728 open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 11
-12728 fstat(11, {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
-12728 fstat(11, {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
-12728 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4299a5000
-12728 read(11, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0\t\0\0\0\0\0\0\0<\0\0\0\t\0\0\0\30\242\222\2170\266{R@\267\32\311\260\270\36\217@\270\324p0\272\27}\300\272\265\243\260\273\370\261@\274\226\3270\275\331\344\300\276x\n\260\277\273\30@\300Z\217\260\301\235\235@\302;\3030\303~\320\300\304\34\366\260\305`\4@\305\376*0\307A7\300\307\340\2570\310\201\224@\312M\241\260\312\356\206\300\316M\3770\316\260\355\300\323)5\260\324Cd\300\364=\0100\364\237\366\300\365\5l0\3662\20@\366\346\237\260\370\23C\300\370\307\3230\371\364w@\372\3236\260\373\3035\300\374\274S0\375\254R@\376\23450\377\2144@\7\243J\260\10$o\240#\224\265\260$\20\224\240%7\362\260%\360v\240'\0314@'\315\303\260(\372g\300)\260H\260*\340\341@+\231W 7\366\306\2608\277*\260@\260\23\260AV>\300Gw\t\260G\334\177 \1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\4\3\4\3\4\3\5\6\5\6\5\3\4\2\4\5\4\3\4\377\377\303\320\0\0\377\377\307\300\0\4\377\377\325\320\1\10\377\377\343\340\1\10\377\377\325\320\0\4\377\377\307\300\0\r\377\377\325\320\1\22\377\377\343\340\1\10\377\377\325\320\0\4CMT\0ART\0ARST\0WART\0WARST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0\n\0\0\0\0\0\0\0=\0\0\0\n\0\0\0\34\377\377\377\377r\234\262\4\377\377\377\377\242\222\2170\377\377\377\377\266{R@\377\377\377\377\267\32\311\260\377\377\377\377\270\36\217@\377\377\377\377\270\324p0\377\377\377\377\272\27}\300\377\377\377\377\272\265\243\260\377\377\377\377\273\370\261@\377\377\377\377\274\226\3270\377\377\377\377\275\331\344\300\377\377\377\377\276x\n\260\377\377\377\377\277\273\30@\377\377\377\377\300Z\217\260\377\377\377\377\301\235\235@\377\377\377\377\302;\3030\377\377\377\377\303~\320\300\377\377\377\377\304\34\366\260\377\377\377\377\305`\4@\377\377\377\377\305\376*0\377\377\377\377\307A7\300\377\377\377\377\307\340\2570\377\377\377\377\310\201\224@\377\377\377\377\312M\241\260\377\377\377\377\312\356\206\300\377\377\377\377\316M\3770\377\377\377\377\316\260\355\300\377\377\377\377\323)5\260\377\377\377\377\324Cd\300\377\377\377\377\364=\0100\377\377\377\377\364\237\366\300\377\377\377\377\365\5l0\377\377\377\377\3662\20@\377\377\377\377\366\346\237\260\377\377\377\377\370\23C\300\377\377\377\377\370\307\3230\377\377\377\377\371\364w@\377\377\377\377\372\3236\260\377\377\377\377\373\3035\300\377\377\377\377\374\274S0\377\377\377\377\375\254R@\377\377\377\377\376\23450\377\377\377\377\377\2144@\0\0\0\0\7\243J\260\0\0\0\0\10$o\240\0\0\0\0#\224\265\260\0\0\0\0$\20\224\240\0\0\0\0%7\362\260\0\0\0\0%\360v\240\0\0\0\0'\0314@\0\0\0\0'\315\303\260\0\0\0\0(\372g\300\0\0\0\0)\260H\260\0\0\0\0*\340\341@\0\0\0\0+\231W \0\0\0\0007\366\306\260\0\0\0\0008\277*\260\0\0\0\0@\260\23\260\0\0\0\0AV>\300\0\0\0\0Gw\t\260\0\0\0\0G\334\177 \1\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\4\5\4\5\4\6\7\6\7"..., 4096) = 1147
-12728 lseek(11, -707, SEEK_CUR)         = 440
-12728 read(11, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0\n\0\0\0\0\0\0\0=\0\0\0\n\0\0\0\34\377\377\377\377r\234\262\4\377\377\377\377\242\222\2170\377\377\377\377\266{R@\377\377\377\377\267\32\311\260\377\377\377\377\270\36\217@\377\377\377\377\270\324p0\377\377\377\377\272\27}\300\377\377\377\377\272\265\243\260\377\377\377\377\273\370\261@\377\377\377\377\274\226\3270\377\377\377\377\275\331\344\300\377\377\377\377\276x\n\260\377\377\377\377\277\273\30@\377\377\377\377\300Z\217\260\377\377\377\377\301\235\235@\377\377\377\377\302;\3030\377\377\377\377\303~\320\300\377\377\377\377\304\34\366\260\377\377\377\377\305`\4@\377\377\377\377\305\376*0\377\377\377\377\307A7\300\377\377\377\377\307\340\2570\377\377\377\377\310\201\224@\377\377\377\377\312M\241\260\377\377\377\377\312\356\206\300\377\377\377\377\316M\3770\377\377\377\377\316\260\355\300\377\377\377\377\323)5\260\377\377\377\377\324Cd\300\377\377\377\377\364=\0100\377\377\377\377\364\237\366\300\377\377\377\377\365\5l0\377\377\377\377\3662\20@\377\377\377\377\366\346\237\260\377\377\377\377\370\23C\300\377\377\377\377\370\307\3230\377\377\377\377\371\364w@\377\377\377\377\372\3236\260\377\377\377\377\373\3035\300\377\377\377\377\374\274S0\377\377\377\377\375\254R@\377\377\377\377\376\23450\377\377\377\377\377\2144@\0\0\0\0\7\243J\260\0\0\0\0\10$o\240\0\0\0\0#\224\265\260\0\0\0\0$\20\224\240\0\0\0\0%7\362\260\0\0\0\0%\360v\240\0\0\0\0'\0314@\0\0\0\0'\315\303\260\0\0\0\0(\372g\300\0\0\0\0)\260H\260\0\0\0\0*\340\341@\0\0\0\0+\231W \0\0\0\0007\366\306\260\0\0\0\0008\277*\260\0\0\0\0@\260\23\260\0\0\0\0AV>\300\0\0\0\0Gw\t\260\0\0\0\0G\334\177 \1\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\4\5\4\5\4\6\7\6\7\6\4\5\3\5\6\5\4\5\377\377\277|\0\0\377\377\303\320\0\4\377\377\307\300\0\10\377\377\325\320\1\f\377\377\343\340\1\f\377\377\325\320\0\10\377\377\307\300\0\21\377\377\325\320\1\26\377\377\343\340\1\f\377\377\325\320\0\10LMT\0CMT\0ART\0ARST\0WART\0WARST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\nART3\n", 4096) = 707
-12728 close(11)                         = 0
-12728 munmap(0x7fe4299a5000, 4096)      = 0
-12728 write(1, "nombre: primero.txt md5:ef963e293ebb3044a8bc9e1e27f0bff2 tmMod:1464813924 leer:Wed Jun  1 17:45:24 2016\n", 104) = 104
-12728 write(1, "\n", 1)                 = 1
-12728 write(4, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0primero.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ef963e293ebb3044a8bc9e1e27f0bff2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0dIOW\0\0\0\0", 152) = 152
-12728 close(10)                         = 0
-12728 write(1, "esto es dir de md5 Directorio/pepe/publico/segundo.txt\n", 55) = 55
-12728 open("Directorio/pepe/publico/segundo.txt", O_RDONLY) = 10
-12728 read(10, "ssdasdsdervidorsdodsssegundeeeeo csdasdsdasdliente apap asdaasdsdassdhollsdasdasd\n", 512) = 82
-12728 read(10, "", 512)                 = 0
-12728 lseek(10, 0, SEEK_SET)            = 0
-12728 read(10, "ssdasdsdervidorsdodsssegundeeeeo csdasdsdasdliente apap asdaasdsdassdhollsdasdasd\n", 82) = 82
-12728 read(10, "", 82)                  = 0
-12728 stat("Directorio/pepe/publico/segundo.txt", {st_mode=S_IFREG|0600, st_size=82, ...}) = 0
-12728 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
-12728 write(1, "nombre: segundo.txt md5:955987343b2a200cf26c53b483983b8d tmMod:1464817529 leer:Wed Jun  1 18:45:29 2016\n", 104) = 104
-12728 write(1, "\n", 1)                 = 1
-12728 write(4, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0segundo.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\000955987343b2a200cf26c53b483983b8d\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0yWOW\0\0\0\0", 152) = 152
-12728 close(10)                         = 0
-12728 write(1, "esto es dir de md5 Directorio/pepe/publico/pau.txt\n", 51) = 51
-12728 open("Directorio/pepe/publico/pau.txt", O_RDONLY) = 10
-12728 read(10, " que bieenn pkakauhsdaola modificado en cliente msdassdasossddssdasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la s", 512) = 512
-12728 read(10, "ensaci\303\263n de simultaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otradasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sis", 512) = 512
-12728 read(10, "tema operativo ir\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la sensaci\303\263n de simultaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevo hilo de ejecuci\303\263n (un thread). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo", 512) = 512
-12728 read(10, " ir\303\241 ejecutando cachos de programa por turnos (porhilo de ejecuci\303\263n (un thread). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez.\n", 512) = 179
-12728 read(10, "", 512)                 = 0
-12728 lseek(10, 0, SEEK_SET)            = 0
-12728 read(10, " que bieenn pkakauhsdaola modificado en cliente msdassdasossddssdasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sistema operativo ir\303\241 ejecutando cachos de programa por turnos (por rodajas de tiempo) de forma muy r\303\241pida, dando la sensaci\303\263n de simultaneidad.Si queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otradasdasd queremos que nuestro programa empiece a ejecutar varias cosas \"a la vez\", tenemos dos opciones. Por una parte podemos crear un nuevo proceso y por otra, podemos crear un nuevoed). En realidad nuestro ordenador, salvo que tenga varias cpu, no ejecutar\303\241 varias cosas a la vez. Cuando digo \"a la vez\", me refiero a que el sis"..., 2048) = 1715
-12728 read(10, "", 2048)                = 0
-12728 stat("Directorio/pepe/publico/pau.txt", {st_mode=S_IFREG|0600, st_size=1715, ...}) = 0
-12728 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
-12728 write(1, "nombre: pau.txt md5:cd5bd72a3364f2dc6a70b16367c4dae7 tmMod:1464817580 leer:Wed Jun  1 18:46:20 2016\n", 100) = 100
-12728 write(1, "\n", 1)                 = 1
-12728 write(4, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0pau.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0cd5bd72a3364f2dc6a70b16367c4dae7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\254WOW\0\0\0\0", 152) = 152
-12728 close(10)                         = 0
-12728 getdents(9, /* 0 entries */, 32768) = 0
-12728 read(4, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0", 48) = 48
-12728 read(4, "segundo.txt\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
-12728 open("Directorio/pepe/publico/segundo.txt", O_RDONLY) = 10
-12728 write(1, "\n", 1)                 = 1
-12728 write(1, "Actualizo el archivo segundo.txt \n", 34) = 34
-12728 read(10, "ssdasdsdervidorsdodsssegundeeeeo csdasdsdasdliente apap asdaasdsdassdhollsdasdasd\n", 512) = 82
-12728 read(10, "", 512)                 = 0
-12728 lseek(10, 0, SEEK_SET)            = 0
-12728 read(10, "ssdasdsdervidorsdodsssegundeeeeo csdasdsdasdliente apap asdaasdsdassdhollsdasdasd\n", 82) = 82
-12728 read(10, "", 82)                  = 0
-12728 lseek(10, 0, SEEK_SET)            = 0
-12728 read(10, "ssdasdsdervidorsdodsssegundeeeeo csdasdsdasdliente apap asdaasdsdassdhollsdasdasd\n", 1024) = 82
-12728 write(4, "//GyC****/\0InicioArchivo\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0segundo.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\000955987343b2a200cf26c53b483983b8d\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0R\0\0\0ssdasdsdervidorsdodsssegundeeeeo csdasdsdasdliente apap asdaasdsdassdhollsdasdasd\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1200) = 1200
-12728 read(10, "", 1024)                = 0
-12728 close(10)                         = 0
-12728 write(4, "//GyC****/\0finalizarEnvio\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1200) = 1200
-12728 write(1, "mando arvhivo segundo.txt\n\n************salid e accep ******** \n", 63) = 63
-12728 write(1, "\n", 1)                 = 1
-12728 wait4(-1,  <unfinished ...>
-12678 <... accept resumed> 0, NULL)     = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
-12729 <... read resumed> 0x7ffdbd00c2e0, 32) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
-12678 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
-12729 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
-12728 <... wait4 resumed> NULL, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
-12728 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
-12678 +++ killed by SIGINT +++
-12729 +++ killed by SIGINT +++
-12728 +++ killed by SIGINT +++
+7977  execve("./servidorGyC", ["./servidorGyC", "127.0.0.1", "2000"], [/* 64 vars */]) = 0
+7977  brk(0)                            = 0x135a000
+7977  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+7977  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10f47c8000
+7977  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+7977  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+7977  fstat(3, {st_mode=S_IFREG|0644, st_size=125915, ...}) = 0
+7977  mmap(NULL, 125915, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f10f47a9000
+7977  close(3)                          = 0
+7977  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+7977  open("/lib/x86_64-linux-gnu/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
+7977  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\356\5\0\0\0\0\0@\0\0\0\0\0\0\0 ~\35\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\224 \33\0\0\0\0\0\224 \33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\310-\33\0\0\0\0\0\310-;\0\0\0\0\0\310-;\0\0\0\0\0\31O\2\0\0\0\0\0\320\212\2\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\260\311\34\0\0\0\0\0\260\311<\0\0\0\0\0\260\311<\0\0\0\0\0\0\2\0\0\0\0\0\0\0\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\310\1\0\0\0\0\0\0\310\1\0\0\0\0\0\0\310\1\0\0\0\0\0\0$\0\0\0\0\0\0\0$\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\270s\27\0\0\0\0\0\270s\27\0\0\0\0\0\270s\27\0\0\0\0\0<\222\0\0\0\0\0\0<\222\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0\310-\33\0\0\0\0\0\310-;\0\0\0\0\0\310-;\0\0\0\0\0008\242\1\0\0\0\0\0008\242\1\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\233\302/\224W\343\327\351\317\215\334\23\\\r\254\217wB\23]\0\0\0\0\5\10\0\0n\0\0\0\0\2\0\0\17\0\0\0\1\0\30\205D\4\201\200a\200\0\0 L\4\0\201\0\0\10\30\206\4\200\0\0!\300\20\0@\0\201\204\3\21\204\244`\0F\10\fH\0\3\200\24\201\0\212\4\t\3\311\204\10\0d\30\0\2\0051\10\0\0\200\0\0\0\0\254\24t\201\22\10T\4\0\22@E\t@\200\0\f\224\34\0\0Q\0\300 \1\0H(\f@C\10D\211\2\0\34\0\0@\2 \210\21Q,\224\205\200\0@\10h\"\16\0\0\0\0\4@\0\0\0\6\220\16\0\0(\5\7\0f\0`\260\2\2\0\200\20@\0\0242\10\0\0\0\0\340\0\0\1\1\1\4\202\4#\10\n\10\0A\200\2 \4\202;\4\0\27\5\2\17@\242`\v\4\24\200\2E\304\2\0\210\21\0\0#\0\0b!\f\304\0\2\0010\241\10\0\0\240 \253\0\0250\201\204\20\0a\10B\0\34\0\240\21\r\0@\4 \"\4\4\0@\204\261\201\10\200\200\31\4p0\200\2\0\6Pa\0\200@ \2\244\0\0A\0@i@\n\240\240\223\0\23$\354\2D&\270\10\20\0C\1\0H$\0\0C\4\2B\254\21@\0  @\0\16 \0\0\5\21Q", 832) = 832
+7977  fstat(3, {st_mode=S_IFREG|0644, st_size=1934624, ...}) = 0
+7977  mmap(NULL, 4044952, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f10f41cc000
+7977  mprotect(0x7f10f437f000, 2093056, PROT_NONE) = 0
+7977  mmap(0x7f10f457e000, 155648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b2000) = 0x7f10f457e000
+7977  mmap(0x7f10f45a4000, 14488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f10f45a4000
+7977  close(3)                          = 0
+7977  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+7977  open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+7977  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0po\0\0\0\0\0\0@\0\0\0\0\0\0\0h\225\1\0\0\0\0\0\0\0\0\0@\0008\0\t\0@\0%\0\"\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\1\0\0\0\0\0\0\370\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\240/\1\0\0\0\0\0\240/\1\0\0\0\0\0\240/\1\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\334\210\1\0\0\0\0\0\334\210\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0x\213\1\0\0\0\0\0x\213!\0\0\0\0\0x\213!\0\0\0\0\0x\7\0\0\0\0\0\0\270I\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0P\215\1\0\0\0\0\0P\215!\0\0\0\0\0P\215!\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0008\2\0\0\0\0\0\0008\2\0\0\0\0\0\0008\2\0\0\0\0\0\0D\0\0\0\0\0\0\0D\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\274/\1\0\0\0\0\0\274/\1\0\0\0\0\0\274/\1\0\0\0\0\0\344\n\0\0\0\0\0\0\344\n\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0x\213\1\0\0\0\0\0x\213!\0\0\0\0\0x\213!\0\0\0\0\0\210\4\0\0\0\0\0\0\210\4\0\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\223\30\350\257\v\373\344Ds\33\260F\22\2\357W\367\303\225B\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\2\0\0\0\6\0\0\0\30\0\0\0\0\0\0\0\345\1\0\0V\0\0\0 \0\0\0\v\0\0\0\31#\2\261\1\10\20\2@@a\370\3\10\10\25\200 \0\0\0\0\200\300\321Q\0\0\0\22\353\3020D\0\10\20A\0\2\0\2\f\1\200\v\221\1\330\240\r\240@\230 \244\200\21\n\202-l@g\214V\24\0\224 \200$H\200P(\1\22\f\311B\240\220\22\10\f \2ZdA\245c\4@\n\n\n\0\2009\1(\314@\204\201@\22\10(\fD\0\0\0\200Q\10\200\35\4B\320\2608A\0\1\0\0\265\0300\0\200`\2\20\"\0\tA\20\1\5\0P(\251\22G(\0\0\202\4\230@\4\0\20\340T\0\2@\2\2\20\3010D\26\200\0", 832) = 832
+7977  fstat(3, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
+7977  mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f10f3fae000
+7977  mprotect(0x7f10f3fc7000, 2093056, PROT_NONE) = 0
+7977  mmap(0x7f10f41c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f10f41c6000
+7977  mmap(0x7f10f41c8000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f10f41c8000
+7977  close(3)                          = 0
+7977  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+7977  open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+7977  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0@\0\0\0\0\0\0\0 \6\34\0\0\0\0\0\0\0\0\0@\0008\0\n\0@\0D\0C\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000\177\30\0\0\0\0\0000\177\30\0\0\0\0\0000\177\30\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\24\240\33\0\0\0\0\0\24\240\33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0@\247\33\0\0\0\0\0@\247;\0\0\0\0\0@\247;\0\0\0\0\0`Q\0\0\0\0\0\0\200\233\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\240\333\33\0\0\0\0\0\240\333;\0\0\0\0\0\240\333;\0\0\0\0\0\340\1\0\0\0\0\0\0\340\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0p\2\0\0\0\0\0\0p\2\0\0\0\0\0\0p\2\0\0\0\0\0\0D\0\0\0\0\0\0\0D\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0\7\0\0\0\4\0\0\0@\247\33\0\0\0\0\0@\247;\0\0\0\0\0@\247;\0\0\0\0\0\20\0\0\0\0\0\0\0\260\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0P\345td\4\0\0\0L\177\30\0\0\0\0\0L\177\30\0\0\0\0\0L\177\30\0\0\0\0\0\4g\0\0\0\0\0\0\4g\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0@\247\33\0\0\0\0\0@\247;\0\0\0\0\0@\247;\0\0\0\0\0\3008\0\0\0\0\0\0\3008\0\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0000\311M\306j\37\351Q\200\303\326\215+\211\345v\325\256!<\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\2\0\0\0\6\0\0\0\30\0\0\0\0\0\0\0\363\3\0\0\n\0\0\0\0\1\0\0\16\0\0\0\0000\20D\240 \2\1\210\3\346\220\305E\214\0\300\0\10\0\5\200\0`\300\200\0\r\212\f\0\4\20\0\210D2\10.@\210P4, \16\"H&\204\300\214\4\10\0\2\2\16\241\254\32\4f\300\0\3002\0\300\0P\1 \201\10\204\v  ($\0\4 P\0\20X\200\312DB(\0\6\200\20\30B\0 @\200\0\tP\0Q\212@\20\0\0\0\0\10\0\0\21\20", 832) = 832
+7977  fstat(3, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+7977  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10f47a8000
+7977  mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f10f3be9000
+7977  mprotect(0x7f10f3da4000, 2093056, PROT_NONE) = 0
+7977  mmap(0x7f10f3fa3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ba000) = 0x7f10f3fa3000
+7977  mmap(0x7f10f3fa9000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f10f3fa9000
+7977  close(3)                          = 0
+7977  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+7977  open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+7977  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0@\0\0\0\0\0\0\0\3101\0\0\0\0\0\0\0\0\0\0@\0008\0\t\0@\0\36\0\35\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\1\0\0\0\0\0\0\370\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\200\32\0\0\0\0\0\0\200\32\0\0\0\0\0\0\200\32\0\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0` \0\0\0\0\0\0` \0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0`-\0\0\0\0\0\0`- \0\0\0\0\0`- \0\0\0\0\0@\3\0\0\0\0\0\0\320\3\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\210-\0\0\0\0\0\0\210- \0\0\0\0\0\210- \0\0\0\0\0\20\2\0\0\0\0\0\0\20\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0008\2\0\0\0\0\0\0008\2\0\0\0\0\0\0008\2\0\0\0\0\0\0D\0\0\0\0\0\0\0D\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\234\32\0\0\0\0\0\0\234\32\0\0\0\0\0\0\234\32\0\0\0\0\0\0\274\0\0\0\0\0\0\0\274\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0`-\0\0\0\0\0\0`- \0\0\0\0\0`- \0\0\0\0\0\240\2\0\0\0\0\0\0\240\2\0\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\301\256L\267\31]3zw\243\306\211\5\35\253\2529\200\312\f\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\2\0\0\0\6\0\0\0\30\0\0\0\0\0\0\0\33\0\0\0\33\0\0\0\2\0\0\0\7\0\0\0\230\2\21\0\200H\0\4\22\0\0@\203(\10\236\33\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\0\0\0\0\35\0\0\0\0\0\0\0\36\0\0\0\0\0\0\0\37\0\0\0\0\0\0\0 \0\0\0\0\0\0\0!\0\0\0#\0\0\0$\0\0\0&\0\0\0'\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\0\0\0\0\0\0\0\0\0\0\0\353\26\251\30a\257\0\371\301S\200\30\273\25sB\257\304M\17\221!\374\370\6\2\4\371\3733\373\17\371\31sB\372\31sB\225\263_\31\177\236\320\30a\242\222\6", 832) = 832
+7977  fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+7977  mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f10f39e5000
+7977  mprotect(0x7f10f39e8000, 2093056, PROT_NONE) = 0
+7977  mmap(0x7f10f3be7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f10f3be7000
+7977  close(3)                          = 0
+7977  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10f47a7000
+7977  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10f47a5000
+7977  arch_prctl(ARCH_SET_FS, 0x7f10f47a5740) = 0
+7977  mprotect(0x7f10f3fa3000, 16384, PROT_READ) = 0
+7977  mprotect(0x7f10f3be7000, 4096, PROT_READ) = 0
+7977  mprotect(0x7f10f41c6000, 4096, PROT_READ) = 0
+7977  mprotect(0x7f10f457e000, 110592, PROT_READ) = 0
+7977  mprotect(0x603000, 4096, PROT_READ) = 0
+7977  mprotect(0x7f10f47ca000, 4096, PROT_READ) = 0
+7977  munmap(0x7f10f47a9000, 125915)    = 0
+7977  set_tid_address(0x7f10f47a5a10)   = 7977
+7977  set_robust_list(0x7f10f47a5a20, 24) = 0
+7977  futex(0x7ffcffd01de0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7f10f47a5740) = -1 EAGAIN (Resource temporarily unavailable)
+7977  rt_sigaction(SIGRTMIN, {0x7f10f3fb49f0, [], SA_RESTORER|SA_SIGINFO, 0x7f10f3fbe340}, NULL, 8) = 0
+7977  rt_sigaction(SIGRT_1, {0x7f10f3fb4a80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f10f3fbe340}, NULL, 8) = 0
+7977  rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+7977  getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+7977  socket(PF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+7977  fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 7), ...}) = 0
+7977  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10f47c7000
+7977  write(1, "nueva coneccion \n", 17) = 17
+7977  setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+7977  setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+7977  bind(3, {sa_family=AF_INET, sin_port=htons(2000), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+7977  listen(3, 15)                     = 0
+7977  accept(3, 0, NULL)                = 4
+7977  clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f10f47a5a10) = 7984
+7984  set_robust_list(0x7f10f47a5a20, 24 <unfinished ...>
+7977  accept(3,  <unfinished ...>
+7984  <... set_robust_list resumed> )   = 0
+7984  pipe([5, 6])                      = 0
+7984  write(1, "\n\n************entre en accept ************\n", 43) = 43
+7984  write(1, "\n", 1)                 = 1
+7984  read(4, "pepe-pepe\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 42
+7984  open("usuarios.txt", O_RDWR)      = 7
+7984  read(7, "claudio-123\npepe-pepe\npicp-123\n", 512) = 31
+7984  write(1, "esto es lo q guardo pepe \n\n", 27) = 27
+7984  write(4, "0", 1)                  = 1
+7984  read(7, "", 512)                  = 0
+7984  write(1, "sali\n", 5)             = 5
+7984  close(0)                          = 0
+7984  close(42)                         = -1 EBADF (Bad file descriptor)
+7984  clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f10f47a5a10) = 7985
+7984  write(1, "entre al padre \n", 16 <unfinished ...>
+7985  set_robust_list(0x7f10f47a5a20, 24 <unfinished ...>
+7984  <... write resumed> )             = 16
+7985  <... set_robust_list resumed> )   = 0
+7984  close(5 <unfinished ...>
+7985  write(1, "entre al hijo del log \n", 23 <unfinished ...>
+7984  <... close resumed> )             = 0
+7985  <... write resumed> )             = 23
+7984  openat(AT_FDCWD, "./Directorio/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+7985  close(6)                          = 0
+7984  <... openat resumed> )            = 0
+7985  write(1, "estoy en logRead pipe 6 usu pepe\n \n", 35) = 35
+7984  brk(0)                            = 0x135a000
+7984  brk(0x1383000)                    = 0x1383000
+7984  openat(AT_FDCWD, "./Directorio/pepe", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+7984  openat(AT_FDCWD, "./Directorio/pepe/temporario", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 8
+7984  openat(AT_FDCWD, "./Directorio/pepe/publico", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+7985  open("Directorio/pepe/log.txt", O_WRONLY|O_CREAT|O_APPEND, 0600 <unfinished ...>
+7984  <... openat resumed> )            = 9
+7985  <... open resumed> )              = 0
+7984  write(1, " este es usuario en diretorio pepe\n\n************actualizo el servidor ************\n", 83 <unfinished ...>
+7985  read(5,  <unfinished ...>
+7984  <... write resumed> )             = 83
+7984  write(1, "\n", 1)                 = 1
+7984  read(4, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0", 48) = 48
+7984  mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f10f31e4000
+7984  mprotect(0x7f10f31e4000, 4096, PROT_NONE) = 0
+7984  clone(child_stack=0x7f10f39e3fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f10f39e49d0, tls=0x7f10f39e4700, child_tidptr=0x7f10f39e49d0) = 7986
+7986  set_robust_list(0x7f10f39e49e0, 24 <unfinished ...>
+7984  mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+7986  <... set_robust_list resumed> )   = 0
+7984  <... mmap resumed> )              = 0x7f10f29e3000
+7986  read(4,  <unfinished ...>
+7984  mprotect(0x7f10f29e3000, 4096, PROT_NONE) = 0
+7984  clone( <unfinished ...>
+7987  set_robust_list(0x7f10f31e39e0, 24) = 0
+7984  <... clone resumed> child_stack=0x7f10f31e2fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f10f31e39d0, tls=0x7f10f31e3700, child_tidptr=0x7f10f31e39d0) = 7987
+7987  read(4,  <unfinished ...>
+7984  futex(0x7f10f31e39d0, FUTEX_WAIT, 7987, NULL <unfinished ...>
+7987  <... read resumed> "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0texto.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00015e70d5371f02da4f7fde5ce0a3f0c54\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\2\f\35\275\177\0\0\313iPW\0\0\0\0", 152) = 152
+7986  <... read resumed> "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0claudio.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0c6a2e81eec44c45dafa5924d16232ddb\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\2\f\35\275\177\0\0}iPW\0\0\0\0", 152) = 152
+7987  openat(AT_FDCWD, "Directorio/pepe/publico/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 10
+7986  openat(AT_FDCWD, "Directorio/pepe/publico/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+7987  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f10ea9e3000
+7987  munmap(0x7f10ea9e3000, 23187456 <unfinished ...>
+7986  <... openat resumed> )            = 11
+7987  <... munmap resumed> )            = 0
+7986  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+7987  munmap(0x7f10f0000000, 43921408)  = 0
+7986  <... mmap resumed> )              = 0x7f10e4000000
+7987  mprotect(0x7f10ec000000, 167936, PROT_READ|PROT_WRITE) = 0
+7987  getdents(10,  <unfinished ...>
+7986  munmap(0x7f10e8000000, 67108864 <unfinished ...>
+7987  <... getdents resumed> /* 4 entries */, 32768) = 112
+7987  open("Directorio/pepe/publico/texto.txt", O_RDONLY <unfinished ...>
+7986  <... munmap resumed> )            = 0
+7987  <... open resumed> )              = 12
+7987  read(12,  <unfinished ...>
+7986  mprotect(0x7f10e4000000, 167936, PROT_READ|PROT_WRITE <unfinished ...>
+7987  <... read resumed> "reaci\303\263n de Procesos\nlos procesos  se crean mediante una llamada al sistema de \342\200\234crear proceso\342\200\235, durante el curso de su ejecuci\303\263n. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.\n\nCuando un proceso crea un proceso nuevo, hay dos posibilidades en t\303\251rminos de ejecuci\303\263n:\nPadre e hijo se ejecutan concurrentemente.\nPadre espera por la finalizaci\303\263n del hijo.\nEn UNIX existen dos funciones b\303\241sicas para crear procesos: Fork y Exec.\n\nFunci\303\263n fork(): Cuando se la llama crea un proceso ", 512) = 512
+7986  <... mprotect resumed> )          = 0
+7987  read(12, "hijo que es una copia casi exacta del proceso padre (duplicado del padre). Ambos procesos contin\303\272an ejecut\303\241ndose desde el punto en el que se hizo la llamada a fork().\n\nEn UNIX los procesos se identifican mediante un \342\200\234identificador de proceso\342\200\235 (PID) que es un entero \303\272nico. Ambos procesos contin\303\272an su ejecuci\303\263n con la instrucci\303\263n que sigue al fork() con una diferencia:\nEl c\303\263digo que el hijo recibe del fork es cero.\nEl que recibe del padre es el propio pid.\nFunciones exec: Tras crear un nuevo proces", 512) = 512
+7986  getdents(11,  <unfinished ...>
+7987  read(12, "o, despu\303\251s de llamar a fork, Linux llama a una funci\303\263n de la familia exec. \303\211stas funciones reemplazan el programa ejecut\303\241ndose en el proceso por otro programa. Cuando un programa llama a una funci\303\263n exec, su ejecuci\303\263n cesa de inmediato y comienza a ejecutar el nuevo programa desde el principio, suponiendo que no ocurriera ning\303\272n error durante la llamada.\n\nGeneralmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve despu\303\251s del fork para reemplazar su espacio de memoria c", 512) = 512
+7986  <... getdents resumed> /* 4 entries */, 32768) = 112
+7987  read(12,  <unfinished ...>
+7986  open("Directorio/pepe/publico/claudio.txt", O_RDONLY <unfinished ...>
+7987  <... read resumed> "on un programa nuevo. \n\nNota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a s\303\255 mismo de la cola de procesos listos hasta que el hijo termine.\n- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf\n", 512) = 314
+7986  <... open resumed> )              = 13
+7986  read(13,  <unfinished ...>
+7987  read(12,  <unfinished ...>
+7986  <... read resumed> "hoolaaa   \n", 512) = 11
+7987  <... read resumed> "", 512)       = 0
+7986  read(13, "", 512)                 = 0
+7987  close(12)                         = 0
+7986  close(13 <unfinished ...>
+7987  write(1, " \n", 2 <unfinished ...>
+7986  <... close resumed> )             = 0
+7987  <... write resumed> )             = 2
+7986  futex(0x7f10f3fa99e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+7987  write(1, "nombre texto.txt md5local 15e70d5371f02da4f7fde5ce0a3f0c54 md 15e70d5371f02da4f7fde5ce0a3f0c54 \n", 96) = 96
+7987  futex(0x7f10f3fa99e0, FUTEX_WAKE_PRIVATE, 1) = 1
+7986  <... futex resumed> )             = 0
+7987  getdents(10,  <unfinished ...>
+7986  write(1, " \n", 2 <unfinished ...>
+7987  <... getdents resumed> /* 0 entries */, 32768) = 0
+7986  <... write resumed> )             = 2
+7987  open("/proc/sys/vm/overcommit_memory", O_RDONLY|O_CLOEXEC <unfinished ...>
+7986  write(1, "nombre claudio.txt md5local c6a2e81eec44c45dafa5924d16232ddb md c6a2e81eec44c45dafa5924d16232ddb \n", 98 <unfinished ...>
+7987  <... open resumed> )              = 12
+7987  read(12,  <unfinished ...>
+7986  <... write resumed> )             = 98
+7987  <... read resumed> "0", 1)        = 1
+7986  futex(0x7f10f3fa99e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+7987  close(12 <unfinished ...>
+7986  <... futex resumed> )             = 0
+7987  <... close resumed> )             = 0
+7986  getdents(11,  <unfinished ...>
+7987  madvise(0x7f10ec021000, 32768, MADV_DONTNEED <unfinished ...>
+7986  <... getdents resumed> /* 0 entries */, 32768) = 0
+7987  <... madvise resumed> )           = 0
+7986  madvise(0x7f10e4021000, 32768, MADV_DONTNEED <unfinished ...>
+7987  close(10)                         = 0
+7986  <... madvise resumed> )           = 0
+7986  close(11 <unfinished ...>
+7987  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+7986  <... close resumed> )             = 0
+7987  <... open resumed> )              = 10
+7986  futex(0x7f10f47cb968, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+7987  fstat(10, {st_mode=S_IFREG|0644, st_size=125915, ...}) = 0
+7987  mmap(NULL, 125915, PROT_READ, MAP_PRIVATE, 10, 0) = 0x7f10f4786000
+7987  close(10)                         = 0
+7987  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+7987  open("/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 10
+7987  read(10, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260*\0\0\0\0\0\0@\0\0\0\0\0\0\0pY\1\0\0\0\0\0\0\0\0\0@\0008\0\6\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\214T\1\0\0\0\0\0\214T\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\220T\1\0\0\0\0\0\220T!\0\0\0\0\0\220T!\0\0\0\0\0\320\3\0\0\0\0\0\0\220\6\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\260T\1\0\0\0\0\0\260T!\0\0\0\0\0\260T!\0\0\0\0\0\360\1\0\0\0\0\0\0\360\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\220\1\0\0\0\0\0\0\220\1\0\0\0\0\0\0\220\1\0\0\0\0\0\0$\0\0\0\0\0\0\0$\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\3204\1\0\0\0\0\0\3204\1\0\0\0\0\0\3204\1\0\0\0\0\0D\5\0\0\0\0\0\0D\5\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\00061\33DWq\n\345W\214K\360\7\221\336\3275\235\273\222\0\0\0\0\203\0\0\0\27\0\0\0\20\0\0\0\n\0\0\0\23\34\3\30\4$\0\1\1\201\0T\4\6\210\20\200\204\0\10\0\10\5\200\2\0@\20D\20\0\266\2\200\320 \301\0\220\2024\1\0\4\10(@\2H\1\v \320\1\2(\0235\4`l\322\0!\3p`@\322\200\10`\0@\1\0\200\1\0\0\2$\0\10\21\2\10H\300\1$\t\21(  \10C\v\246\202H\t\10\10\3D\f\n\34\22O\306\1\207\va\204\226\315\4\302\305\f\242\333\16\314\27\0\0\0\30\0\0\0\33\0\0\0\0\0\0\0\36\0\0\0\0\0\0\0 \0\0\0!\0\0\0#\0\0\0&\0\0\0(\0\0\0\0\0\0\0)\0\0\0+\0\0\0,\0\0\0/\0\0\0001\0\0\0004\0\0\0005\0\0\0008\0\0\0\0\0\0\0009\0\0\0:\0\0\0=\0\0\0>\0\0\0@\0\0\0A\0\0\0B\0\0\0C\0\0\0D\0\0\0F\0\0\0\0\0\0\0G\0\0\0\0\0\0\0H\0\0\0\0\0\0\0\0\0\0\0I\0\0\0J\0\0\0L\0\0\0M\0\0\0N\0\0\0\0\0\0\0\0\0\0\0P\0\0\0R\0\0\0\0\0\0\0\0\0\0\0S\0\0\0U\0\0\0\0\0\0\0V\0\0\0\0\0\0\0\0\0\0\0X\0\0\0Y\0\0\0Z\0\0\0\0\0\0\0\0\0\0\0\\\0\0\0]\0\0\0\0\0\0\0", 832) = 832
+7987  fstat(10, {st_mode=S_IFREG|0644, st_size=90160, ...}) = 0
+7987  mmap(NULL, 2186016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 10, 0) = 0x7f10f27cd000
+7987  mprotect(0x7f10f27e3000, 2093056, PROT_NONE) = 0
+7987  mmap(0x7f10f29e2000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 10, 0x15000) = 0x7f10f29e2000
+7987  close(10)                         = 0
+7987  munmap(0x7f10f4786000, 125915)    = 0
+7987  futex(0x7f10f47cb968, FUTEX_WAKE_PRIVATE, 1) = 1
+7986  <... futex resumed> )             = 0
+7986  futex(0x7f10f47cb968, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+7987  futex(0x7f10f29e2890, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+7986  <... futex resumed> )             = 0
+7987  <... futex resumed> )             = 0
+7987  futex(0x7f10f47cb990, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+7986  futex(0x7f10f47cb990, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+7987  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+7986  <... futex resumed> )             = 0
+7987  futex(0x7f10f47cb990, FUTEX_WAKE_PRIVATE, 1) = 0
+7987  madvise(0x7f10f29e3000, 8368128, MADV_DONTNEED <unfinished ...>
+7986  madvise(0x7f10f31e4000, 8368128, MADV_DONTNEED <unfinished ...>
+7987  <... madvise resumed> )           = 0
+7986  <... madvise resumed> )           = 0
+7987  _exit(0)                          = ?
+7986  _exit(0)                          = ?
+7987  +++ exited with 0 +++
+7986  +++ exited with 0 +++
+7984  <... futex resumed> )             = 0
+7984  write(1, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
+7984  write(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
+7984  read(4, "//GyC****/\0finalizar\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1136) = 1136
+7984  write(1, "esto es lo ultmimo us:pepe cont: pepe  termina\n", 47) = 47
+7984  write(1, "\n\n\n\n************actualizo el cliente ************\n", 50) = 50
+7984  write(1, "\n", 1)                 = 1
+7984  write(1, "reportar\n", 9)         = 9
+7984  getdents(9, /* 4 entries */, 32768) = 112
+7984  getdents(9, /* 0 entries */, 32768) = 0
+7984  lseek(9, 0, SEEK_SET)             = 0
+7984  write(4, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0", 48) = 48
+7984  getdents(9, /* 4 entries */, 32768) = 112
+7984  close(0)                          = 0
+7984  write(1, "esto es dir de md5 Directorio/pepe/publico/claudio.txt\n", 55) = 55
+7984  open("Directorio/pepe/publico/claudio.txt", O_RDONLY) = 0
+7984  read(0, "hoolaaa   \n", 512)      = 11
+7984  read(0, "", 512)                  = 0
+7984  stat("Directorio/pepe/publico/claudio.txt", {st_mode=S_IFREG|0600, st_size=11, ...}) = 0
+7984  open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 10
+7984  fstat(10, {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
+7984  fstat(10, {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
+7984  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10f47c6000
+7984  read(10, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0\t\0\0\0\0\0\0\0<\0\0\0\t\0\0\0\30\242\222\2170\266{R@\267\32\311\260\270\36\217@\270\324p0\272\27}\300\272\265\243\260\273\370\261@\274\226\3270\275\331\344\300\276x\n\260\277\273\30@\300Z\217\260\301\235\235@\302;\3030\303~\320\300\304\34\366\260\305`\4@\305\376*0\307A7\300\307\340\2570\310\201\224@\312M\241\260\312\356\206\300\316M\3770\316\260\355\300\323)5\260\324Cd\300\364=\0100\364\237\366\300\365\5l0\3662\20@\366\346\237\260\370\23C\300\370\307\3230\371\364w@\372\3236\260\373\3035\300\374\274S0\375\254R@\376\23450\377\2144@\7\243J\260\10$o\240#\224\265\260$\20\224\240%7\362\260%\360v\240'\0314@'\315\303\260(\372g\300)\260H\260*\340\341@+\231W 7\366\306\2608\277*\260@\260\23\260AV>\300Gw\t\260G\334\177 \1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\4\3\4\3\4\3\5\6\5\6\5\3\4\2\4\5\4\3\4\377\377\303\320\0\0\377\377\307\300\0\4\377\377\325\320\1\10\377\377\343\340\1\10\377\377\325\320\0\4\377\377\307\300\0\r\377\377\325\320\1\22\377\377\343\340\1\10\377\377\325\320\0\4CMT\0ART\0ARST\0WART\0WARST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0\n\0\0\0\0\0\0\0=\0\0\0\n\0\0\0\34\377\377\377\377r\234\262\4\377\377\377\377\242\222\2170\377\377\377\377\266{R@\377\377\377\377\267\32\311\260\377\377\377\377\270\36\217@\377\377\377\377\270\324p0\377\377\377\377\272\27}\300\377\377\377\377\272\265\243\260\377\377\377\377\273\370\261@\377\377\377\377\274\226\3270\377\377\377\377\275\331\344\300\377\377\377\377\276x\n\260\377\377\377\377\277\273\30@\377\377\377\377\300Z\217\260\377\377\377\377\301\235\235@\377\377\377\377\302;\3030\377\377\377\377\303~\320\300\377\377\377\377\304\34\366\260\377\377\377\377\305`\4@\377\377\377\377\305\376*0\377\377\377\377\307A7\300\377\377\377\377\307\340\2570\377\377\377\377\310\201\224@\377\377\377\377\312M\241\260\377\377\377\377\312\356\206\300\377\377\377\377\316M\3770\377\377\377\377\316\260\355\300\377\377\377\377\323)5\260\377\377\377\377\324Cd\300\377\377\377\377\364=\0100\377\377\377\377\364\237\366\300\377\377\377\377\365\5l0\377\377\377\377\3662\20@\377\377\377\377\366\346\237\260\377\377\377\377\370\23C\300\377\377\377\377\370\307\3230\377\377\377\377\371\364w@\377\377\377\377\372\3236\260\377\377\377\377\373\3035\300\377\377\377\377\374\274S0\377\377\377\377\375\254R@\377\377\377\377\376\23450\377\377\377\377\377\2144@\0\0\0\0\7\243J\260\0\0\0\0\10$o\240\0\0\0\0#\224\265\260\0\0\0\0$\20\224\240\0\0\0\0%7\362\260\0\0\0\0%\360v\240\0\0\0\0'\0314@\0\0\0\0'\315\303\260\0\0\0\0(\372g\300\0\0\0\0)\260H\260\0\0\0\0*\340\341@\0\0\0\0+\231W \0\0\0\0007\366\306\260\0\0\0\0008\277*\260\0\0\0\0@\260\23\260\0\0\0\0AV>\300\0\0\0\0Gw\t\260\0\0\0\0G\334\177 \1\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\4\5\4\5\4\6\7\6\7"..., 4096) = 1147
+7984  lseek(10, -707, SEEK_CUR)         = 440
+7984  read(10, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0\n\0\0\0\0\0\0\0=\0\0\0\n\0\0\0\34\377\377\377\377r\234\262\4\377\377\377\377\242\222\2170\377\377\377\377\266{R@\377\377\377\377\267\32\311\260\377\377\377\377\270\36\217@\377\377\377\377\270\324p0\377\377\377\377\272\27}\300\377\377\377\377\272\265\243\260\377\377\377\377\273\370\261@\377\377\377\377\274\226\3270\377\377\377\377\275\331\344\300\377\377\377\377\276x\n\260\377\377\377\377\277\273\30@\377\377\377\377\300Z\217\260\377\377\377\377\301\235\235@\377\377\377\377\302;\3030\377\377\377\377\303~\320\300\377\377\377\377\304\34\366\260\377\377\377\377\305`\4@\377\377\377\377\305\376*0\377\377\377\377\307A7\300\377\377\377\377\307\340\2570\377\377\377\377\310\201\224@\377\377\377\377\312M\241\260\377\377\377\377\312\356\206\300\377\377\377\377\316M\3770\377\377\377\377\316\260\355\300\377\377\377\377\323)5\260\377\377\377\377\324Cd\300\377\377\377\377\364=\0100\377\377\377\377\364\237\366\300\377\377\377\377\365\5l0\377\377\377\377\3662\20@\377\377\377\377\366\346\237\260\377\377\377\377\370\23C\300\377\377\377\377\370\307\3230\377\377\377\377\371\364w@\377\377\377\377\372\3236\260\377\377\377\377\373\3035\300\377\377\377\377\374\274S0\377\377\377\377\375\254R@\377\377\377\377\376\23450\377\377\377\377\377\2144@\0\0\0\0\7\243J\260\0\0\0\0\10$o\240\0\0\0\0#\224\265\260\0\0\0\0$\20\224\240\0\0\0\0%7\362\260\0\0\0\0%\360v\240\0\0\0\0'\0314@\0\0\0\0'\315\303\260\0\0\0\0(\372g\300\0\0\0\0)\260H\260\0\0\0\0*\340\341@\0\0\0\0+\231W \0\0\0\0007\366\306\260\0\0\0\0008\277*\260\0\0\0\0@\260\23\260\0\0\0\0AV>\300\0\0\0\0Gw\t\260\0\0\0\0G\334\177 \1\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\4\5\4\5\4\6\7\6\7\6\4\5\3\5\6\5\4\5\377\377\277|\0\0\377\377\303\320\0\4\377\377\307\300\0\10\377\377\325\320\1\f\377\377\343\340\1\f\377\377\325\320\0\10\377\377\307\300\0\21\377\377\325\320\1\26\377\377\343\340\1\f\377\377\325\320\0\10LMT\0CMT\0ART\0ARST\0WART\0WARST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\nART3\n", 4096) = 707
+7984  close(10)                         = 0
+7984  munmap(0x7f10f47c6000, 4096)      = 0
+7984  write(1, "nombre: claudio.txt md5:c6a2e81eec44c45dafa5924d16232ddb tmMod:1464887680 leer:Thu Jun  2 14:14:40 2016\n", 104) = 104
+7984  write(1, "\n", 1)                 = 1
+7984  write(4, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0claudio.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0c6a2e81eec44c45dafa5924d16232ddb\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200iPW\0\0\0\0", 152) = 152
+7984  close(0)                          = 0
+7984  close(0)                          = -1 EBADF (Bad file descriptor)
+7984  write(1, "esto es dir de md5 Directorio/pepe/publico/texto.txt\n", 53) = 53
+7984  open("Directorio/pepe/publico/texto.txt", O_RDONLY) = 0
+7984  read(0, "reaci\303\263n de Procesos\nlos procesos  se crean mediante una llamada al sistema de \342\200\234crear proceso\342\200\235, durante el curso de su ejecuci\303\263n. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.\n\nCuando un proceso crea un proceso nuevo, hay dos posibilidades en t\303\251rminos de ejecuci\303\263n:\nPadre e hijo se ejecutan concurrentemente.\nPadre espera por la finalizaci\303\263n del hijo.\nEn UNIX existen dos funciones b\303\241sicas para crear procesos: Fork y Exec.\n\nFunci\303\263n fork(): Cuando se la llama crea un proceso ", 512) = 512
+7984  read(0, "hijo que es una copia casi exacta del proceso padre (duplicado del padre). Ambos procesos contin\303\272an ejecut\303\241ndose desde el punto en el que se hizo la llamada a fork().\n\nEn UNIX los procesos se identifican mediante un \342\200\234identificador de proceso\342\200\235 (PID) que es un entero \303\272nico. Ambos procesos contin\303\272an su ejecuci\303\263n con la instrucci\303\263n que sigue al fork() con una diferencia:\nEl c\303\263digo que el hijo recibe del fork es cero.\nEl que recibe del padre es el propio pid.\nFunciones exec: Tras crear un nuevo proces", 512) = 512
+7984  read(0, "o, despu\303\251s de llamar a fork, Linux llama a una funci\303\263n de la familia exec. \303\211stas funciones reemplazan el programa ejecut\303\241ndose en el proceso por otro programa. Cuando un programa llama a una funci\303\263n exec, su ejecuci\303\263n cesa de inmediato y comienza a ejecutar el nuevo programa desde el principio, suponiendo que no ocurriera ning\303\272n error durante la llamada.\n\nGeneralmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve despu\303\251s del fork para reemplazar su espacio de memoria c", 512) = 512
+7984  read(0, "on un programa nuevo. \n\nNota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a s\303\255 mismo de la cola de procesos listos hasta que el hijo termine.\n- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf\n", 512) = 314
+7984  read(0, "", 512)                  = 0
+7984  stat("Directorio/pepe/publico/texto.txt", {st_mode=S_IFREG|0600, st_size=1850, ...}) = 0
+7984  stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
+7984  write(1, "nombre: texto.txt md5:15e70d5371f02da4f7fde5ce0a3f0c54 tmMod:1464887766 leer:Thu Jun  2 14:16:06 2016\n", 102) = 102
+7984  write(1, "\n", 1)                 = 1
+7984  write(4, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0texto.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00015e70d5371f02da4f7fde5ce0a3f0c54\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\326iPW\0\0\0\0", 152) = 152
+7984  close(0)                          = 0
+7984  getdents(9, /* 0 entries */, 32768) = 0
+7984  read(4, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 48) = 48
+7984  read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
+7984  write(4, "//GyC****/\0finalizarEnvio\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1200) = 1200
+7984  write(1, "\n\n************salid e accep ******** \n", 38) = 38
+7984  write(1, "\n", 1)                 = 1
+7984  wait4(-1,  <unfinished ...>
+7977  <... accept resumed> 0, NULL)     = 5
+7977  clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f10f47a5a10) = 8006
+7977  accept(3,  <unfinished ...>
+8006  set_robust_list(0x7f10f47a5a20, 24) = 0
+8006  pipe([6, 7])                      = 0
+8006  write(1, "\n\n************entre en accept ************\n", 43) = 43
+8006  write(1, "\n", 1)                 = 1
+8006  read(5, "pepe-pepe\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 42
+8006  open("usuarios.txt", O_RDWR)      = 8
+8006  read(8, "claudio-123\npepe-pepe\npicp-123\n", 512) = 31
+8006  write(1, "esto es lo q guardo pepe \n\n", 27) = 27
+8006  write(5, "0", 1)                  = 1
+8006  read(8, "", 512)                  = 0
+8006  write(1, "sali\n", 5)             = 5
+8006  close(0)                          = 0
+8006  close(42)                         = -1 EBADF (Bad file descriptor)
+8006  clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f10f47a5a10) = 8007
+8007  set_robust_list(0x7f10f47a5a20, 24) = 0
+8006  write(1, "entre al padre \n", 16) = 16
+8007  write(1, "entre al hijo del log \n", 23 <unfinished ...>
+8006  close(6 <unfinished ...>
+8007  <... write resumed> )             = 23
+8006  <... close resumed> )             = 0
+8007  close(7)                          = 0
+8006  openat(AT_FDCWD, "./Directorio/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+8007  write(1, "estoy en logRead pipe 7 usu pepe\n \n", 35 <unfinished ...>
+8006  <... openat resumed> )            = 0
+8007  <... write resumed> )             = 35
+8006  brk(0 <unfinished ...>
+8007  open("Directorio/pepe/log.txt", O_WRONLY|O_CREAT|O_APPEND, 0600 <unfinished ...>
+8006  <... brk resumed> )               = 0x135a000
+8007  <... open resumed> )              = 0
+8006  brk(0x1383000 <unfinished ...>
+8007  read(6,  <unfinished ...>
+8006  <... brk resumed> )               = 0x1383000
+8006  openat(AT_FDCWD, "./Directorio/pepe", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 6
+8006  openat(AT_FDCWD, "./Directorio/pepe/temporario", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 9
+8006  openat(AT_FDCWD, "./Directorio/pepe/publico", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 10
+8006  write(1, " este es usuario en diretorio pepe\n\n************actualizo el servidor ************\n", 83) = 83
+8006  write(1, "\n", 1)                 = 1
+8006  read(5, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0", 48) = 48
+8006  mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f10f31e4000
+8006  mprotect(0x7f10f31e4000, 4096, PROT_NONE) = 0
+8006  clone(child_stack=0x7f10f39e3fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f10f39e49d0, tls=0x7f10f39e4700, child_tidptr=0x7f10f39e49d0) = 8008
+8008  set_robust_list(0x7f10f39e49e0, 24 <unfinished ...>
+8006  mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+8008  <... set_robust_list resumed> )   = 0
+8006  <... mmap resumed> )              = 0x7f10f29e3000
+8008  read(5,  <unfinished ...>
+8006  mprotect(0x7f10f29e3000, 4096, PROT_NONE) = 0
+8006  clone( <unfinished ...>
+8009  set_robust_list(0x7f10f31e39e0, 24) = 0
+8006  <... clone resumed> child_stack=0x7f10f31e2fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f10f31e39d0, tls=0x7f10f31e3700, child_tidptr=0x7f10f31e39d0) = 8009
+8009  read(5,  <unfinished ...>
+8006  futex(0x7f10f31e39d0, FUTEX_WAIT, 8009, NULL <unfinished ...>
+8008  <... read resumed> "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0claudio.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000ce6c1c1912f9e8026bf7d534936b812\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0b\316\356\211\177\0\0mjPW\0\0\0\0", 152) = 152
+8009  <... read resumed> "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0texto.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00015e70d5371f02da4f7fde5ce0a3f0c54\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0b\316\356\211\177\0\0\313iPW\0\0\0\0", 152) = 152
+8008  openat(AT_FDCWD, "Directorio/pepe/publico/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+8009  openat(AT_FDCWD, "Directorio/pepe/publico/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+8008  <... openat resumed> )            = 11
+8009  <... openat resumed> )            = 12
+8008  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+8009  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+8008  <... mmap resumed> )              = 0x7f10ea9e3000
+8009  <... mmap resumed> )              = 0x7f10e29e3000
+8008  munmap(0x7f10ea9e3000, 23187456 <unfinished ...>
+8009  munmap(0x7f10e29e3000, 23187456)  = 0
+8008  <... munmap resumed> )            = 0
+8009  munmap(0x7f10e8000000, 43921408 <unfinished ...>
+8008  munmap(0x7f10f0000000, 43921408 <unfinished ...>
+8009  <... munmap resumed> )            = 0
+8008  <... munmap resumed> )            = 0
+8009  mprotect(0x7f10e4000000, 167936, PROT_READ|PROT_WRITE <unfinished ...>
+8008  mprotect(0x7f10ec000000, 167936, PROT_READ|PROT_WRITE <unfinished ...>
+8009  <... mprotect resumed> )          = 0
+8008  <... mprotect resumed> )          = 0
+8009  getdents(12,  <unfinished ...>
+8008  getdents(11,  <unfinished ...>
+8009  <... getdents resumed> /* 4 entries */, 32768) = 112
+8008  <... getdents resumed> /* 4 entries */, 32768) = 112
+8009  open("Directorio/pepe/publico/texto.txt", O_RDONLY <unfinished ...>
+8008  open("Directorio/pepe/publico/claudio.txt", O_RDONLY <unfinished ...>
+8009  <... open resumed> )              = 13
+8008  <... open resumed> )              = 14
+8009  read(13,  <unfinished ...>
+8008  read(14,  <unfinished ...>
+8009  <... read resumed> "reaci\303\263n de Procesos\nlos procesos  se crean mediante una llamada al sistema de \342\200\234crear proceso\342\200\235, durante el curso de su ejecuci\303\263n. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.\n\nCuando un proceso crea un proceso nuevo, hay dos posibilidades en t\303\251rminos de ejecuci\303\263n:\nPadre e hijo se ejecutan concurrentemente.\nPadre espera por la finalizaci\303\263n del hijo.\nEn UNIX existen dos funciones b\303\241sicas para crear procesos: Fork y Exec.\n\nFunci\303\263n fork(): Cuando se la llama crea un proceso ", 512) = 512
+8008  <... read resumed> "hoolaaa   \n", 512) = 11
+8009  read(13, "hijo que es una copia casi exacta del proceso padre (duplicado del padre). Ambos procesos contin\303\272an ejecut\303\241ndose desde el punto en el que se hizo la llamada a fork().\n\nEn UNIX los procesos se identifican mediante un \342\200\234identificador de proceso\342\200\235 (PID) que es un entero \303\272nico. Ambos procesos contin\303\272an su ejecuci\303\263n con la instrucci\303\263n que sigue al fork() con una diferencia:\nEl c\303\263digo que el hijo recibe del fork es cero.\nEl que recibe del padre es el propio pid.\nFunciones exec: Tras crear un nuevo proces", 512) = 512
+8008  read(14,  <unfinished ...>
+8009  read(13,  <unfinished ...>
+8008  <... read resumed> "", 512)       = 0
+8009  <... read resumed> "o, despu\303\251s de llamar a fork, Linux llama a una funci\303\263n de la familia exec. \303\211stas funciones reemplazan el programa ejecut\303\241ndose en el proceso por otro programa. Cuando un programa llama a una funci\303\263n exec, su ejecuci\303\263n cesa de inmediato y comienza a ejecutar el nuevo programa desde el principio, suponiendo que no ocurriera ning\303\272n error durante la llamada.\n\nGeneralmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve despu\303\251s del fork para reemplazar su espacio de memoria c", 512) = 512
+8009  read(13,  <unfinished ...>
+8008  close(14 <unfinished ...>
+8009  <... read resumed> "on un programa nuevo. \n\nNota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a s\303\255 mismo de la cola de procesos listos hasta que el hijo termine.\n- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf\n", 512) = 314
+8008  <... close resumed> )             = 0
+8009  read(13,  <unfinished ...>
+8008  write(1, " \n", 2 <unfinished ...>
+8009  <... read resumed> "", 512)       = 0
+8008  <... write resumed> )             = 2
+8009  close(13 <unfinished ...>
+8008  write(1, "nombre claudio.txt md5local c6a2e81eec44c45dafa5924d16232ddb md 0ce6c1c1912f9e8026bf7d534936b812 \n", 98) = 98
+8008  stat("Directorio/pepe/publico/claudio.txt", {st_mode=S_IFREG|0600, st_size=11, ...}) = 0
+8008  getdents(11,  <unfinished ...>
+8009  <... close resumed> )             = 0
+8008  <... getdents resumed> /* 0 entries */, 32768) = 0
+8009  write(1, " \n", 2 <unfinished ...>
+8008  open("/proc/sys/vm/overcommit_memory", O_RDONLY|O_CLOEXEC <unfinished ...>
+8009  <... write resumed> )             = 2
+8008  <... open resumed> )              = 13
+8008  read(13, "0", 1)                  = 1
+8009  write(1, "nombre texto.txt md5local 15e70d5371f02da4f7fde5ce0a3f0c54 md 15e70d5371f02da4f7fde5ce0a3f0c54 \n", 96 <unfinished ...>
+8008  close(13 <unfinished ...>
+8009  <... write resumed> )             = 96
+8008  <... close resumed> )             = 0
+8009  getdents(12,  <unfinished ...>
+8008  madvise(0x7f10ec021000, 32768, MADV_DONTNEED <unfinished ...>
+8009  <... getdents resumed> /* 0 entries */, 32768) = 0
+8008  <... madvise resumed> )           = 0
+8009  madvise(0x7f10e4021000, 32768, MADV_DONTNEED <unfinished ...>
+8008  close(11 <unfinished ...>
+8009  <... madvise resumed> )           = 0
+8008  <... close resumed> )             = 0
+8009  close(12)                         = 0
+8009  futex(0x7f10f47cb968, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+8008  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 11
+8008  fstat(11, {st_mode=S_IFREG|0644, st_size=125915, ...}) = 0
+8008  mmap(NULL, 125915, PROT_READ, MAP_PRIVATE, 11, 0) = 0x7f10f4786000
+8008  close(11)                         = 0
+8008  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+8008  open("/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 11
+8008  read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260*\0\0\0\0\0\0@\0\0\0\0\0\0\0pY\1\0\0\0\0\0\0\0\0\0@\0008\0\6\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\214T\1\0\0\0\0\0\214T\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\220T\1\0\0\0\0\0\220T!\0\0\0\0\0\220T!\0\0\0\0\0\320\3\0\0\0\0\0\0\220\6\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\260T\1\0\0\0\0\0\260T!\0\0\0\0\0\260T!\0\0\0\0\0\360\1\0\0\0\0\0\0\360\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\220\1\0\0\0\0\0\0\220\1\0\0\0\0\0\0\220\1\0\0\0\0\0\0$\0\0\0\0\0\0\0$\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\3204\1\0\0\0\0\0\3204\1\0\0\0\0\0\3204\1\0\0\0\0\0D\5\0\0\0\0\0\0D\5\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\00061\33DWq\n\345W\214K\360\7\221\336\3275\235\273\222\0\0\0\0\203\0\0\0\27\0\0\0\20\0\0\0\n\0\0\0\23\34\3\30\4$\0\1\1\201\0T\4\6\210\20\200\204\0\10\0\10\5\200\2\0@\20D\20\0\266\2\200\320 \301\0\220\2024\1\0\4\10(@\2H\1\v \320\1\2(\0235\4`l\322\0!\3p`@\322\200\10`\0@\1\0\200\1\0\0\2$\0\10\21\2\10H\300\1$\t\21(  \10C\v\246\202H\t\10\10\3D\f\n\34\22O\306\1\207\va\204\226\315\4\302\305\f\242\333\16\314\27\0\0\0\30\0\0\0\33\0\0\0\0\0\0\0\36\0\0\0\0\0\0\0 \0\0\0!\0\0\0#\0\0\0&\0\0\0(\0\0\0\0\0\0\0)\0\0\0+\0\0\0,\0\0\0/\0\0\0001\0\0\0004\0\0\0005\0\0\0008\0\0\0\0\0\0\0009\0\0\0:\0\0\0=\0\0\0>\0\0\0@\0\0\0A\0\0\0B\0\0\0C\0\0\0D\0\0\0F\0\0\0\0\0\0\0G\0\0\0\0\0\0\0H\0\0\0\0\0\0\0\0\0\0\0I\0\0\0J\0\0\0L\0\0\0M\0\0\0N\0\0\0\0\0\0\0\0\0\0\0P\0\0\0R\0\0\0\0\0\0\0\0\0\0\0S\0\0\0U\0\0\0\0\0\0\0V\0\0\0\0\0\0\0\0\0\0\0X\0\0\0Y\0\0\0Z\0\0\0\0\0\0\0\0\0\0\0\\\0\0\0]\0\0\0\0\0\0\0", 832) = 832
+8008  fstat(11, {st_mode=S_IFREG|0644, st_size=90160, ...}) = 0
+8008  mmap(NULL, 2186016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f10f27cd000
+8008  mprotect(0x7f10f27e3000, 2093056, PROT_NONE) = 0
+8008  mmap(0x7f10f29e2000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0x15000) = 0x7f10f29e2000
+8008  close(11)                         = 0
+8008  munmap(0x7f10f4786000, 125915)    = 0
+8008  futex(0x7f10f47cb968, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+8009  <... futex resumed> )             = 0
+8008  <... futex resumed> )             = 1
+8009  futex(0x7f10f47cb968, FUTEX_WAKE_PRIVATE, 1) = 0
+8008  futex(0x7f10f29e2890, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+8009  madvise(0x7f10f29e3000, 8368128, MADV_DONTNEED <unfinished ...>
+8008  madvise(0x7f10f31e4000, 8368128, MADV_DONTNEED <unfinished ...>
+8009  <... madvise resumed> )           = 0
+8008  <... madvise resumed> )           = 0
+8009  _exit(0)                          = ?
+8008  _exit(0)                          = ?
+8009  +++ exited with 0 +++
+8008  +++ exited with 0 +++
+8006  <... futex resumed> )             = 0
+8006  write(1, "claudio.txt\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
+8006  write(5, "claudio.txt\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
+8006  read(5, "//GyC****/\0InicioArchivo\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0claudio.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0Creaci\303\263n de Procesos\nlos procesos  se crean mediante una llamada al sistema de \342\200\234crear proceso\342\200\235, durante el curso de su ejecuci\303\263n. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.\n\nCuando un proceso crea un proceso nuevo, hay dos posibilidades en t\303\251rminos de ejecuci\303\263n:\nPadre e hijo se ejecutan concurrentemente.\nPadre espera por la finalizaci\303\263n del hijo.\nEn UNIX existen dos funciones b\303\241sicas para crear procesos: Fork y Exec.\n\nFunci\303\263n fork(): Cuando se la llama crea un proceso hijo que es una copia casi exacta del proceso padre (duplicado del padre). Ambos procesos contin\303\272an ejecut\303\241ndose desde el punto en el que se hizo la llamada a fork().\n\nEn UNIX los procesos se identifican mediante un \342\200\234identificador de proceso\342\200\235 (PID) que es un entero \303\272nico. Ambos procesos contin\303\272an su ejecuci\303\263n con la instrucci\303\263n que sigue al fork() con una diferencia:\nEl c\303\263digo que el h"..., 1136) = 1136
+8006  unlink("Directorio/pepe/publico/claudio.txt") = 0
+8006  open("Directorio/pepe/publico/claudio.txt", O_WRONLY|O_CREAT|O_APPEND, 0600) = 11
+8006  write(1, "Actualizo el archivo claudio.txt tama\303\261o 1024\n", 46) = 46
+8006  write(11, "Creaci\303\263n de Procesos\nlos procesos  se crean mediante una llamada al sistema de \342\200\234crear proceso\342\200\235, durante el curso de su ejecuci\303\263n. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.\n\nCuando un proceso crea un proceso nuevo, hay dos posibilidades en t\303\251rminos de ejecuci\303\263n:\nPadre e hijo se ejecutan concurrentemente.\nPadre espera por la finalizaci\303\263n del hijo.\nEn UNIX existen dos funciones b\303\241sicas para crear procesos: Fork y Exec.\n\nFunci\303\263n fork(): Cuando se la llama crea un proceso hijo que es una copia casi exacta del proceso padre (duplicado del padre). Ambos procesos contin\303\272an ejecut\303\241ndose desde el punto en el que se hizo la llamada a fork().\n\nEn UNIX los procesos se identifican mediante un \342\200\234identificador de proceso\342\200\235 (PID) que es un entero \303\272nico. Ambos procesos contin\303\272an su ejecuci\303\263n con la instrucci\303\263n que sigue al fork() con una diferencia:\nEl c\303\263digo que el hijo recibe del fork es cero.\nEl que recibe del padre es el propio pid.\nFunciones exec: Tras crear un nuevo proce", 1024) = 1024
+8006  write(7, "claudio.txt", 11)       = 11
+8007  <... read resumed> "claudio.txt", 32) = 11
+8006  read(5,  <unfinished ...>
+8007  write(1, "  entre a logRead claudio.txt\n", 30) = 30
+8007  write(0, "se modifico --->", 16)  = 16
+8007  write(0, "claudio.txt", 11)       = 11
+8007  write(0, "\n\0", 2)               = 2
+8007  read(6,  <unfinished ...>
+8006  <... read resumed> "//GyC****/\0Archivo\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0claudio.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0<\3\0\0so, despu\303\251s de llamar a fork, Linux llama a una funci\303\263n de la familia exec. \303\211stas funciones reemplazan el programa ejecut\303\241ndose en el proceso por otro programa. Cuando un programa llama a una funci\303\263n exec, su ejecuci\303\263n cesa de inmediato y comienza a ejecutar el nuevo programa desde el principio, suponiendo que no ocurriera ning\303\272n error durante la llamada.\n\nGeneralmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve despu\303\251s del fork para reemplazar su espacio de memoria con un programa nuevo. \n\nNota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a s\303\255 mismo de la cola de procesos listos hasta que el hijo termine.\n- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf \n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1136) = 1136
+8006  write(1, "****************estoy en log write 7----------------------Sigo actualizando claudio.txt tama\303\261o 828\n", 100) = 100
+8006  write(11, "so, despu\303\251s de llamar a fork, Linux llama a una funci\303\263n de la familia exec. \303\211stas funciones reemplazan el programa ejecut\303\241ndose en el proceso por otro programa. Cuando un programa llama a una funci\303\263n exec, su ejecuci\303\263n cesa de inmediato y comienza a ejecutar el nuevo programa desde el principio, suponiendo que no ocurriera ning\303\272n error durante la llamada.\n\nGeneralmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve despu\303\251s del fork para reemplazar su espacio de memoria con un programa nuevo. \n\nNota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a s\303\255 mismo de la cola de procesos listos hasta que el hijo termine.\n- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf \n", 828) = 828
+8006  read(5, "//GyC****/\0finalizar\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1136) = 1136
+8006  close(11)                         = 0
+8006  write(1, "esto es lo ultmimo us:pepe cont: pepe  termina\n", 47) = 47
+8006  write(1, "\n\n\n\n************actualizo el cliente ************\n", 50) = 50
+8006  write(1, "\n", 1)                 = 1
+8006  write(1, "reportar\n", 9)         = 9
+8006  getdents(10, /* 4 entries */, 32768) = 112
+8006  getdents(10, /* 0 entries */, 32768) = 0
+8006  lseek(10, 0, SEEK_SET)            = 0
+8006  write(5, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0", 48) = 48
+8006  getdents(10, /* 4 entries */, 32768) = 112
+8006  close(0)                          = 0
+8006  write(1, "esto es dir de md5 Directorio/pepe/publico/claudio.txt\n", 55) = 55
+8006  open("Directorio/pepe/publico/claudio.txt", O_RDONLY) = 0
+8006  read(0, "Creaci\303\263n de Procesos\nlos procesos  se crean mediante una llamada al sistema de \342\200\234crear proceso\342\200\235, durante el curso de su ejecuci\303\263n. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.\n\nCuando un proceso crea un proceso nuevo, hay dos posibilidades en t\303\251rminos de ejecuci\303\263n:\nPadre e hijo se ejecutan concurrentemente.\nPadre espera por la finalizaci\303\263n del hijo.\nEn UNIX existen dos funciones b\303\241sicas para crear procesos: Fork y Exec.\n\nFunci\303\263n fork(): Cuando se la llama crea un proceso", 512) = 512
+8006  read(0, " hijo que es una copia casi exacta del proceso padre (duplicado del padre). Ambos procesos contin\303\272an ejecut\303\241ndose desde el punto en el que se hizo la llamada a fork().\n\nEn UNIX los procesos se identifican mediante un \342\200\234identificador de proceso\342\200\235 (PID) que es un entero \303\272nico. Ambos procesos contin\303\272an su ejecuci\303\263n con la instrucci\303\263n que sigue al fork() con una diferencia:\nEl c\303\263digo que el hijo recibe del fork es cero.\nEl que recibe del padre es el propio pid.\nFunciones exec: Tras crear un nuevo proce", 512) = 512
+8006  read(0, "so, despu\303\251s de llamar a fork, Linux llama a una funci\303\263n de la familia exec. \303\211stas funciones reemplazan el programa ejecut\303\241ndose en el proceso por otro programa. Cuando un programa llama a una funci\303\263n exec, su ejecuci\303\263n cesa de inmediato y comienza a ejecutar el nuevo programa desde el principio, suponiendo que no ocurriera ning\303\272n error durante la llamada.\n\nGeneralmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve despu\303\251s del fork para reemplazar su espacio de memoria ", 512) = 512
+8006  read(0, "con un programa nuevo. \n\nNota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a s\303\255 mismo de la cola de procesos listos hasta que el hijo termine.\n- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf \n", 512) = 316
+8006  read(0, "", 512)                  = 0
+8006  stat("Directorio/pepe/publico/claudio.txt", {st_mode=S_IFREG|0600, st_size=1852, ...}) = 0
+8006  open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 11
+8006  fstat(11, {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
+8006  fstat(11, {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
+8006  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10f47c6000
+8006  read(11, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0\t\0\0\0\0\0\0\0<\0\0\0\t\0\0\0\30\242\222\2170\266{R@\267\32\311\260\270\36\217@\270\324p0\272\27}\300\272\265\243\260\273\370\261@\274\226\3270\275\331\344\300\276x\n\260\277\273\30@\300Z\217\260\301\235\235@\302;\3030\303~\320\300\304\34\366\260\305`\4@\305\376*0\307A7\300\307\340\2570\310\201\224@\312M\241\260\312\356\206\300\316M\3770\316\260\355\300\323)5\260\324Cd\300\364=\0100\364\237\366\300\365\5l0\3662\20@\366\346\237\260\370\23C\300\370\307\3230\371\364w@\372\3236\260\373\3035\300\374\274S0\375\254R@\376\23450\377\2144@\7\243J\260\10$o\240#\224\265\260$\20\224\240%7\362\260%\360v\240'\0314@'\315\303\260(\372g\300)\260H\260*\340\341@+\231W 7\366\306\2608\277*\260@\260\23\260AV>\300Gw\t\260G\334\177 \1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\4\3\4\3\4\3\5\6\5\6\5\3\4\2\4\5\4\3\4\377\377\303\320\0\0\377\377\307\300\0\4\377\377\325\320\1\10\377\377\343\340\1\10\377\377\325\320\0\4\377\377\307\300\0\r\377\377\325\320\1\22\377\377\343\340\1\10\377\377\325\320\0\4CMT\0ART\0ARST\0WART\0WARST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0\n\0\0\0\0\0\0\0=\0\0\0\n\0\0\0\34\377\377\377\377r\234\262\4\377\377\377\377\242\222\2170\377\377\377\377\266{R@\377\377\377\377\267\32\311\260\377\377\377\377\270\36\217@\377\377\377\377\270\324p0\377\377\377\377\272\27}\300\377\377\377\377\272\265\243\260\377\377\377\377\273\370\261@\377\377\377\377\274\226\3270\377\377\377\377\275\331\344\300\377\377\377\377\276x\n\260\377\377\377\377\277\273\30@\377\377\377\377\300Z\217\260\377\377\377\377\301\235\235@\377\377\377\377\302;\3030\377\377\377\377\303~\320\300\377\377\377\377\304\34\366\260\377\377\377\377\305`\4@\377\377\377\377\305\376*0\377\377\377\377\307A7\300\377\377\377\377\307\340\2570\377\377\377\377\310\201\224@\377\377\377\377\312M\241\260\377\377\377\377\312\356\206\300\377\377\377\377\316M\3770\377\377\377\377\316\260\355\300\377\377\377\377\323)5\260\377\377\377\377\324Cd\300\377\377\377\377\364=\0100\377\377\377\377\364\237\366\300\377\377\377\377\365\5l0\377\377\377\377\3662\20@\377\377\377\377\366\346\237\260\377\377\377\377\370\23C\300\377\377\377\377\370\307\3230\377\377\377\377\371\364w@\377\377\377\377\372\3236\260\377\377\377\377\373\3035\300\377\377\377\377\374\274S0\377\377\377\377\375\254R@\377\377\377\377\376\23450\377\377\377\377\377\2144@\0\0\0\0\7\243J\260\0\0\0\0\10$o\240\0\0\0\0#\224\265\260\0\0\0\0$\20\224\240\0\0\0\0%7\362\260\0\0\0\0%\360v\240\0\0\0\0'\0314@\0\0\0\0'\315\303\260\0\0\0\0(\372g\300\0\0\0\0)\260H\260\0\0\0\0*\340\341@\0\0\0\0+\231W \0\0\0\0007\366\306\260\0\0\0\0008\277*\260\0\0\0\0@\260\23\260\0\0\0\0AV>\300\0\0\0\0Gw\t\260\0\0\0\0G\334\177 \1\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\4\5\4\5\4\6\7\6\7"..., 4096) = 1147
+8006  lseek(11, -707, SEEK_CUR)         = 440
+8006  read(11, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0\n\0\0\0\0\0\0\0=\0\0\0\n\0\0\0\34\377\377\377\377r\234\262\4\377\377\377\377\242\222\2170\377\377\377\377\266{R@\377\377\377\377\267\32\311\260\377\377\377\377\270\36\217@\377\377\377\377\270\324p0\377\377\377\377\272\27}\300\377\377\377\377\272\265\243\260\377\377\377\377\273\370\261@\377\377\377\377\274\226\3270\377\377\377\377\275\331\344\300\377\377\377\377\276x\n\260\377\377\377\377\277\273\30@\377\377\377\377\300Z\217\260\377\377\377\377\301\235\235@\377\377\377\377\302;\3030\377\377\377\377\303~\320\300\377\377\377\377\304\34\366\260\377\377\377\377\305`\4@\377\377\377\377\305\376*0\377\377\377\377\307A7\300\377\377\377\377\307\340\2570\377\377\377\377\310\201\224@\377\377\377\377\312M\241\260\377\377\377\377\312\356\206\300\377\377\377\377\316M\3770\377\377\377\377\316\260\355\300\377\377\377\377\323)5\260\377\377\377\377\324Cd\300\377\377\377\377\364=\0100\377\377\377\377\364\237\366\300\377\377\377\377\365\5l0\377\377\377\377\3662\20@\377\377\377\377\366\346\237\260\377\377\377\377\370\23C\300\377\377\377\377\370\307\3230\377\377\377\377\371\364w@\377\377\377\377\372\3236\260\377\377\377\377\373\3035\300\377\377\377\377\374\274S0\377\377\377\377\375\254R@\377\377\377\377\376\23450\377\377\377\377\377\2144@\0\0\0\0\7\243J\260\0\0\0\0\10$o\240\0\0\0\0#\224\265\260\0\0\0\0$\20\224\240\0\0\0\0%7\362\260\0\0\0\0%\360v\240\0\0\0\0'\0314@\0\0\0\0'\315\303\260\0\0\0\0(\372g\300\0\0\0\0)\260H\260\0\0\0\0*\340\341@\0\0\0\0+\231W \0\0\0\0007\366\306\260\0\0\0\0008\277*\260\0\0\0\0@\260\23\260\0\0\0\0AV>\300\0\0\0\0Gw\t\260\0\0\0\0G\334\177 \1\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\4\5\4\5\4\6\7\6\7\6\4\5\3\5\6\5\4\5\377\377\277|\0\0\377\377\303\320\0\4\377\377\307\300\0\10\377\377\325\320\1\f\377\377\343\340\1\f\377\377\325\320\0\10\377\377\307\300\0\21\377\377\325\320\1\26\377\377\343\340\1\f\377\377\325\320\0\10LMT\0CMT\0ART\0ARST\0WART\0WARST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\nART3\n", 4096) = 707
+8006  close(11)                         = 0
+8006  munmap(0x7f10f47c6000, 4096)      = 0
+8006  write(1, "nombre: claudio.txt md5:0ce6c1c1912f9e8026bf7d534936b812 tmMod:1464887920 leer:Thu Jun  2 14:18:40 2016\n", 104) = 104
+8006  write(1, "\n", 1)                 = 1
+8006  write(5, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0claudio.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000ce6c1c1912f9e8026bf7d534936b812\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0pjPW\0\0\0\0", 152) = 152
+8006  close(0)                          = 0
+8006  close(0)                          = -1 EBADF (Bad file descriptor)
+8006  write(1, "esto es dir de md5 Directorio/pepe/publico/texto.txt\n", 53) = 53
+8006  open("Directorio/pepe/publico/texto.txt", O_RDONLY) = 0
+8006  read(0, "reaci\303\263n de Procesos\nlos procesos  se crean mediante una llamada al sistema de \342\200\234crear proceso\342\200\235, durante el curso de su ejecuci\303\263n. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.\n\nCuando un proceso crea un proceso nuevo, hay dos posibilidades en t\303\251rminos de ejecuci\303\263n:\nPadre e hijo se ejecutan concurrentemente.\nPadre espera por la finalizaci\303\263n del hijo.\nEn UNIX existen dos funciones b\303\241sicas para crear procesos: Fork y Exec.\n\nFunci\303\263n fork(): Cuando se la llama crea un proceso ", 512) = 512
+8006  read(0, "hijo que es una copia casi exacta del proceso padre (duplicado del padre). Ambos procesos contin\303\272an ejecut\303\241ndose desde el punto en el que se hizo la llamada a fork().\n\nEn UNIX los procesos se identifican mediante un \342\200\234identificador de proceso\342\200\235 (PID) que es un entero \303\272nico. Ambos procesos contin\303\272an su ejecuci\303\263n con la instrucci\303\263n que sigue al fork() con una diferencia:\nEl c\303\263digo que el hijo recibe del fork es cero.\nEl que recibe del padre es el propio pid.\nFunciones exec: Tras crear un nuevo proces", 512) = 512
+8006  read(0, "o, despu\303\251s de llamar a fork, Linux llama a una funci\303\263n de la familia exec. \303\211stas funciones reemplazan el programa ejecut\303\241ndose en el proceso por otro programa. Cuando un programa llama a una funci\303\263n exec, su ejecuci\303\263n cesa de inmediato y comienza a ejecutar el nuevo programa desde el principio, suponiendo que no ocurriera ning\303\272n error durante la llamada.\n\nGeneralmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve despu\303\251s del fork para reemplazar su espacio de memoria c", 512) = 512
+8006  read(0, "on un programa nuevo. \n\nNota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a s\303\255 mismo de la cola de procesos listos hasta que el hijo termine.\n- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf\n", 512) = 314
+8006  read(0, "", 512)                  = 0
+8006  stat("Directorio/pepe/publico/texto.txt", {st_mode=S_IFREG|0600, st_size=1850, ...}) = 0
+8006  stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
+8006  write(1, "nombre: texto.txt md5:15e70d5371f02da4f7fde5ce0a3f0c54 tmMod:1464887766 leer:Thu Jun  2 14:16:06 2016\n", 102) = 102
+8006  write(1, "\n", 1)                 = 1
+8006  write(5, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0texto.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00015e70d5371f02da4f7fde5ce0a3f0c54\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\326iPW\0\0\0\0", 152) = 152
+8006  close(0)                          = 0
+8006  getdents(10, /* 0 entries */, 32768) = 0
+8006  read(5, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 48) = 48
+8006  read(5, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
+8006  write(5, "//GyC****/\0finalizarEnvio\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1200) = 1200
+8006  write(1, "\n\n************salid e accep ******** \n", 38) = 38
+8006  write(1, "\n", 1)                 = 1
+8006  wait4(-1,  <unfinished ...>
+7977  <... accept resumed> 0, NULL)     = 6
+7977  clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f10f47a5a10) = 8034
+8034  set_robust_list(0x7f10f47a5a20, 24 <unfinished ...>
+7977  accept(3,  <unfinished ...>
+8034  <... set_robust_list resumed> )   = 0
+8034  pipe([7, 8])                      = 0
+8034  write(1, "\n\n************entre en accept ************\n", 43) = 43
+8034  write(1, "\n", 1)                 = 1
+8034  read(6, "pepe-pepe\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 42
+8034  open("usuarios.txt", O_RDWR)      = 9
+8034  read(9, "claudio-123\npepe-pepe\npicp-123\n", 512) = 31
+8034  write(1, "esto es lo q guardo pepe \n\n", 27) = 27
+8034  write(6, "0", 1)                  = 1
+8034  read(9, "", 512)                  = 0
+8034  write(1, "sali\n", 5)             = 5
+8034  close(0)                          = 0
+8034  close(42)                         = -1 EBADF (Bad file descriptor)
+8034  clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f10f47a5a10) = 8035
+8035  set_robust_list(0x7f10f47a5a20, 24) = 0
+8034  write(1, "entre al padre \n", 16 <unfinished ...>
+8035  write(1, "entre al hijo del log \n", 23 <unfinished ...>
+8034  <... write resumed> )             = 16
+8035  <... write resumed> )             = 23
+8034  close(7 <unfinished ...>
+8035  close(8 <unfinished ...>
+8034  <... close resumed> )             = 0
+8035  <... close resumed> )             = 0
+8034  openat(AT_FDCWD, "./Directorio/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+8035  write(1, "estoy en logRead pipe 8 usu pepe\n \n", 35 <unfinished ...>
+8034  <... openat resumed> )            = 0
+8035  <... write resumed> )             = 35
+8034  brk(0 <unfinished ...>
+8035  open("Directorio/pepe/log.txt", O_WRONLY|O_CREAT|O_APPEND, 0600 <unfinished ...>
+8034  <... brk resumed> )               = 0x135a000
+8035  <... open resumed> )              = 0
+8034  brk(0x1383000 <unfinished ...>
+8035  read(7,  <unfinished ...>
+8034  <... brk resumed> )               = 0x1383000
+8034  openat(AT_FDCWD, "./Directorio/pepe", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 7
+8034  openat(AT_FDCWD, "./Directorio/pepe/temporario", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 10
+8034  openat(AT_FDCWD, "./Directorio/pepe/publico", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 11
+8034  write(1, " este es usuario en diretorio pepe\n\n************actualizo el servidor ************\n", 83) = 83
+8034  write(1, "\n", 1)                 = 1
+8034  read(6, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0", 48) = 48
+8034  mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f10f31e4000
+8034  mprotect(0x7f10f31e4000, 4096, PROT_NONE) = 0
+8034  clone(child_stack=0x7f10f39e3fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f10f39e49d0, tls=0x7f10f39e4700, child_tidptr=0x7f10f39e49d0) = 8036
+8036  set_robust_list(0x7f10f39e49e0, 24 <unfinished ...>
+8034  mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+8036  <... set_robust_list resumed> )   = 0
+8034  <... mmap resumed> )              = 0x7f10f29e3000
+8036  read(6,  <unfinished ...>
+8034  mprotect(0x7f10f29e3000, 4096, PROT_NONE) = 0
+8034  clone( <unfinished ...>
+8037  set_robust_list(0x7f10f31e39e0, 24) = 0
+8034  <... clone resumed> child_stack=0x7f10f31e2fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f10f31e39d0, tls=0x7f10f31e3700, child_tidptr=0x7f10f31e39d0) = 8037
+8037  read(6,  <unfinished ...>
+8034  futex(0x7f10f31e39d0, FUTEX_WAIT, 8037, NULL <unfinished ...>
+8037  <... read resumed> "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0texto.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00015e70d5371f02da4f7fde5ce0a3f0c54\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\222\356\374L\177\0\0\313iPW\0\0\0\0", 152) = 152
+8036  <... read resumed> "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0claudio.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000ce6c1c1912f9e8026bf7d534936b812\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\222\356\374L\177\0\0mjPW\0\0\0\0", 152) = 152
+8037  openat(AT_FDCWD, "Directorio/pepe/publico/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+8036  openat(AT_FDCWD, "Directorio/pepe/publico/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+8037  <... openat resumed> )            = 13
+8036  <... openat resumed> )            = 12
+8036  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+8037  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+8036  <... mmap resumed> )              = 0x7f10ea9e3000
+8036  munmap(0x7f10ea9e3000, 23187456 <unfinished ...>
+8037  <... mmap resumed> )              = 0x7f10e29e3000
+8036  <... munmap resumed> )            = 0
+8037  munmap(0x7f10e29e3000, 23187456 <unfinished ...>
+8036  munmap(0x7f10f0000000, 43921408 <unfinished ...>
+8037  <... munmap resumed> )            = 0
+8036  <... munmap resumed> )            = 0
+8037  munmap(0x7f10e8000000, 43921408 <unfinished ...>
+8036  mprotect(0x7f10ec000000, 167936, PROT_READ|PROT_WRITE <unfinished ...>
+8037  <... munmap resumed> )            = 0
+8036  <... mprotect resumed> )          = 0
+8037  mprotect(0x7f10e4000000, 167936, PROT_READ|PROT_WRITE) = 0
+8036  getdents(12,  <unfinished ...>
+8037  getdents(13,  <unfinished ...>
+8036  <... getdents resumed> /* 4 entries */, 32768) = 112
+8037  <... getdents resumed> /* 4 entries */, 32768) = 112
+8036  open("Directorio/pepe/publico/claudio.txt", O_RDONLY <unfinished ...>
+8037  open("Directorio/pepe/publico/texto.txt", O_RDONLY <unfinished ...>
+8036  <... open resumed> )              = 14
+8037  <... open resumed> )              = 15
+8037  read(15,  <unfinished ...>
+8036  read(14,  <unfinished ...>
+8037  <... read resumed> "reaci\303\263n de Procesos\nlos procesos  se crean mediante una llamada al sistema de \342\200\234crear proceso\342\200\235, durante el curso de su ejecuci\303\263n. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.\n\nCuando un proceso crea un proceso nuevo, hay dos posibilidades en t\303\251rminos de ejecuci\303\263n:\nPadre e hijo se ejecutan concurrentemente.\nPadre espera por la finalizaci\303\263n del hijo.\nEn UNIX existen dos funciones b\303\241sicas para crear procesos: Fork y Exec.\n\nFunci\303\263n fork(): Cuando se la llama crea un proceso ", 512) = 512
+8036  <... read resumed> "claudio pico\n", 512) = 13
+8037  read(15, "hijo que es una copia casi exacta del proceso padre (duplicado del padre). Ambos procesos contin\303\272an ejecut\303\241ndose desde el punto en el que se hizo la llamada a fork().\n\nEn UNIX los procesos se identifican mediante un \342\200\234identificador de proceso\342\200\235 (PID) que es un entero \303\272nico. Ambos procesos contin\303\272an su ejecuci\303\263n con la instrucci\303\263n que sigue al fork() con una diferencia:\nEl c\303\263digo que el hijo recibe del fork es cero.\nEl que recibe del padre es el propio pid.\nFunciones exec: Tras crear un nuevo proces", 512) = 512
+8036  read(14,  <unfinished ...>
+8037  read(15,  <unfinished ...>
+8036  <... read resumed> "", 512)       = 0
+8037  <... read resumed> "o, despu\303\251s de llamar a fork, Linux llama a una funci\303\263n de la familia exec. \303\211stas funciones reemplazan el programa ejecut\303\241ndose en el proceso por otro programa. Cuando un programa llama a una funci\303\263n exec, su ejecuci\303\263n cesa de inmediato y comienza a ejecutar el nuevo programa desde el principio, suponiendo que no ocurriera ning\303\272n error durante la llamada.\n\nGeneralmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve despu\303\251s del fork para reemplazar su espacio de memoria c", 512) = 512
+8037  read(15,  <unfinished ...>
+8036  close(14 <unfinished ...>
+8037  <... read resumed> "on un programa nuevo. \n\nNota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a s\303\255 mismo de la cola de procesos listos hasta que el hijo termine.\n- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf\n", 512) = 314
+8036  <... close resumed> )             = 0
+8037  read(15,  <unfinished ...>
+8036  write(1, " \n", 2 <unfinished ...>
+8037  <... read resumed> "", 512)       = 0
+8036  <... write resumed> )             = 2
+8037  close(15 <unfinished ...>
+8036  write(1, "nombre claudio.txt md5local 5e774f857c07fd869b29ab45fb72e5ed md 0ce6c1c1912f9e8026bf7d534936b812 \n", 98 <unfinished ...>
+8037  <... close resumed> )             = 0
+8036  <... write resumed> )             = 98
+8037  futex(0x7f10f3fa99e0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+8036  futex(0x7f10f3fa99e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+8037  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+8036  <... futex resumed> )             = 0
+8037  write(1, " \n", 2 <unfinished ...>
+8036  stat("Directorio/pepe/publico/claudio.txt",  <unfinished ...>
+8037  <... write resumed> )             = 2
+8036  <... stat resumed> {st_mode=S_IFREG|0600, st_size=13, ...}) = 0
+8037  write(1, "nombre texto.txt md5local 15e70d5371f02da4f7fde5ce0a3f0c54 md 15e70d5371f02da4f7fde5ce0a3f0c54 \n", 96 <unfinished ...>
+8036  getdents(12,  <unfinished ...>
+8037  <... write resumed> )             = 96
+8036  <... getdents resumed> /* 0 entries */, 32768) = 0
+8037  futex(0x7f10f3fa99e0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+8036  open("/proc/sys/vm/overcommit_memory", O_RDONLY|O_CLOEXEC <unfinished ...>
+8037  <... futex resumed> )             = 0
+8037  getdents(13,  <unfinished ...>
+8036  <... open resumed> )              = 14
+8037  <... getdents resumed> /* 0 entries */, 32768) = 0
+8036  read(14,  <unfinished ...>
+8037  madvise(0x7f10e4021000, 32768, MADV_DONTNEED <unfinished ...>
+8036  <... read resumed> "0", 1)        = 1
+8037  <... madvise resumed> )           = 0
+8036  close(14 <unfinished ...>
+8037  close(13 <unfinished ...>
+8036  <... close resumed> )             = 0
+8037  <... close resumed> )             = 0
+8036  madvise(0x7f10ec021000, 32768, MADV_DONTNEED) = 0
+8037  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+8036  close(12)                         = 0
+8037  <... open resumed> )              = 13
+8036  futex(0x7f10f47cb968, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+8037  fstat(13, {st_mode=S_IFREG|0644, st_size=125915, ...}) = 0
+8037  mmap(NULL, 125915, PROT_READ, MAP_PRIVATE, 13, 0) = 0x7f10f4786000
+8037  close(13)                         = 0
+8037  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+8037  open("/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 12
+8037  read(12, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260*\0\0\0\0\0\0@\0\0\0\0\0\0\0pY\1\0\0\0\0\0\0\0\0\0@\0008\0\6\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\214T\1\0\0\0\0\0\214T\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\220T\1\0\0\0\0\0\220T!\0\0\0\0\0\220T!\0\0\0\0\0\320\3\0\0\0\0\0\0\220\6\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\260T\1\0\0\0\0\0\260T!\0\0\0\0\0\260T!\0\0\0\0\0\360\1\0\0\0\0\0\0\360\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\220\1\0\0\0\0\0\0\220\1\0\0\0\0\0\0\220\1\0\0\0\0\0\0$\0\0\0\0\0\0\0$\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0P\345td\4\0\0\0\3204\1\0\0\0\0\0\3204\1\0\0\0\0\0\3204\1\0\0\0\0\0D\5\0\0\0\0\0\0D\5\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\00061\33DWq\n\345W\214K\360\7\221\336\3275\235\273\222\0\0\0\0\203\0\0\0\27\0\0\0\20\0\0\0\n\0\0\0\23\34\3\30\4$\0\1\1\201\0T\4\6\210\20\200\204\0\10\0\10\5\200\2\0@\20D\20\0\266\2\200\320 \301\0\220\2024\1\0\4\10(@\2H\1\v \320\1\2(\0235\4`l\322\0!\3p`@\322\200\10`\0@\1\0\200\1\0\0\2$\0\10\21\2\10H\300\1$\t\21(  \10C\v\246\202H\t\10\10\3D\f\n\34\22O\306\1\207\va\204\226\315\4\302\305\f\242\333\16\314\27\0\0\0\30\0\0\0\33\0\0\0\0\0\0\0\36\0\0\0\0\0\0\0 \0\0\0!\0\0\0#\0\0\0&\0\0\0(\0\0\0\0\0\0\0)\0\0\0+\0\0\0,\0\0\0/\0\0\0001\0\0\0004\0\0\0005\0\0\0008\0\0\0\0\0\0\0009\0\0\0:\0\0\0=\0\0\0>\0\0\0@\0\0\0A\0\0\0B\0\0\0C\0\0\0D\0\0\0F\0\0\0\0\0\0\0G\0\0\0\0\0\0\0H\0\0\0\0\0\0\0\0\0\0\0I\0\0\0J\0\0\0L\0\0\0M\0\0\0N\0\0\0\0\0\0\0\0\0\0\0P\0\0\0R\0\0\0\0\0\0\0\0\0\0\0S\0\0\0U\0\0\0\0\0\0\0V\0\0\0\0\0\0\0\0\0\0\0X\0\0\0Y\0\0\0Z\0\0\0\0\0\0\0\0\0\0\0\\\0\0\0]\0\0\0\0\0\0\0", 832) = 832
+8037  fstat(12, {st_mode=S_IFREG|0644, st_size=90160, ...}) = 0
+8037  mmap(NULL, 2186016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 12, 0) = 0x7f10f27cd000
+8037  mprotect(0x7f10f27e3000, 2093056, PROT_NONE) = 0
+8037  mmap(0x7f10f29e2000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 12, 0x15000) = 0x7f10f29e2000
+8037  close(12)                         = 0
+8037  munmap(0x7f10f4786000, 125915)    = 0
+8037  futex(0x7f10f47cb968, FUTEX_WAKE_PRIVATE, 1) = 1
+8036  <... futex resumed> )             = 0
+8036  futex(0x7f10f47cb968, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+8037  futex(0x7f10f29e2890, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+8036  <... futex resumed> )             = 0
+8037  <... futex resumed> )             = 0
+8037  futex(0x7f10f47cb990, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+8036  futex(0x7f10f47cb990, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+8037  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+8036  <... futex resumed> )             = 0
+8037  futex(0x7f10f47cb990, FUTEX_WAKE_PRIVATE, 1) = 0
+8037  madvise(0x7f10f29e3000, 8368128, MADV_DONTNEED <unfinished ...>
+8036  madvise(0x7f10f31e4000, 8368128, MADV_DONTNEED <unfinished ...>
+8037  <... madvise resumed> )           = 0
+8036  <... madvise resumed> )           = 0
+8037  _exit(0)                          = ?
+8036  _exit(0)                          = ?
+8037  +++ exited with 0 +++
+8036  +++ exited with 0 +++
+8034  <... futex resumed> )             = 0
+8034  write(1, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
+8034  write(6, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
+8034  read(6, "//GyC****/\0finalizar\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1136) = 1136
+8034  write(1, "esto es lo ultmimo us:pepe cont: pepe  termina\n", 47) = 47
+8034  write(1, "\n\n\n\n************actualizo el cliente ************\n", 50) = 50
+8034  write(1, "\n", 1)                 = 1
+8034  write(1, "reportar\n", 9)         = 9
+8034  getdents(11, /* 4 entries */, 32768) = 112
+8034  getdents(11, /* 0 entries */, 32768) = 0
+8034  lseek(11, 0, SEEK_SET)            = 0
+8034  write(6, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0", 48) = 48
+8034  getdents(11, /* 4 entries */, 32768) = 112
+8034  close(0)                          = 0
+8034  write(1, "esto es dir de md5 Directorio/pepe/publico/claudio.txt\n", 55) = 55
+8034  open("Directorio/pepe/publico/claudio.txt", O_RDONLY) = 0
+8034  read(0, "claudio pico\n", 512)    = 13
+8034  read(0, "", 512)                  = 0
+8034  stat("Directorio/pepe/publico/claudio.txt", {st_mode=S_IFREG|0600, st_size=13, ...}) = 0
+8034  open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 12
+8034  fstat(12, {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
+8034  fstat(12, {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
+8034  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10f47c6000
+8034  read(12, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0\t\0\0\0\0\0\0\0<\0\0\0\t\0\0\0\30\242\222\2170\266{R@\267\32\311\260\270\36\217@\270\324p0\272\27}\300\272\265\243\260\273\370\261@\274\226\3270\275\331\344\300\276x\n\260\277\273\30@\300Z\217\260\301\235\235@\302;\3030\303~\320\300\304\34\366\260\305`\4@\305\376*0\307A7\300\307\340\2570\310\201\224@\312M\241\260\312\356\206\300\316M\3770\316\260\355\300\323)5\260\324Cd\300\364=\0100\364\237\366\300\365\5l0\3662\20@\366\346\237\260\370\23C\300\370\307\3230\371\364w@\372\3236\260\373\3035\300\374\274S0\375\254R@\376\23450\377\2144@\7\243J\260\10$o\240#\224\265\260$\20\224\240%7\362\260%\360v\240'\0314@'\315\303\260(\372g\300)\260H\260*\340\341@+\231W 7\366\306\2608\277*\260@\260\23\260AV>\300Gw\t\260G\334\177 \1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\4\3\4\3\4\3\5\6\5\6\5\3\4\2\4\5\4\3\4\377\377\303\320\0\0\377\377\307\300\0\4\377\377\325\320\1\10\377\377\343\340\1\10\377\377\325\320\0\4\377\377\307\300\0\r\377\377\325\320\1\22\377\377\343\340\1\10\377\377\325\320\0\4CMT\0ART\0ARST\0WART\0WARST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0\n\0\0\0\0\0\0\0=\0\0\0\n\0\0\0\34\377\377\377\377r\234\262\4\377\377\377\377\242\222\2170\377\377\377\377\266{R@\377\377\377\377\267\32\311\260\377\377\377\377\270\36\217@\377\377\377\377\270\324p0\377\377\377\377\272\27}\300\377\377\377\377\272\265\243\260\377\377\377\377\273\370\261@\377\377\377\377\274\226\3270\377\377\377\377\275\331\344\300\377\377\377\377\276x\n\260\377\377\377\377\277\273\30@\377\377\377\377\300Z\217\260\377\377\377\377\301\235\235@\377\377\377\377\302;\3030\377\377\377\377\303~\320\300\377\377\377\377\304\34\366\260\377\377\377\377\305`\4@\377\377\377\377\305\376*0\377\377\377\377\307A7\300\377\377\377\377\307\340\2570\377\377\377\377\310\201\224@\377\377\377\377\312M\241\260\377\377\377\377\312\356\206\300\377\377\377\377\316M\3770\377\377\377\377\316\260\355\300\377\377\377\377\323)5\260\377\377\377\377\324Cd\300\377\377\377\377\364=\0100\377\377\377\377\364\237\366\300\377\377\377\377\365\5l0\377\377\377\377\3662\20@\377\377\377\377\366\346\237\260\377\377\377\377\370\23C\300\377\377\377\377\370\307\3230\377\377\377\377\371\364w@\377\377\377\377\372\3236\260\377\377\377\377\373\3035\300\377\377\377\377\374\274S0\377\377\377\377\375\254R@\377\377\377\377\376\23450\377\377\377\377\377\2144@\0\0\0\0\7\243J\260\0\0\0\0\10$o\240\0\0\0\0#\224\265\260\0\0\0\0$\20\224\240\0\0\0\0%7\362\260\0\0\0\0%\360v\240\0\0\0\0'\0314@\0\0\0\0'\315\303\260\0\0\0\0(\372g\300\0\0\0\0)\260H\260\0\0\0\0*\340\341@\0\0\0\0+\231W \0\0\0\0007\366\306\260\0\0\0\0008\277*\260\0\0\0\0@\260\23\260\0\0\0\0AV>\300\0\0\0\0Gw\t\260\0\0\0\0G\334\177 \1\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\4\5\4\5\4\6\7\6\7"..., 4096) = 1147
+8034  lseek(12, -707, SEEK_CUR)         = 440
+8034  read(12, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0\n\0\0\0\0\0\0\0=\0\0\0\n\0\0\0\34\377\377\377\377r\234\262\4\377\377\377\377\242\222\2170\377\377\377\377\266{R@\377\377\377\377\267\32\311\260\377\377\377\377\270\36\217@\377\377\377\377\270\324p0\377\377\377\377\272\27}\300\377\377\377\377\272\265\243\260\377\377\377\377\273\370\261@\377\377\377\377\274\226\3270\377\377\377\377\275\331\344\300\377\377\377\377\276x\n\260\377\377\377\377\277\273\30@\377\377\377\377\300Z\217\260\377\377\377\377\301\235\235@\377\377\377\377\302;\3030\377\377\377\377\303~\320\300\377\377\377\377\304\34\366\260\377\377\377\377\305`\4@\377\377\377\377\305\376*0\377\377\377\377\307A7\300\377\377\377\377\307\340\2570\377\377\377\377\310\201\224@\377\377\377\377\312M\241\260\377\377\377\377\312\356\206\300\377\377\377\377\316M\3770\377\377\377\377\316\260\355\300\377\377\377\377\323)5\260\377\377\377\377\324Cd\300\377\377\377\377\364=\0100\377\377\377\377\364\237\366\300\377\377\377\377\365\5l0\377\377\377\377\3662\20@\377\377\377\377\366\346\237\260\377\377\377\377\370\23C\300\377\377\377\377\370\307\3230\377\377\377\377\371\364w@\377\377\377\377\372\3236\260\377\377\377\377\373\3035\300\377\377\377\377\374\274S0\377\377\377\377\375\254R@\377\377\377\377\376\23450\377\377\377\377\377\2144@\0\0\0\0\7\243J\260\0\0\0\0\10$o\240\0\0\0\0#\224\265\260\0\0\0\0$\20\224\240\0\0\0\0%7\362\260\0\0\0\0%\360v\240\0\0\0\0'\0314@\0\0\0\0'\315\303\260\0\0\0\0(\372g\300\0\0\0\0)\260H\260\0\0\0\0*\340\341@\0\0\0\0+\231W \0\0\0\0007\366\306\260\0\0\0\0008\277*\260\0\0\0\0@\260\23\260\0\0\0\0AV>\300\0\0\0\0Gw\t\260\0\0\0\0G\334\177 \1\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\4\5\4\5\4\6\7\6\7\6\4\5\3\5\6\5\4\5\377\377\277|\0\0\377\377\303\320\0\4\377\377\307\300\0\10\377\377\325\320\1\f\377\377\343\340\1\f\377\377\325\320\0\10\377\377\307\300\0\21\377\377\325\320\1\26\377\377\343\340\1\f\377\377\325\320\0\10LMT\0CMT\0ART\0ARST\0WART\0WARST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\nART3\n", 4096) = 707
+8034  close(12)                         = 0
+8034  munmap(0x7f10f47c6000, 4096)      = 0
+8034  write(1, "nombre: claudio.txt md5:5e774f857c07fd869b29ab45fb72e5ed tmMod:1464887946 leer:Thu Jun  2 14:19:06 2016\n", 104) = 104
+8034  write(1, "\n", 1)                 = 1
+8034  write(6, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0claudio.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0005e774f857c07fd869b29ab45fb72e5ed\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\212jPW\0\0\0\0", 152) = 152
+8034  close(0)                          = 0
+8034  close(0)                          = -1 EBADF (Bad file descriptor)
+8034  write(1, "esto es dir de md5 Directorio/pepe/publico/texto.txt\n", 53) = 53
+8034  open("Directorio/pepe/publico/texto.txt", O_RDONLY) = 0
+8034  read(0, "reaci\303\263n de Procesos\nlos procesos  se crean mediante una llamada al sistema de \342\200\234crear proceso\342\200\235, durante el curso de su ejecuci\303\263n. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.\n\nCuando un proceso crea un proceso nuevo, hay dos posibilidades en t\303\251rminos de ejecuci\303\263n:\nPadre e hijo se ejecutan concurrentemente.\nPadre espera por la finalizaci\303\263n del hijo.\nEn UNIX existen dos funciones b\303\241sicas para crear procesos: Fork y Exec.\n\nFunci\303\263n fork(): Cuando se la llama crea un proceso ", 512) = 512
+8034  read(0, "hijo que es una copia casi exacta del proceso padre (duplicado del padre). Ambos procesos contin\303\272an ejecut\303\241ndose desde el punto en el que se hizo la llamada a fork().\n\nEn UNIX los procesos se identifican mediante un \342\200\234identificador de proceso\342\200\235 (PID) que es un entero \303\272nico. Ambos procesos contin\303\272an su ejecuci\303\263n con la instrucci\303\263n que sigue al fork() con una diferencia:\nEl c\303\263digo que el hijo recibe del fork es cero.\nEl que recibe del padre es el propio pid.\nFunciones exec: Tras crear un nuevo proces", 512) = 512
+8034  read(0, "o, despu\303\251s de llamar a fork, Linux llama a una funci\303\263n de la familia exec. \303\211stas funciones reemplazan el programa ejecut\303\241ndose en el proceso por otro programa. Cuando un programa llama a una funci\303\263n exec, su ejecuci\303\263n cesa de inmediato y comienza a ejecutar el nuevo programa desde el principio, suponiendo que no ocurriera ning\303\272n error durante la llamada.\n\nGeneralmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve despu\303\251s del fork para reemplazar su espacio de memoria c", 512) = 512
+8034  read(0, "on un programa nuevo. \n\nNota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a s\303\255 mismo de la cola de procesos listos hasta que el hijo termine.\n- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf\n", 512) = 314
+8034  read(0, "", 512)                  = 0
+8034  stat("Directorio/pepe/publico/texto.txt", {st_mode=S_IFREG|0600, st_size=1850, ...}) = 0
+8034  stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1147, ...}) = 0
+8034  write(1, "nombre: texto.txt md5:15e70d5371f02da4f7fde5ce0a3f0c54 tmMod:1464887766 leer:Thu Jun  2 14:16:06 2016\n", 102) = 102
+8034  write(1, "\n", 1)                 = 1
+8034  write(6, "//GyC****/\0actualizarArchivos\0\0\0\0\0\0\0\0\0\0\0\0texto.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00015e70d5371f02da4f7fde5ce0a3f0c54\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\326iPW\0\0\0\0", 152) = 152
+8034  close(0)                          = 0
+8034  getdents(11, /* 0 entries */, 32768) = 0
+8034  read(6, "//GyC****/\0informacion\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0", 48) = 48
+8034  read(6, "claudio.txt\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 512) = 512
+8034  open("Directorio/pepe/publico/claudio.txt", O_RDONLY) = 0
+8034  write(1, "\n", 1)                 = 1
+8034  write(1, "Actualizo el archivo claudio.txt \n", 34) = 34
+8034  read(0, "claudio pico\n", 512)    = 13
+8034  read(0, "", 512)                  = 0
+8034  lseek(0, 0, SEEK_SET)             = 0
+8034  read(0, "claudio pico\n", 1024)   = 13
+8034  write(6, "//GyC****/\0InicioArchivo\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0claudio.txt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0005e774f857c07fd869b29ab45fb72e5ed\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0claudio pico\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1200) = 1200
+8034  read(0, "", 1024)                 = 0
+8034  close(0)                          = 0
+8034  write(6, "//GyC****/\0finalizarEnvio\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1200) = 1200
+8034  write(1, "mando arvhivo claudio.txt\n\n************salid e accep ******** \n", 63) = 63
+8034  write(1, "\n", 1)                 = 1
+8034  wait4(-1,  <unfinished ...>
+8035  <... read resumed> 0x7ffcffd01d10, 32) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+7977  <... accept resumed> 0, NULL)     = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+7977  --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+7977  accept(3,  <unfinished ...>
+8035  --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+8035  read(7,  <unfinished ...>
+8034  <... wait4 resumed> NULL, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+8007  <... read resumed> 0x7ffcffd01d10, 32) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+8006  <... wait4 resumed> NULL, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+8034  --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+8007  --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+8006  --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+8034  wait4(-1,  <unfinished ...>
+8007  read(6,  <unfinished ...>
+8006  wait4(-1,  <unfinished ...>
+7985  <... read resumed> 0x7ffcffd01d10, 32) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+7984  <... wait4 resumed> NULL, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+7985  --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+7984  --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+7985  read(5,  <unfinished ...>
+7984  wait4(-1,  <unfinished ...>
+8035  <... read resumed> 0x7ffcffd01d10, 32) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+7977  <... accept resumed> 0, NULL)     = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+8035  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+7977  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+7977  +++ killed by SIGINT +++
+8035  +++ killed by SIGINT +++
+8034  <... wait4 resumed> NULL, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+8007  <... read resumed> 0x7ffcffd01d10, 32) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+8006  <... wait4 resumed> NULL, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+8034  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+8007  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+7985  <... read resumed> 0x7ffcffd01d10, 32) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+8006  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+7984  <... wait4 resumed> NULL, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+7985  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+7984  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+8034  +++ killed by SIGINT +++
+8007  +++ killed by SIGINT +++
+8006  +++ killed by SIGINT +++
+7985  +++ killed by SIGINT +++
+7984  +++ killed by SIGINT +++

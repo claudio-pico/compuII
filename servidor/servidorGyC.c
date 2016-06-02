@@ -82,15 +82,10 @@ int main (int argc , char* argv[]){
 	    printf("esto es lo ultmimo us:%s cont: %s  termina\n",usuario.usuario, usuario.contrasena);
 	  }
 	  printf("\n\n\n\n************actualizo el cliente ************\n\n");
-//	  sleep(2);
           reportar(&usuario);
 	  mandarArchivos(&usuario);
 	}
      
-     /*  char nada[512]; 
-       if((read(usuario.dscAccept ,&nada, sizeof nada))>0){
-
-       }*/	   
       printf("\n\n************salid e accep ******** \n\n");
       wait(NULL);
       close(dscAccept);

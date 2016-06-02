@@ -28,20 +28,20 @@ int reportar(Usuario* usuario){
   strcat(dir,usuario->usuario);
   strcat(dir,"/publico/");
   char* tok; 
+  printf("reportar\n");
   struct stat status;
   
   Info info;
-  memset(info.head.head,'\0',11);
+  memset(&info,'\0',sizeof info);
   strcat(info.head.head,headM);
-  memset(info.head.accion,'\0',30);
   strcat(info.head.accion,"informacion");
   info.cantidad=contarArchivos(usuario->dirPublico);
   write(usuario->dscAccept,&info,sizeof info);
   
   while((dt=readdir(usuario->dirPublico)) != NULL){    
     if((strcmp(dt->d_name,".")!=0)&&(strcmp(dt->d_name,"..")!=0)){
-      memset(buf,'\0',512);
-      memset(buf2,'\0',512);
+      memset(buf,'\0',sizeof buf);
+      memset(buf2,'\0',sizeof buf2);
       snprintf(buf, sizeof buf, "%s%s",dir,dt->d_name);
       op=0;
       printf("esto es dir de md5 %s\n",buf);
@@ -52,8 +52,8 @@ int reportar(Usuario* usuario){
       //Cada vez que actualice el contenido de un archivo o guardar un archivo mtime se actualiza.
       if(strlen(outMd5)>0){                                      
 	Archivos archivo;         
-	memset(archivo.md5,'\0',64);
-	memset(archivo.nombre,'\0',64);
+	memset(archivo.md5,'\0',sizeof archivo.md5 );
+	memset(archivo.nombre,'\0',sizeof archivo.md5);
                  	
 	tok = strtok (outMd5,"\n ");
 	strcat(archivo.md5,tok);

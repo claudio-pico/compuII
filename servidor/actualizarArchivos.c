@@ -29,7 +29,8 @@ void* hilosActualizar(){
   char bufDir[512];
   char outMd5[64];
   Archivos archivo;
-  memset(&archivo,'\0',sizeof archivo );         
+  memset(archivo.md5,'\0',sizeof archivo.md5 );
+  memset(archivo.nombre,'\0',sizeof archivo.md5);           
   struct stat statusLocal; 
   int op=0;
   int encontroArchivo;

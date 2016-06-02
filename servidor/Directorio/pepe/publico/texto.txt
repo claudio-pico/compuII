@@ -1,5 +1,4 @@
-joooooaaaaasdsdassdasdno se que onda guuuaauuu
-Creación de Procesos
+reación de Procesos
 los procesos  se crean mediante una llamada al sistema de “crear proceso”, durante el curso de su ejecución. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.
 
 Cuando un proceso crea un proceso nuevo, hay dos posibilidades en términos de ejecución:

@@ -1,4 +1,3 @@
-joooooaaaaasdsdassdasdno se que onda guuuaauuu
 Creación de Procesos
 los procesos  se crean mediante una llamada al sistema de “crear proceso”, durante el curso de su ejecución. El proceso creador se denomina proceso padre, y el nuevo proceso, hijo.
 
@@ -17,4 +16,4 @@ Funciones exec: Tras crear un nuevo proceso, después de llamar a fork, Linux ll
 Generalmente uno de los dos procesos (padre o hijo) utiliza la llamada al sistema exec ve después del fork para reemplazar su espacio de memoria con un programa nuevo. 
 
 Nota: Si el padre no tiene nada que hacer mientras el hijo se ejecuta, puede emitir una llamada wait (esperar) para sacarse a sí mismo de la cola de procesos listos hasta que el hijo termine.
-- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf
+- See more at: http://systope.blogspot.com.ar/2012/05/procesos-e-hilos.html#sthash.tfnLEmoI.dpuf 

@@ -11,13 +11,21 @@ void md5(int dato,char* outMd5){
   MD5_CTX c;
   unsigned char out[16];
   char buf[512];
-  memset(out,'\0',16);
-  memset(buf,'\0',512);
+  memset(out,'\0',sizeof out);
+  memset(buf,'\0',sizeof buf);
   MD5_Init(&c);
 
-  while(read(dato,buf,512)>0){
-    MD5_Update(&c,buf,strlen(buf));
-    memset(buf,'\0',512);
+  int tamano=0;
+  int lee=0;
+  while((lee=read(dato,buf,512 ))>0){
+    tamano=lee+tamano;
+  }
+  lseek (dato, 0, SEEK_SET );
+  char bufT[tamano];
+  memset(bufT,'\0',tamano);
+  while(read(dato,bufT,tamano)>0){
+    MD5_Update(&c,bufT,strlen(bufT));
+    memset(bufT,'\0',tamano);
   }
   memset(outMd5,'\0',64);
   MD5_Final(out, &c);
@@ -27,5 +35,4 @@ void md5(int dato,char* outMd5){
     strcat(outMd5,aux);
   }
   return;
-   
-}
+   }

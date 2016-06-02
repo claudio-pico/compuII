@@ -14,8 +14,8 @@ int main(int argc ,char* argv[] ){
   int op;
   Usuario usuario;
   char* puerto="2000";
-  memset(usuario.usuario,'\0',30);
-  memset(usuario.contrasena,'\0',30);	
+  memset(usuario.usuario,'\0',sizeof usuario.usuario);
+  memset(usuario.contrasena,'\0',sizeof usuario.contrasena);	
   while ((op = getopt (argc, argv, "p:d:u:c:")) != -1) { 
     switch (op) {
     case 'p': puerto = optarg; 
@@ -47,20 +47,14 @@ int main(int argc ,char* argv[] ){
       reportar(&usuario);
       mandarArchivos(&usuario);
       printf("\n\n \n\n************actualizo el cliente ************\n\n");
-//      sleep(2);
       if(actualizarArchivos(&usuario)){
         return -1;
 
       }
     }
   }
-//   char nada[512]; 
-//   write(usuario.desSocket,&nada,sizeof nada);
+  close(usuario.desSocket);
   printf("conexionDes\n"); 
- // while(1){
- // printf("esperar.....");
- // }
-//  conectado(desSocket);     
   return 0;    
 }
 
