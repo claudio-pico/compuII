@@ -40,8 +40,8 @@ int recibirArchivo(char* bufNombreArchivos, Usuario* usuario,int cantArchivos){
   cantArchivos++;
   while(cantArchivos>contadorArchivos){
     memset(&nombreArchivo,'\0',sizeof nombreArchivo);
-   if((read(usuario->desSocket,&nombreArchivo, sizeof nombreArchivo))>0){
-   if((strcmp(nombreArchivo.head.head,headM))==0 && (strcmp(nombreArchivo.head.accion,"InicioArchivo"))==0){
+    if((read(usuario->desSocket,&nombreArchivo, sizeof nombreArchivo))>0){
+      if((strcmp(nombreArchivo.head.head,headM))==0 && (strcmp(nombreArchivo.head.accion,"InicioArchivo"))==0){
         contadorArchivos++;
         //verifico que el archivo anterior fue correctamente modificado.
         if(strlen(archivoAnterior)!=0){
@@ -64,7 +64,7 @@ int recibirArchivo(char* bufNombreArchivos, Usuario* usuario,int cantArchivos){
         write(op,nombreArchivo.bufContenido,nombreArchivo.tamanoContenido); 
         printf("\n Escibi el archivo %s \n",nombreArchivo.nombre);
         memset(&nombreArchivo,'\0',sizeof nombreArchivo); 
-       }else if((strcmp(nombreArchivo.head.head,headM))==0 && (strcmp(nombreArchivo.head.accion,"Archivo"))==0){    
+      }else if((strcmp(nombreArchivo.head.head,headM))==0 && (strcmp(nombreArchivo.head.accion,"Archivo"))==0){    
         printf("\n sigo escribiendo %s \n",nombreArchivo.nombre);
         write(op,nombreArchivo.bufContenido,nombreArchivo.tamanoContenido);
         memset(&nombreArchivo,'\0',sizeof nombreArchivo);
@@ -74,16 +74,16 @@ int recibirArchivo(char* bufNombreArchivos, Usuario* usuario,int cantArchivos){
       }else if((strcmp(nombreArchivo.head.head,headM))==0 && (strcmp(nombreArchivo.head.accion,"finalizarEnvio"))==0){
         contadorArchivos++;
         if(contadorArchivos!=cantArchivos){   
-         printf ("Error : La actualizacion no fue completa \n");
-           return -1;
-         }
+	  printf ("Error : La actualizacion no fue completa \n");
+	  return -1;
+	}
         printf("pase por finalizar");
       }
     }
   }
   close(op);
   if(strlen(archivoAnterior)!=0){
-   verificarMd5(archivoAnterior,md5Anterior,usuario->usuario);
+    verificarMd5(archivoAnterior,md5Anterior,usuario->usuario);
   }
   return 1;
 }

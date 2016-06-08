@@ -14,7 +14,7 @@ void md5(int dato,char* outMd5){
   memset(out,'\0',sizeof out);
   memset(buf,'\0',sizeof buf);
   MD5_Init(&c);
- int lee=0;
+  int lee=0;
   while((lee=read(dato,buf,sizeof buf))>0){
     MD5_Update(&c,buf,lee);
     memset(buf,'\0',sizeof buf);

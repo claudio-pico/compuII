@@ -4,7 +4,6 @@
 #include <string.h>
 #include <unistd.h> 
 #include <sys/socket.h>
-
 #include <netinet/in.h>
 #include<assert.h>
 #include<arpa/inet.h>
@@ -14,10 +13,13 @@ int main(int argc ,char* argv[] ){
   int op;
   Usuario usuario;
   char* puerto="2000";
+  char* ip="127.0.0.1";
   memset(usuario.usuario,'\0',sizeof usuario.usuario);
   memset(usuario.contrasena,'\0',sizeof usuario.contrasena);	
-  while ((op = getopt (argc, argv, "p:d:u:c:")) != -1) { 
+  while ((op = getopt (argc, argv, "i:p:u:c:")) != -1) { 
     switch (op) {
+    case 'i': ip = optarg;
+      break;
     case 'p': puerto = optarg; 
       break; 
     case 'u': strcpy(usuario.usuario,optarg);
@@ -41,7 +43,7 @@ int main(int argc ,char* argv[] ){
     return -1;
        
   }
-  if(conexion(puerto,&usuario)==0){
+  if(conexion(ip,puerto,&usuario)==0){
     if(directorio(&usuario)==0){
       printf("\n\n************actualizo el servidor ************\n\n");
       reportar(&usuario);

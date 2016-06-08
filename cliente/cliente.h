@@ -28,7 +28,7 @@ typedef struct Usuario{
 
 
 /*crea el enlace con el servidor*/
-int conexion(char*,Usuario*);
+int conexion(char*,char*,Usuario*);
 
 /*envio usuario y contraseña al servidor y espero la validacion */
 int validar(Usuario*);
@@ -61,5 +61,4 @@ int contarArchivos(DIR*);
 /*Verifica que la actualizacion del archivo fue correcta, si no lo fue 
 vulve el archivo al estado anterior*/
 void verificarMd5(char*,char*,char*);
-
 #endif

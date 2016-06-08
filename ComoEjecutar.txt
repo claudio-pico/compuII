@@ -8,4 +8,6 @@ SERVIDOR
 
 1. apt-get install libssl-dev
 
+ssh a162038g01@192.168.3.9
 
+scp -r compuII a162038g01@192.168.3.9:
